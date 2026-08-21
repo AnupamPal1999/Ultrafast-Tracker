@@ -68,7 +68,8 @@ def get_today_split():
     # Split event hubs
     hubs = [h for i, h in enumerate(ALL_EVENT_HUBS) if (i % 2 == 0) == is_even_day]
     
-    print(f"Today is day {day_of_month} ({'Even' pisc if is_even_day else 'Odd'} batch). Scraping {len(feeds)} feeds and {len(hubs)} hubs.")
+    batch_name = "Even" if is_even_day else "Odd"
+    print(f"Today is day {day_of_month} ({batch_name} batch). Scraping {len(feeds)} feeds and {len(hubs)} hubs.")
     return feeds, hubs
 
 def extract_dates(text):
@@ -171,7 +172,6 @@ def fetch_current_batch_events():
     return list(events.values())
 
 if __name__ == "__main__":
-    # Load existing events so alternating runs don't overwrite the other half of the list
     existing_events = []
     try:
         with open("events.json", "r", encoding="utf-8") as f:
@@ -180,17 +180,14 @@ if __name__ == "__main__":
     except:
         pass
 
-    # Filter out past events from existing pool
     today_date = datetime.now().date()
     valid_existing = {re.sub(r'[^a-zA-Z0-9]', '', e['title']).lower(): e for e in existing_events if datetime.strptime(e['date'], "%Y-%m-%d").date() >= today_date}
 
-    # Fetch new batch
     new_batch = fetch_current_batch_events()
 
-    # Merge new batch into existing pool
     for ev in new_batch:
         key = re.sub(r'[^a-zA-Z0-9]', '', ev['title']).lower()
-        valid_existing[key] = ev  # Overwrites or adds fresh entry
+        valid_existing[key] = ev
 
     final_events = sorted(list(valid_existing.values()), key=lambda x: x['date'])
 
