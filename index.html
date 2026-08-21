@@ -334,7 +334,7 @@ END:VCALENDAR`;
           </div>
           
           <div class="meta">
-            <div><strong>📅 Date:</strong> <span class="meta-date">${ev.display_date}</span></div>
+            <div><strong>📅 Date:</strong> <span class="meta-date">${ev.display_date || ev.date || 'TBA'}</span></div>
             <div><strong>🏛️ Host:</strong> ${ev.organizer}</div>
             <div><strong>📍 Where:</strong> ${ev.location}</div>
           </div>
