@@ -27,8 +27,8 @@ CATEGORIES = {
     "Laser Sources & Development": ["fiber laser", "solid-state", "diode laser", "opcpa", "amplifier"]
 }
 
-# --- ALL SOURCES SPLIT INTO EVEN AND ODD LISTS ---
-ALL_DIRECT_FEEDS = [
+# --- MASTER SOURCE LIST ---
+DIRECT_FEEDS = [
     {"name": "Laserlab-Europe", "url": "https://laserlab-europe.eu/events/category/laserlab-europe/feed/"},
     {"name": "Laser4EU", "url": "https://laser4eu.eu/feed/"},
     {"name": "Lightsources.org", "url": "https://lightsources.org/for-users/events/feed/"},
@@ -42,7 +42,7 @@ ALL_DIRECT_FEEDS = [
     {"name": "ELI ALPS", "url": "https://www.eli-alps.hu/en/rss"}
 ]
 
-ALL_EVENT_HUBS = [
+EVENT_HUBS = [
     "https://mbi-berlin.de/news-and-events",
     "https://www.llc.lu.se/events",
     "https://arcnl.nl/en/news-events",
@@ -58,25 +58,12 @@ ALL_EVENT_HUBS = [
     "https://www.qub.ac.uk/News/"
 ]
 
-def get_today_split():
-    day_of_month = datetime.now().day
-    is_even_day = (day_of_month % 2 == 0)
-    
-    feeds = [f for i, f in enumerate(ALL_DIRECT_FEEDS) if (i % 2 == 0) == is_even_day]
-    hubs = [h for i, h in enumerate(ALL_EVENT_HUBS) if (i % 2 == 0) == is_even_day]
-    
-    batch_name = "Even" if is_even_day else "Odd"
-    print(f"--- Running {batch_name} Batch (Day {day_of_month}) ---")
-    return feeds, hubs
-
 def parse_smart_date(month_str, day_str, year_str=None):
-    """If the year is missing from the website text, intelligently calculate if it's this year or next year."""
     today = datetime.now().date()
     try:
         if year_str:
             year = int(year_str)
         else:
-            # Test with current year
             tmp_date = date_parser.parse(f"{month_str} {day_str} {today.year}").date()
             year = today.year + 1 if tmp_date < today else today.year
             
@@ -88,7 +75,6 @@ def parse_smart_date(month_str, day_str, year_str=None):
 def extract_dates(text):
     months_regex = r'(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)'
     
-    # Notice the year (202X) is now OPTIONAL (the trailing ? block)
     p1 = rf'\b({months_regex})\s+(\d{{1,2}})(?:\s*-\s*\d{{1,2}})?(?:st|nd|rd|th)?(?:(?:,\s*|\s+)(202[4-9]))?\b'
     p2 = rf'\b(\d{{1,2}})(?:\s*-\s*\d{{1,2}})?(?:st|nd|rd|th)?\s+({months_regex})(?:(?:,\s*|\s+)(202[4-9]))?\b'
     
@@ -115,13 +101,12 @@ def is_valid_event(text):
     text_lower = text.lower()
     return any(ind in text_lower for ind in EVENT_INDICATORS) and not "press release" in text_lower
 
-def fetch_current_batch_events():
+def fetch_all_events():
     events = {}
     today_date = datetime.now().date()
-    feeds, hubs = get_today_split()
 
-    print("\n--- Scanning RSS Feeds ---")
-    for feed in feeds:
+    print("--- Scanning RSS Feeds ---")
+    for feed in DIRECT_FEEDS:
         try:
             parsed = feedparser.parse(feed["url"])
             for entry in parsed.entries:
@@ -141,15 +126,11 @@ def fetch_current_batch_events():
                                 "date": sort_date, "link": entry.get("link", "#"), "description": summary[:250] + "..."
                             }
                             print(f"[SUCCESS] Added: {title} ({sort_date})")
-                        else:
-                            print(f"[SKIPPED - PAST EVENT] {title}")
-                    else:
-                        print(f"[SKIPPED - NO EXACT DATE] {title}")
         except Exception as e:
-            print(f"[ERROR] Failed to read {feed['name']}: {e}")
+            print(f"[ERROR] Failed {feed['name']}: {e}")
 
     print("\n--- Scanning Deep Hubs ---")
-    for hub in hubs:
+    for hub in EVENT_HUBS:
         try:
             hub_content = trafilatura.fetch_url(hub)
             if not hub_content: continue
@@ -177,12 +158,8 @@ def fetch_current_batch_events():
                                     "date": sort_date, "link": url, "description": text[:250] + "..."
                                 }
                                 print(f"[SUCCESS] Added deep link: {title}")
-                        else:
-                            print(f"[SKIPPED - PAST EVENT] {title}")
-                    else:
-                        print(f"[SKIPPED - NO EXACT DATE] {title}")
-        except Exception as e:
-            print(f"[ERROR] Deep scrape failed for {hub}: {e}")
+        except Exception:
+            pass
 
     return list(events.values())
 
@@ -198,7 +175,7 @@ if __name__ == "__main__":
     today_date = datetime.now().date()
     valid_existing = {re.sub(r'[^a-zA-Z0-9]', '', e['title']).lower(): e for e in existing_events if datetime.strptime(e['date'], "%Y-%m-%d").date() >= today_date}
 
-    new_batch = fetch_current_batch_events()
+    new_batch = fetch_all_events()
 
     for ev in new_batch:
         key = re.sub(r'[^a-zA-Z0-9]', '', ev['title']).lower()
