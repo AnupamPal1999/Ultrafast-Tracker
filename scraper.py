@@ -17,8 +17,7 @@ KEYWORDS = [
 
 EVENT_INDICATORS = [
     "conference", "workshop", "school", "symposium", "meeting", 
-    "seminar", "congress", "colloquium", "summit", "deadline", 
-    "exhibition", "webinar", "call for proposals"
+    "seminar", "congress", "colloquium", "summit", "deadline", "exhibition"
 ]
 
 CATEGORIES = {
@@ -27,7 +26,6 @@ CATEGORIES = {
     "Laser Sources & Development": ["fiber laser", "solid-state", "diode laser", "opcpa", "amplifier"]
 }
 
-# --- MASTER SOURCE LIST ---
 DIRECT_FEEDS = [
     {"name": "Laserlab-Europe", "url": "https://laserlab-europe.eu/events/category/laserlab-europe/feed/"},
     {"name": "Laser4EU", "url": "https://laser4eu.eu/feed/"},
@@ -51,45 +49,42 @@ EVENT_HUBS = [
     "https://actu.epfl.ch/",
     "https://www.psi.ch/en/media/events",
     "https://www.gsi.de/en/news/events",
-    "https://www.elettra.eu/news.html",
     "https://www.physics.ox.ac.uk/events",
-    "https://www.imperial.ac.uk/physics/events/",
-    "https://www.kcl.ac.uk/news",
-    "https://www.qub.ac.uk/News/"
+    "https://www.imperial.ac.uk/physics/events/"
 ]
 
 def parse_smart_date(month_str, day_str, year_str=None):
+    """Parses date, assuming current or next year if the year isn't explicitly written."""
     today = datetime.now().date()
     try:
-        if year_str:
-            year = int(year_str)
-        else:
-            tmp_date = date_parser.parse(f"{month_str} {day_str} {today.year}").date()
-            year = today.year + 1 if tmp_date < today else today.year
-            
-        final_date = date_parser.parse(f"{month_str} {day_str} {year}").strftime("%Y-%m-%d")
-        return final_date
+        year = int(year_str) if year_str else today.year
+        tmp_date = date_parser.parse(f"{month_str} {day_str} {year}").date()
+        if not year_str and tmp_date < today:
+            year += 1
+            tmp_date = date_parser.parse(f"{month_str} {day_str} {year}").date()
+        return tmp_date.strftime("%Y-%m-%d")
     except:
         return None
 
 def extract_dates(text):
     months_regex = r'(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)'
     
+    # Optional year capture to handle sites that just say "October 12"
     p1 = rf'\b({months_regex})\s+(\d{{1,2}})(?:\s*-\s*\d{{1,2}})?(?:st|nd|rd|th)?(?:(?:,\s*|\s+)(202[4-9]))?\b'
     p2 = rf'\b(\d{{1,2}})(?:\s*-\s*\d{{1,2}})?(?:st|nd|rd|th)?\s+({months_regex})(?:(?:,\s*|\s+)(202[4-9]))?\b'
     
-    match1 = re.search(p1, text, re.IGNORECASE)
-    if match1:
-        month, start_day, year = match1.groups()
-        sort_date = parse_smart_date(month, start_day, year)
-        if sort_date: return match1.group(0).strip(), sort_date
-        
-    match2 = re.search(p2, text, re.IGNORECASE)
-    if match2:
-        start_day, month, year = match2.groups()
-        sort_date = parse_smart_date(month, start_day, year)
-        if sort_date: return match2.group(0).strip(), sort_date
-
+    for pattern in [p1, p2]:
+        match = re.search(pattern, text, re.IGNORECASE)
+        if match:
+            # Re-order based on which pattern matched
+            if pattern == p1:
+                month, start_day, year = match.groups()
+            else:
+                start_day, month, year = match.groups()
+                
+            sort_date = parse_smart_date(month, start_day, year)
+            if sort_date:
+                return match.group(0).strip(), sort_date
     return None, None
 
 def classify_event(text):
@@ -99,9 +94,9 @@ def classify_event(text):
 
 def is_valid_event(text):
     text_lower = text.lower()
-    return any(ind in text_lower for ind in EVENT_INDICATORS) and not "press release" in text_lower
+    return any(ind in text_lower for ind in EVENT_INDICATORS) and "press release" not in text_lower
 
-def fetch_all_events():
+def fetch_events():
     events = {}
     today_date = datetime.now().date()
 
@@ -125,9 +120,9 @@ def fetch_all_events():
                                 "location": "See Official Link", "display_date": disp_date,
                                 "date": sort_date, "link": entry.get("link", "#"), "description": summary[:250] + "..."
                             }
-                            print(f"[SUCCESS] Added: {title} ({sort_date})")
+                            print(f"Found: {title}")
         except Exception as e:
-            print(f"[ERROR] Failed {feed['name']}: {e}")
+            print(f"Error on {feed['name']}: {e}")
 
     print("\n--- Scanning Deep Hubs ---")
     for hub in EVENT_HUBS:
@@ -157,31 +152,15 @@ def fetch_all_events():
                                     "location": "See Official Link", "display_date": disp_date,
                                     "date": sort_date, "link": url, "description": text[:250] + "..."
                                 }
-                                print(f"[SUCCESS] Added deep link: {title}")
+                                print(f"Found deep link: {title}")
         except Exception:
             pass
 
     return list(events.values())
 
 if __name__ == "__main__":
-    existing_events = []
-    try:
-        with open("events.json", "r", encoding="utf-8") as f:
-            data = json.load(f)
-            existing_events = data.get("events", [])
-    except:
-        pass
-
-    today_date = datetime.now().date()
-    valid_existing = {re.sub(r'[^a-zA-Z0-9]', '', e['title']).lower(): e for e in existing_events if datetime.strptime(e['date'], "%Y-%m-%d").date() >= today_date}
-
-    new_batch = fetch_all_events()
-
-    for ev in new_batch:
-        key = re.sub(r'[^a-zA-Z0-9]', '', ev['title']).lower()
-        valid_existing[key] = ev
-
-    final_events = sorted(list(valid_existing.values()), key=lambda x: x['date'])
+    new_events = fetch_events()
+    final_events = sorted(new_events, key=lambda x: x['date'])
 
     output_data = {
         "last_updated": datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC"),
@@ -191,4 +170,4 @@ if __name__ == "__main__":
 
     with open("events.json", "w", encoding="utf-8") as f:
         json.dump(output_data, f, indent=2, ensure_ascii=False)
-    print(f"\nSuccessfully saved {len(final_events)} total combined events.")
+    print(f"\nSaved {len(final_events)} automated events to dashboard.")
