@@ -15,7 +15,7 @@ KEYWORDS = [
 
 EVENT_INDICATORS = [
     "conference", "workshop", "school", "symposium", "meeting", 
-    "seminar", "congress", "colloquium", "summit"
+    "seminar", "congress", "colloquium", "summit", "deadline"
 ]
 
 CATEGORIES = {
@@ -24,48 +24,59 @@ CATEGORIES = {
     "Laser Sources & Development": ["fiber laser", "solid-state", "diode laser", "opcpa", "amplifier"]
 }
 
-# The expanded list of exact organizations and institutes
+# The expanded list of global and European laser/X-ray facilities
 FEEDS = [
+    {"name": "Laserlab-Europe", "url": "https://www.laserlab-europe.eu/events/events-rss"},
+    {"name": "Laser4EU", "url": "https://laser4eu.eu/feed/"},
+    {"name": "European XFEL", "url": "https://www.xfel.eu/news_and_events/news/rss/index_eng.xml"},
+    {"name": "ESRF (European Synchrotron)", "url": "https://www.esrf.fr/news/rss.xml"},
     {"name": "Optica Events", "url": "https://www.optica.org/events/rss"},
     {"name": "SPIE Conferences", "url": "https://spie.org/conferences-and-exhibitions/rss"},
-    {"name": "Laserlab-Europe", "url": "https://www.laserlab-europe.eu/events/events-rss"},
-    {"name": "Lightsources.org (Synchrotrons/FELs)", "url": "https://lightsources.org/feed/"},
+    {"name": "Lightsources.org", "url": "https://lightsources.org/feed/"},
     {"name": "SLAC National Accelerator", "url": "https://www6.slac.stanford.edu/news/feed"},
     {"name": "DESY News", "url": "https://www.desy.de/news/index_eng.xml"},
-    {"name": "Max Planck Institute of Quantum Optics (MPQ)", "url": "https://www.mpq.mpg.de/rss.xml"},
-    {"name": "Extreme Light Infrastructure (ELI)", "url": "https://www.eli-beams.eu/feed/"},
+    {"name": "Max Planck (MPQ)", "url": "https://www.mpq.mpg.de/rss.xml"},
+    {"name": "ELI Beams", "url": "https://www.eli-beams.eu/feed/"},
+    {"name": "ELI ALPS", "url": "https://www.eli-alps.hu/en/rss"},
     {"name": "APS Physics", "url": "https://physics.aps.org/feeds/all"},
-    {"name": "European Physical Society (EPS)", "url": "https://www.eps.org/events/event_list.asp?show=&rss=1"},
-    {"name": "CERN / Indico Physics Events", "url": "https://indico.cern.ch/export/feed/rss.xml"}
+    {"name": "EPS", "url": "https://www.eps.org/events/event_list.asp?show=&rss=1"}
 ]
 
 def extract_exact_dates(text):
     """
-    Strictly scans text for exact dates. If it doesn't find a specific 
-    Day, Month, and Year, it rejects the event.
+    Smarter date parser that grabs exact strings like '14-16 October 2026'
+    or falls back to 'October 2026' if the exact day isn't announced yet.
     """
-    months = r'Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?'
+    months_regex = r'(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)'
     
-    # 1. Matches: October 12-14, 2026 OR October 12, 2026
-    pattern1 = rf'\b({months})\s+(\d{{1,2}})(?:\s*-\s*(\d{{1,2}}))?(?:st|nd|rd|th)?(?:,\s*)?\s+(\d{{4}})\b'
-    # 2. Matches: 12-14 October 2026 OR 12 October 2026
-    pattern2 = rf'\b(\d{{1,2}})(?:\s*-\s*(\d{{1,2}}))?(?:st|nd|rd|th)?\s+({months})\s+(\d{{4}})\b'
-
-    match1 = re.search(pattern1, text, re.IGNORECASE)
-    if match1:
-        month, start_day, end_day, year = match1.groups()
-        display = f"{month.capitalize()} {start_day}" + (f"-{end_day}" if end_day else "") + f", {year}"
-        sort_date = date_parser.parse(f"{month} {start_day} {year}").strftime("%Y-%m-%d")
-        return display, sort_date
+    # Matches: Month DD-DD, YYYY (e.g., October 12-14, 2026)
+    p1 = rf'\b({months_regex})\s+(\d{{1,2}})(?:\s*-\s*\d{{1,2}})?(?:st|nd|rd|th)?(?:,\s*)?\s+(202[4-9])\b'
+    # Matches: DD-DD Month YYYY (e.g., 12-14 October 2026)
+    p2 = rf'\b(\d{{1,2}})(?:\s*-\s*\d{{1,2}})?(?:st|nd|rd|th)?\s+({months_regex})\s+(202[4-9])\b'
+    # Matches: Month YYYY (e.g., October 2026)
+    p3 = rf'\b({months_regex})\s+(202[4-9])\b'
+    
+    try:
+        m1 = re.search(p1, text, re.IGNORECASE)
+        if m1:
+            month, start_day, year = m1.groups()
+            sort_date = date_parser.parse(f"{month} {start_day} {year}").strftime("%Y-%m-%d")
+            return m1.group(0).strip(), sort_date
             
-    match2 = re.search(pattern2, text, re.IGNORECASE)
-    if match2:
-        start_day, end_day, month, year = match2.groups()
-        display = f"{start_day}" + (f"-{end_day}" if end_day else "") + f" {month.capitalize()} {year}"
-        sort_date = date_parser.parse(f"{month} {start_day} {year}").strftime("%Y-%m-%d")
-        return display, sort_date
-
-    # If no exact date is found, return None (This allows us to delete generic events)
+        m2 = re.search(p2, text, re.IGNORECASE)
+        if m2:
+            start_day, month, year = m2.groups()
+            sort_date = date_parser.parse(f"{month} {start_day} {year}").strftime("%Y-%m-%d")
+            return m2.group(0).strip(), sort_date
+            
+        m3 = re.search(p3, text, re.IGNORECASE)
+        if m3:
+            month, year = m3.groups()
+            sort_date = date_parser.parse(f"{month} 1 {year}").strftime("%Y-%m-%d")
+            return f"{month.capitalize()} {year} (Dates TBA)", sort_date
+    except:
+        pass
+        
     return None, None
 
 def classify_event(text):
@@ -76,8 +87,7 @@ def classify_event(text):
 def is_actual_event(text):
     text_lower = text.lower()
     if any(indicator in text_lower for indicator in EVENT_INDICATORS):
-        if "press release" in text_lower or "hub launched" in text_lower:
-            return False
+        if "press release" in text_lower or "hub launched" in text_lower: return False
         return True
     return False
 
@@ -90,20 +100,18 @@ def fetch_feed_events():
             parsed = feedparser.parse(feed_info["url"])
             for entry in parsed.entries:
                 title = entry.get("title", "")
-                summary = BeautifulSoup(entry.get("summary", "") or entry.get("description", ""), "html.parser").get_text()
+                summary_raw = entry.get("summary", "") or entry.get("description", "")
+                summary = BeautifulSoup(summary_raw, "html.parser").get_text()
                 combined = f"{title} {summary}"
                 
-                # Check for keywords and ensure it's an event
                 if any(kw in combined.lower() for kw in KEYWORDS) and is_actual_event(combined):
                     
                     event_type = "Conference"
                     if "school" in combined.lower(): event_type = "School"
                     elif any(w in combined.lower() for w in ["workshop", "symposium", "seminar"]): event_type = "Workshop"
                     
-                    # STRICT RULE: Try to find an exact date
                     display_date, sort_date = extract_exact_dates(combined)
                     
-                    # If an exact date is found, add it. If not, drop it completely.
                     if display_date and sort_date:
                         events.append({
                             "title": title,
@@ -119,12 +127,10 @@ def fetch_feed_events():
         except Exception as e:
             print(f"Error parsing {feed_info['name']}: {e}")
 
-    # Remove duplicates and past events
     valid_events = {}
     for ev in events:
         try:
             ev_date = datetime.strptime(ev['date'], "%Y-%m-%d")
-            # Only keep future events (from today onward)
             if ev_date >= today:
                 clean_title = re.sub(r'[^a-zA-Z0-9]', '', ev['title']).lower()
                 if clean_title not in valid_events:
@@ -143,4 +149,4 @@ if __name__ == "__main__":
     }
     with open("events.json", "w", encoding="utf-8") as f:
         json.dump(output_data, f, indent=2, ensure_ascii=False)
-    print(f"Successfully saved {len(collected)} exact, confirmed events.")
+    print(f"Successfully saved {len(collected)} exact events.")
