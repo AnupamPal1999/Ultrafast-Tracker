@@ -1,4 +1,5 @@
-feedparser>=6.0.10
-beautifulsoup4>=4.12.0
-requests>=2.31.0
-python-dateutil>=2.8.2
+feedparser
+beautifulsoup4
+requests
+python-dateutil
+trafilatura
