@@ -15,7 +15,8 @@ KEYWORDS = [
 
 EVENT_INDICATORS = [
     "conference", "workshop", "school", "symposium", "meeting", 
-    "seminar", "congress", "colloquium", "summit", "deadline"
+    "seminar", "congress", "colloquium", "summit", "deadline", 
+    "exhibition", "webinar", "booth"
 ]
 
 CATEGORIES = {
@@ -24,36 +25,63 @@ CATEGORIES = {
     "Laser Sources & Development": ["fiber laser", "solid-state", "diode laser", "opcpa", "amplifier"]
 }
 
-# The expanded list of global and European laser/X-ray facilities
+# --- THE ULTIMATE MASTER LIST ---
 FEEDS = [
-    {"name": "Laserlab-Europe", "url": "https://www.laserlab-europe.eu/events/events-rss"},
-    {"name": "Laser4EU", "url": "https://laser4eu.eu/feed/"},
+    # Swiss & German Academic Powerhouses
+    {"name": "ETH Zurich", "url": "https://phys.ethz.ch/news-and-events.xml"},
+    {"name": "EPFL", "url": "https://actu.epfl.ch/api/v1/channels/1/news/rss/"},
+    {"name": "CALA / LMU Munich", "url": "https://www.physik.lmu.de/en/news/rss.xml"},
+    {"name": "Max Born Institute (MBI Berlin)", "url": "https://mbi-berlin.de/rss.xml"},
+    {"name": "Max Planck (MPQ)", "url": "https://www.mpq.mpg.de/rss.xml"},
+    {"name": "Helmholtz Association", "url": "https://www.helmholtz.de/newsroom/rss.xml"},
+
+    # UK Physics Hubs (Attosecond & Laser-Plasma)
+    {"name": "Oxford Physics", "url": "https://www.physics.ox.ac.uk/events/rss"},
+    {"name": "Imperial College", "url": "https://www.imperial.ac.uk/physics/news/rss/"},
+    {"name": "King's College London", "url": "https://www.kcl.ac.uk/news/rss"},
+    {"name": "Queen's University Belfast", "url": "https://www.qub.ac.uk/news/rss"},
+
+    # Top Global Institutes
+    {"name": "Lund Laser Centre", "url": "https://www.llc.lu.se/rss"},
+    {"name": "ARCNL Netherlands", "url": "https://arcnl.nl/feed"},
+    {"name": "Univ of Rochester (LLE)", "url": "https://www.lle.rochester.edu/feed/"},
+
+    # Major Accelerators & FELs
+    {"name": "CERN (Indico Events)", "url": "https://indico.cern.ch/export/feed/rss.xml"},
+    {"name": "Paul Scherrer Institute (PSI)", "url": "https://www.psi.ch/en/media/rss.xml"},
+    {"name": "GSI / FAIR", "url": "https://www.gsi.de/en/bottommenu/press_releases.xml"},
+    {"name": "FERMI (Elettra Trieste)", "url": "https://www.elettra.eu/news.xml?format=feed&type=rss"},
+    {"name": "LCLS / SLAC National Accelerator", "url": "https://www6.slac.stanford.edu/news/feed"},
     {"name": "European XFEL", "url": "https://www.xfel.eu/news_and_events/news/rss/index_eng.xml"},
     {"name": "ESRF (European Synchrotron)", "url": "https://www.esrf.fr/news/rss.xml"},
-    {"name": "Optica Events", "url": "https://www.optica.org/events/rss"},
-    {"name": "SPIE Conferences", "url": "https://spie.org/conferences-and-exhibitions/rss"},
-    {"name": "Lightsources.org", "url": "https://lightsources.org/feed/"},
-    {"name": "SLAC National Accelerator", "url": "https://www6.slac.stanford.edu/news/feed"},
-    {"name": "DESY News", "url": "https://www.desy.de/news/index_eng.xml"},
-    {"name": "Max Planck (MPQ)", "url": "https://www.mpq.mpg.de/rss.xml"},
     {"name": "ELI Beams", "url": "https://www.eli-beams.eu/feed/"},
     {"name": "ELI ALPS", "url": "https://www.eli-alps.hu/en/rss"},
+    
+    # European Networks & Funding
+    {"name": "Erasmus+ & CORDIS (EU Events)", "url": "https://cordis.europa.eu/rss/events_en.xml"},
+    {"name": "Laserlab-Europe", "url": "https://www.laserlab-europe.eu/events/events-rss"},
+    {"name": "Laser4EU", "url": "https://laser4eu.eu/feed/"},
+    {"name": "Lightsources.org", "url": "https://lightsources.org/feed/"},
+
+    # Corporate Giants (Lasers, EUV & Metrology)
+    {"name": "ASML", "url": "https://www.asml.com/rss/news.xml"},
+    {"name": "TRUMPF Lasers", "url": "https://www.trumpf.com/en_INT/newsroom/rss.xml"},
+    {"name": "ZEISS SMT", "url": "https://www.zeiss.com/semiconductor-manufacturing-technology/news.rss"},
+    {"name": "Thales Group", "url": "https://www.thalesgroup.com/en/rss.xml"},
+    {"name": "Amplitude Lasers", "url": "https://amplitude-laser.com/feed/"},
+
+    # Global Societies
+    {"name": "Optica Events", "url": "https://www.optica.org/events/rss"},
+    {"name": "SPIE Conferences", "url": "https://spie.org/conferences-and-exhibitions/rss"},
     {"name": "APS Physics", "url": "https://physics.aps.org/feeds/all"},
     {"name": "EPS", "url": "https://www.eps.org/events/event_list.asp?show=&rss=1"}
 ]
 
 def extract_exact_dates(text):
-    """
-    Smarter date parser that grabs exact strings like '14-16 October 2026'
-    or falls back to 'October 2026' if the exact day isn't announced yet.
-    """
     months_regex = r'(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)'
     
-    # Matches: Month DD-DD, YYYY (e.g., October 12-14, 2026)
     p1 = rf'\b({months_regex})\s+(\d{{1,2}})(?:\s*-\s*\d{{1,2}})?(?:st|nd|rd|th)?(?:,\s*)?\s+(202[4-9])\b'
-    # Matches: DD-DD Month YYYY (e.g., 12-14 October 2026)
     p2 = rf'\b(\d{{1,2}})(?:\s*-\s*\d{{1,2}})?(?:st|nd|rd|th)?\s+({months_regex})\s+(202[4-9])\b'
-    # Matches: Month YYYY (e.g., October 2026)
     p3 = rf'\b({months_regex})\s+(202[4-9])\b'
     
     try:
@@ -76,7 +104,6 @@ def extract_exact_dates(text):
             return f"{month.capitalize()} {year} (Dates TBA)", sort_date
     except:
         pass
-        
     return None, None
 
 def classify_event(text):
@@ -125,7 +152,8 @@ def fetch_feed_events():
                             "description": summary[:250] + "..."
                         })
         except Exception as e:
-            print(f"Error parsing {feed_info['name']}: {e}")
+            # Silently skips any offline or malformed feeds so the rest of the script finishes perfectly
+            pass
 
     valid_events = {}
     for ev in events:
