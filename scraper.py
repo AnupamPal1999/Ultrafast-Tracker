@@ -78,11 +78,16 @@ FEEDS = [
 ]
 
 def extract_exact_dates(text):
+    """
+    STRICT MODE: The text MUST contain a specific Day, Month, and Year.
+    Generic mentions of "October 2026" or "annually" will be rejected.
+    """
     months_regex = r'(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)'
     
+    # Pattern 1: Month DD-DD, YYYY (e.g., October 12-14, 2026)
     p1 = rf'\b({months_regex})\s+(\d{{1,2}})(?:\s*-\s*\d{{1,2}})?(?:st|nd|rd|th)?(?:,\s*)?\s+(202[4-9])\b'
+    # Pattern 2: DD-DD Month YYYY (e.g., 12-14 October 2026)
     p2 = rf'\b(\d{{1,2}})(?:\s*-\s*\d{{1,2}})?(?:st|nd|rd|th)?\s+({months_regex})\s+(202[4-9])\b'
-    p3 = rf'\b({months_regex})\s+(202[4-9])\b'
     
     try:
         m1 = re.search(p1, text, re.IGNORECASE)
@@ -96,14 +101,10 @@ def extract_exact_dates(text):
             start_day, month, year = m2.groups()
             sort_date = date_parser.parse(f"{month} {start_day} {year}").strftime("%Y-%m-%d")
             return m2.group(0).strip(), sort_date
-            
-        m3 = re.search(p3, text, re.IGNORECASE)
-        if m3:
-            month, year = m3.groups()
-            sort_date = date_parser.parse(f"{month} 1 {year}").strftime("%Y-%m-%d")
-            return f"{month.capitalize()} {year} (Dates TBA)", sort_date
     except:
         pass
+        
+    # If no exact day is found, return None. The event is rejected.
     return None, None
 
 def classify_event(text):
@@ -120,7 +121,8 @@ def is_actual_event(text):
 
 def fetch_feed_events():
     events = []
-    today = datetime.now()
+    # Grab the exact current date to strictly filter out the past
+    today_date = datetime.now().date()
     
     for feed_info in FEEDS:
         try:
@@ -137,6 +139,7 @@ def fetch_feed_events():
                     if "school" in combined.lower(): event_type = "School"
                     elif any(w in combined.lower() for w in ["workshop", "symposium", "seminar"]): event_type = "Workshop"
                     
+                    # Call the strict date extractor
                     display_date, sort_date = extract_exact_dates(combined)
                     
                     if display_date and sort_date:
@@ -152,14 +155,14 @@ def fetch_feed_events():
                             "description": summary[:250] + "..."
                         })
         except Exception as e:
-            # Silently skips any offline or malformed feeds so the rest of the script finishes perfectly
             pass
 
     valid_events = {}
     for ev in events:
         try:
-            ev_date = datetime.strptime(ev['date'], "%Y-%m-%d")
-            if ev_date >= today:
+            # STRICT FUTURE FILTER: Compare event date strictly against today's midnight
+            ev_date_obj = datetime.strptime(ev['date'], "%Y-%m-%d").date()
+            if ev_date_obj >= today_date:
                 clean_title = re.sub(r'[^a-zA-Z0-9]', '', ev['title']).lower()
                 if clean_title not in valid_events:
                     valid_events[clean_title] = ev
@@ -177,4 +180,4 @@ if __name__ == "__main__":
     }
     with open("events.json", "w", encoding="utf-8") as f:
         json.dump(output_data, f, indent=2, ensure_ascii=False)
-    print(f"Successfully saved {len(collected)} exact events.")
+    print(f"Successfully saved {len(collected)} strictly scheduled future events.")
