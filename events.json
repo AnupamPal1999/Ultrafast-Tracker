@@ -1,0 +1,116 @@
+{
+  "last_updated": "2026-08-21 09:10 UTC",
+  "total_events": 11,
+  "events": [
+    {
+      "title": "International Conference on Attosecond Science and Technology (ATTO)",
+      "organizer": "ATTO Committee",
+      "category": "Soft X-Ray & Attosecond",
+      "type": "Conference",
+      "location": "Biennial International",
+      "date": "Summer Series",
+      "link": "https://atto-conference.org",
+      "description": "The flagship conference for attosecond physics, soft X-ray HHG in gases and solids, and core-level electron dynamics."
+    },
+    {
+      "title": "VUVX (International Conference on Vacuum Ultraviolet and X-ray Physics)",
+      "organizer": "VUVX Steering Committee",
+      "category": "Soft X-Ray & Attosecond",
+      "type": "Conference",
+      "location": "Triennial International",
+      "date": "Triennial Series",
+      "link": "https://lightsources.org",
+      "description": "Major international forum covering fundamental advances in VUV, EUV, and soft X-ray science using synchrotrons, FELs, and HHG."
+    },
+    {
+      "title": "Optica High-Brightness Sources and Light-Driven Interactions Congress",
+      "organizer": "Optica",
+      "category": "Soft X-Ray & Attosecond",
+      "type": "Conference",
+      "location": "Biennial (Spring)",
+      "date": "Spring Series",
+      "link": "https://www.optica.org",
+      "description": "Features dedicated topical meetings on Compact EUV & X-Ray Light Sources, Mid-IR Drivers, and High-Intensity Lasers."
+    },
+    {
+      "title": "Ultrafast Phenomena (UP)",
+      "organizer": "Optica",
+      "category": "Ultrafast Science & Non-Linear Optics",
+      "type": "Conference",
+      "location": "Biennial International",
+      "date": "Summer Series",
+      "link": "https://www.optica.org",
+      "description": "Primary international gathering for ultrafast laser development, attosecond spectroscopy, and quantum dynamics."
+    },
+    {
+      "title": "Gordon Research Conference: X-Ray Science / Ultrafast Phenomena",
+      "organizer": "GRC",
+      "category": "Soft X-Ray & Attosecond",
+      "type": "Workshop",
+      "location": "Rotational (US / Europe)",
+      "date": "Biennial",
+      "link": "https://www.grc.org",
+      "description": "Frontier research in ultrafast soft X-ray science, water-window spectroscopy, and coherent diffraction."
+    },
+    {
+      "title": "Europhoton (Solid-State and Fibre Coherent Light Sources)",
+      "organizer": "European Physical Society (EPS)",
+      "category": "Laser Sources & Development",
+      "type": "Conference",
+      "location": "Europe (Rotational)",
+      "date": "Biennial (Late Summer)",
+      "link": "https://www.europhoton.net",
+      "description": "Cutting-edge solid-state, fiber, waveguide, and high-power laser development essential as pump sources."
+    },
+    {
+      "title": "International Summer School on Ultrafast Laser Science",
+      "organizer": "European Facilities / ELI",
+      "category": "Soft X-Ray & Attosecond",
+      "type": "Summer School",
+      "location": "Europe (e.g., ELI-Beamlines / Lund)",
+      "date": "Annual (July - Sept)",
+      "link": "https://www.eli-laser.eu",
+      "description": "Hands-on training school for PhD students covering high-power driver laser technology, HHG optimization, and EUV/soft X-ray metrology."
+    },
+    {
+      "title": "More than just viscous: researchers examine movement of proteins",
+      "organizer": "Lightsources.org News & Events",
+      "category": "Soft X-Ray & Attosecond",
+      "type": "Conference",
+      "location": "See Event Link",
+      "date": "Fri, 07 Aug 2026 12:55:05 +0000",
+      "link": "https://lightsources.org/2026/08/07/more-than-just-viscous-researchers-examine-movement-of-proteins/",
+      "description": "Study yields new insights into how proteins navigate crowded cell-like environments How do proteins find their way through the dense crowd inside a cell? An international research team, including researchers from the University of Siegen, has investigated this..."
+    },
+    {
+      "title": "SLAC researchers make movie of the first steps in a chemical reaction",
+      "organizer": "Lightsources.org News & Events",
+      "category": "Ultrafast Science & Non-Linear Optics",
+      "type": "Conference",
+      "location": "See Event Link",
+      "date": "Wed, 05 Aug 2026 08:32:46 +0000",
+      "link": "https://lightsources.org/2026/08/05/slac-researchers-make-movie-of-the-first-steps-in-a-chemical-reaction/",
+      "description": "Researchers have documented the ultrafast motion of electrons that drive the making and breaking of chemical bonds, including two processes never before captured on their natural timescales. Key takeaways: All chemistry starts with a push from electrons. In th..."
+    },
+    {
+      "title": "New fusion hub around European XFEL",
+      "organizer": "Lightsources.org News & Events",
+      "category": "Soft X-Ray & Attosecond",
+      "type": "Conference",
+      "location": "See Event Link",
+      "date": "Wed, 29 Jul 2026 13:18:39 +0000",
+      "link": "https://lightsources.org/2026/07/29/new-fusion-hub-around-european-xfel/",
+      "description": "German government backs hub for laser fusion in Hesse and around European XFEL The German Federal Ministry for Research, Technology and Space (BMFTR) today announced funding for a hub for laser fusion, with sites in Hamburg/Schleswig-Holstein and Hesse. Europe..."
+    },
+    {
+      "title": "Researchers watch chemistry unfold atom by atom",
+      "organizer": "Lightsources.org News & Events",
+      "category": "Soft X-Ray & Attosecond",
+      "type": "Conference",
+      "location": "See Event Link",
+      "date": "Mon, 13 Jul 2026 17:00:50 +0000",
+      "link": "https://lightsources.org/2026/07/13/researchers-watch-chemistry-unfold-atom-by-atom/",
+      "description": "Study suggests a new way to follow electronic and vibrational dynamics in real time Researchers have captured how a molecule redistributes energy after absorbing light, differentiating the roles of individual atoms in the process. They used X-ray flashes from ..."
+    }
+  ]
+}
