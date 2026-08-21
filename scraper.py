@@ -1,6 +1,8 @@
 import json
 import re
 import feedparser
+import requests
+from urllib.parse import urljoin
 from bs4 import BeautifulSoup
 import trafilatura
 from datetime import datetime
@@ -26,21 +28,28 @@ CATEGORIES = {
     "Laser Sources & Development": ["fiber laser", "solid-state", "diode laser", "opcpa", "amplifier"]
 }
 
+# 1. The RSS Feeds
 DIRECT_FEEDS = [
-    {"name": "Laserlab-Europe", "url": "https://laserlab-europe.eu/events/category/laserlab-europe/feed/"},
-    {"name": "Laser4EU", "url": "https://laser4eu.eu/feed/"},
-    {"name": "Lightsources.org", "url": "https://lightsources.org/for-users/events/feed/"},
-    {"name": "Optica Events", "url": "https://www.optica.org/events/rss"},
-    {"name": "SPIE Conferences", "url": "https://spie.org/conferences-and-exhibitions/rss"},
-    {"name": "APS Physics", "url": "https://physics.aps.org/feeds/all"},
-    {"name": "EPS", "url": "https://www.eps.org/events/event_list.asp?show=&rss=1"},
+    {"name": "Laserlab-Europe RSS", "url": "https://laserlab-europe.eu/events/category/laserlab-europe/feed/"},
+    {"name": "Laser4EU RSS", "url": "https://laser4eu.eu/feed/"},
+    {"name": "Lightsources.org RSS", "url": "https://lightsources.org/for-users/events/feed/"},
+    {"name": "Optica RSS", "url": "https://www.optica.org/events/rss"},
+    {"name": "SPIE RSS", "url": "https://spie.org/conferences-and-exhibitions/rss"},
+    {"name": "APS RSS", "url": "https://physics.aps.org/feeds/all"},
     {"name": "European XFEL", "url": "https://www.xfel.eu/news_and_events/news/rss/index_eng.xml"},
     {"name": "CERN Indico", "url": "https://indico.cern.ch/export/feed/rss.xml"},
     {"name": "ELI Beams", "url": "https://www.eli-beams.eu/feed/"},
     {"name": "ELI ALPS", "url": "https://www.eli-alps.hu/en/rss"}
 ]
 
+# 2. The HTML Events Sections (Now including the societies directly!)
 EVENT_HUBS = [
+    "https://www.optica.org/events/",
+    "https://spie.org/conferences-and-exhibitions",
+    "https://www.eps.org/events/event_list.asp",
+    "https://www.aps.org/meetings/",
+    "https://laserlab-europe.eu/events",
+    "https://lightsources.org/for-users/events/",
     "https://mbi-berlin.de/news-and-events",
     "https://www.llc.lu.se/events",
     "https://arcnl.nl/en/news-events",
@@ -54,7 +63,6 @@ EVENT_HUBS = [
 ]
 
 def parse_smart_date(month_str, day_str, year_str=None):
-    """Parses date, assuming current or next year if the year isn't explicitly written."""
     today = datetime.now().date()
     try:
         year = int(year_str) if year_str else today.year
@@ -69,14 +77,12 @@ def parse_smart_date(month_str, day_str, year_str=None):
 def extract_dates(text):
     months_regex = r'(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)'
     
-    # Optional year capture to handle sites that just say "October 12"
     p1 = rf'\b({months_regex})\s+(\d{{1,2}})(?:\s*-\s*\d{{1,2}})?(?:st|nd|rd|th)?(?:(?:,\s*|\s+)(202[4-9]))?\b'
     p2 = rf'\b(\d{{1,2}})(?:\s*-\s*\d{{1,2}})?(?:st|nd|rd|th)?\s+({months_regex})(?:(?:,\s*|\s+)(202[4-9]))?\b'
     
     for pattern in [p1, p2]:
         match = re.search(pattern, text, re.IGNORECASE)
         if match:
-            # Re-order based on which pattern matched
             if pattern == p1:
                 month, start_day, year = match.groups()
             else:
@@ -120,20 +126,25 @@ def fetch_events():
                                 "location": "See Official Link", "display_date": disp_date,
                                 "date": sort_date, "link": entry.get("link", "#"), "description": summary[:250] + "..."
                             }
-                            print(f"Found: {title}")
+                            print(f"[RSS] Found: {title}")
         except Exception as e:
-            print(f"Error on {feed['name']}: {e}")
+            pass
 
-    print("\n--- Scanning Deep Hubs ---")
+    print("\n--- Scanning Deep HTML Hubs ---")
     for hub in EVENT_HUBS:
         try:
-            hub_content = trafilatura.fetch_url(hub)
-            if not hub_content: continue
-            links = trafilatura.extract_links(hub_content)
+            # We now use BeautifulSoup directly to grab every single link, bypassing the strict filter!
+            response = requests.get(hub, timeout=10)
+            soup = BeautifulSoup(response.text, 'html.parser')
             
-            for link_info in links:
-                url = link_info.get('url')
-                if url and any(w in url.lower() for w in ['event', 'conf', 'school', 'workshop']):
+            # Find all links on the hub page
+            for a_tag in soup.find_all('a', href=True):
+                url = urljoin(hub, a_tag['href'])
+                
+                # Check if the URL looks like it points to an event or meeting
+                if any(w in url.lower() for w in ['event', 'conf', 'school', 'workshop', 'meeting']):
+                    
+                    # Read the actual event page
                     page_data = trafilatura.fetch_url(url)
                     if not page_data: continue
                     text = trafilatura.extract(page_data)
@@ -147,12 +158,12 @@ def fetch_events():
                             clean_title = re.sub(r'[^a-zA-Z0-9]', '', title).lower()
                             if clean_title not in events:
                                 events[clean_title] = {
-                                    "title": title, "organizer": "Institute Hub Crawler", "category": classify_event(text),
+                                    "title": title, "organizer": "HTML Hub Crawler", "category": classify_event(text),
                                     "type": "School" if "school" in text.lower() else "Conference",
                                     "location": "See Official Link", "display_date": disp_date,
                                     "date": sort_date, "link": url, "description": text[:250] + "..."
                                 }
-                                print(f"Found deep link: {title}")
+                                print(f"[HUB] Found deep link: {title}")
         except Exception:
             pass
 
