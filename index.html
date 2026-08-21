@@ -3,202 +3,345 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ultrafast & Laser Science Event Tracker</title>
+  <title>Ultrafast & Attosecond Science Portal</title>
   <style>
     :root {
-      --bg: #0f172a;
-      --card-bg: #1e293b;
-      --accent: #38bdf8;
-      --text: #f8fafc;
-      --text-muted: #94a3b8;
-      --tag-bg: #334155;
-      --border: #334155;
+      --bg: #f4f7f9;
+      --card-bg: #ffffff;
+      --primary: #0369a1; /* Deep Academic Blue */
+      --primary-hover: #0284c7;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --tag-bg: #e0f2fe;
+      --tag-text: #0369a1;
+      --accent: #f59e0b; /* Orange for interested */
     }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       background-color: var(--bg);
-      color: var(--text);
+      color: var(--text-main);
       margin: 0;
       padding: 2rem 1rem;
+      line-height: 1.5;
     }
     .container {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: 0 auto;
     }
     header {
-      margin-bottom: 2rem;
+      text-align: center;
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
       border-bottom: 1px solid var(--border);
-      padding-bottom: 1rem;
     }
-    h1 { margin: 0 0 0.5rem 0; font-size: 1.8rem; color: var(--accent); }
-    .subtitle { color: var(--text-muted); font-size: 0.95rem; }
-    .controls {
+    h1 { margin: 0 0 0.5rem 0; font-size: 2.2rem; color: var(--primary); font-weight: 700; }
+    .subtitle { color: var(--text-muted); font-size: 1.1rem; max-width: 600px; margin: 0 auto; }
+    
+    .filters {
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
+      align-items: center;
+      justify-content: space-between;
     }
-    input[type="text"] {
+    
+    .search-bar {
       flex: 1;
       min-width: 250px;
-      padding: 0.6rem 1rem;
+      padding: 0.8rem 1.2rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      font-size: 1rem;
+      background: var(--card-bg);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    
+    .tabs {
+      display: flex;
+      gap: 0.5rem;
+    }
+    .tab-btn {
+      padding: 0.6rem 1.2rem;
       border-radius: 8px;
       border: 1px solid var(--border);
       background: var(--card-bg);
-      color: var(--text);
-      outline: none;
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--text-muted);
+      transition: all 0.2s;
     }
-    select {
-      padding: 0.6rem 1rem;
-      border-radius: 8px;
-      border: 1px solid var(--border);
-      background: var(--card-bg);
-      color: var(--text);
-      outline: none;
+    .tab-btn.active {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
     }
+    
     .event-grid {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 1rem;
+      gap: 1.5rem;
     }
     .event-card {
       background: var(--card-bg);
       border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 1.2rem;
-      transition: transform 0.15s ease, border-color 0.15s ease;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
     }
     .event-card:hover {
-      border-color: var(--accent);
-      transform: translateY(-2px);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05);
+      border-color: #cbd5e1;
     }
+    
     .event-header {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      margin-bottom: 0.5rem;
-      gap: 1rem;
+      margin-bottom: 0.8rem;
     }
     .event-title {
-      font-size: 1.15rem;
-      font-weight: 600;
-      color: #fff;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-main);
       text-decoration: none;
+      margin-right: 1rem;
     }
-    .event-title:hover { text-decoration: underline; color: var(--accent); }
-    .tags { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+    .event-title:hover { color: var(--primary); text-decoration: underline; }
+    
+    .tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem; }
     .tag {
       background: var(--tag-bg);
-      color: var(--accent);
-      font-size: 0.75rem;
-      padding: 0.2rem 0.6rem;
-      border-radius: 999px;
-      font-weight: 500;
-    }
-    .meta {
-      color: var(--text-muted);
-      font-size: 0.85rem;
-      margin: 0.4rem 0 0.8rem 0;
-      display: flex;
-      gap: 1.2rem;
-      flex-wrap: wrap;
-    }
-    .description {
-      color: #cbd5e1;
-      font-size: 0.9rem;
-      line-height: 1.4;
-    }
-    footer {
-      text-align: center;
-      margin-top: 3rem;
-      color: var(--text-muted);
+      color: var(--tag-text);
       font-size: 0.8rem;
+      padding: 0.3rem 0.8rem;
+      border-radius: 999px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
     }
+    
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0.8rem;
+      background: #f8fafc;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+    .meta strong { color: var(--text-main); }
+    
+    .description {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      flex-grow: 1;
+      margin-bottom: 1.5rem;
+    }
+    
+    .actions {
+      display: flex;
+      gap: 1rem;
+      margin-top: auto;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+    }
+    
+    .btn {
+      padding: 0.6rem 1rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .btn-outline {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text-main);
+    }
+    .btn-outline:hover { border-color: var(--text-muted); }
+    
+    .btn-interest {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+    }
+    .btn-interest.saved {
+      background: #fef3c7;
+      border-color: var(--accent);
+      color: #b45309;
+    }
+    
+    .btn-calendar {
+      background: var(--primary);
+      color: white;
+      border: none;
+      margin-left: auto;
+    }
+    .btn-calendar:hover { background: var(--primary-hover); }
+
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <h1>⚡ Ultrafast & Laser Science Portal</h1>
-      <div class="subtitle">Curated conferences, summer schools, and workshops in Attosecond Science, HHG, & Laser Development.</div>
-      <div class="meta" style="margin-top: 0.5rem;" id="sync-info">Loading synchronization status...</div>
+      <h1>Ultrafast & Attosecond Events</h1>
+      <div class="subtitle">Real-time tracker for PhDs and researchers. Tracks institutes, facilities (ELI, XFEL), and global societies.</div>
+      <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 1rem;" id="sync-info"></div>
     </header>
 
-    <div class="controls">
-      <input type="text" id="search" placeholder="Search keywords (e.g. HHG, GRC, Ti:Sa, Prague)..." oninput="renderEvents()">
-      <select id="category-filter" onchange="renderEvents()">
-        <option value="All">All Categories</option>
-        <option value="Soft X-Ray & Attosecond">Soft X-Ray & Attosecond</option>
-        <option value="Ultrafast Science & Non-Linear Optics">Ultrafast Science & Non-Linear Optics</option>
-        <option value="Laser Sources & Development">Laser Sources & Development</option>
-      </select>
-      <select id="type-filter" onchange="renderEvents()">
-        <option value="All">All Types</option>
-        <option value="Conference">Conferences</option>
-        <option value="Summer School">Summer Schools</option>
-        <option value="Workshop">Workshops</option>
-      </select>
+    <div class="filters">
+      <input type="text" class="search-bar" id="search" placeholder="Search topics, institutes, or locations..." oninput="renderEvents()">
+      
+      <div class="tabs">
+        <button class="tab-btn active" onclick="setFilter('All', this)">All Events</button>
+        <button class="tab-btn" onclick="setFilter('Conference', this)">Conferences</button>
+        <button class="tab-btn" onclick="setFilter('School', this)">Schools</button>
+        <button class="tab-btn" onclick="setFilter('Workshop', this)">Workshops</button>
+        <button class="tab-btn" onclick="toggleSavedEvents(this)" style="border-color: var(--accent); color: var(--accent);">⭐ My Saved</button>
+      </div>
     </div>
 
     <div class="event-grid" id="events-container"></div>
-
-    <footer>
-      Auto-updated weekly via GitHub Actions.
-    </footer>
   </div>
 
   <script>
     let eventsData = [];
+    let currentFilter = 'All';
+    let showOnlySaved = false;
+    let savedEvents = JSON.parse(localStorage.getItem('savedUltrafastEvents') || '[]');
 
     async function loadEvents() {
       try {
         const res = await fetch('events.json?t=' + Date.now());
         const data = await res.json();
-        eventsData = data.events;
-        document.getElementById('sync-info').innerText = `Last updated: ${data.last_updated} \vert{} Active events:${data.total_events}`;
+        
+        // Sort by approaching date (closest to today first)
+        eventsData = data.events.sort((a, b) => new Date(a.date) - new Date(b.date));
+        
+        document.getElementById('sync-info').innerText = `Data Synced: ${data.last_updated}`;
         renderEvents();
       } catch (err) {
-        document.getElementById('events-container').innerHTML = '<p style="color:#ef4444">Error loading events.json. Make sure the scraper has run.</p>';
+        document.getElementById('events-container').innerHTML = '<p>Error loading data. Make sure GitHub Actions ran.</p>';
       }
+    }
+
+    function setFilter(type, btnElement) {
+      currentFilter = type;
+      showOnlySaved = false;
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      btnElement.classList.add('active');
+      renderEvents();
+    }
+    
+    function toggleSavedEvents(btnElement) {
+      showOnlySaved = true;
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      btnElement.classList.add('active');
+      btnElement.style.background = 'var(--accent)';
+      btnElement.style.color = 'white';
+      renderEvents();
+    }
+
+    function toggleInterest(title) {
+      if (savedEvents.includes(title)) {
+        savedEvents = savedEvents.filter(e => e !== title);
+      } else {
+        savedEvents.push(title);
+      }
+      localStorage.setItem('savedUltrafastEvents', JSON.stringify(savedEvents));
+      renderEvents();
+    }
+
+    // Generates an .ics file that triggers an alarm 14 days before
+    function downloadICS(title, dateStr, link) {
+      const eventDate = new Date(dateStr);
+      if(isNaN(eventDate)) return alert("Specific date not available for calendar integration yet.");
+      
+      const start = eventDate.toISOString().replace(/-|:|\.\d+/g, '');
+      const reminderTrigger = "-P14D"; // 14 days before
+      
+      const icsData = `BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+DTSTART:${start}
+SUMMARY:Deadline approaching: ${title}
+DESCRIPTION:Registration or abstract deadline may be approaching for this event. Link: ${link}
+BEGIN:VALARM
+TRIGGER:${reminderTrigger}
+ACTION:DISPLAY
+DESCRIPTION:Reminder: Register for ${title}
+END:VALARM
+END:VEVENT
+END:VCALENDAR`;
+
+      const blob = new Blob([icsData], { type: 'text/calendar;charset=utf-8' });
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'Registration_Reminder.ics';
+      a.click();
     }
 
     function renderEvents() {
       const search = document.getElementById('search').value.toLowerCase();
-      const category = document.getElementById('category-filter').value;
-      const type = document.getElementById('type-filter').value;
-
+      
       const filtered = eventsData.filter(ev => {
-        const matchesSearch = ev.title.toLowerCase().includes(search) || 
-                              ev.description.toLowerCase().includes(search) ||
-                              ev.location.toLowerCase().includes(search);
-        const matchesCategory = category === "All" || ev.category === category;
-        const matchesType = type === "All" || ev.type === type;
-        return matchesSearch && matchesCategory && matchesType;
+        const matchesSearch = ev.title.toLowerCase().includes(search) || ev.description.toLowerCase().includes(search);
+        const matchesType = currentFilter === 'All' || ev.type.includes(currentFilter);
+        const matchesSaved = !showOnlySaved || savedEvents.includes(ev.title);
+        return matchesSearch && matchesType && matchesSaved;
       });
 
       const container = document.getElementById('events-container');
       if (filtered.length === 0) {
-        container.innerHTML = '<p style="color:var(--text-muted)">No matching conferences found.</p>';
+        container.innerHTML = '<p style="text-align: center; color: var(--text-muted); padding: 3rem;">No events found for this filter.</p>';
         return;
       }
 
-      container.innerHTML = filtered.map(ev => `
+      container.innerHTML = filtered.map(ev => {
+        const isSaved = savedEvents.includes(ev.title);
+        
+        return `
         <div class="event-card">
           <div class="event-header">
-            <a href="${ev.link}" target="_blank" rel="noopener" class="event-title">${ev.title}</a>
-            <div class="tags">
-              <span class="tag">${ev.type}</span>
-              <span class="tag" style="background: #1e3a8a;">${ev.category}</span>
-            </div>
+            <a href="${ev.link}" target="_blank" class="event-title">${ev.title}</a>
           </div>
+          
+          <div class="tags">
+            <span class="tag">${ev.type}</span>
+            <span class="tag" style="background:#f1f5f9; color: var(--text-muted);">${ev.category}</span>
+          </div>
+          
           <div class="meta">
-            <span>📅 ${ev.date}</span>
-            <span>📍 ${ev.location}</span>
-            <span>🏛️ ${ev.organizer}</span>
+            <div><strong>📅 Date:</strong> ${ev.date.substring(0, 10)}</div>
+            <div><strong>📍 Where:</strong> ${ev.location}</div>
+            <div><strong>🏛️ Host:</strong> ${ev.organizer}</div>
           </div>
+          
           <div class="description">${ev.description}</div>
+          
+          <div class="actions">
+            <button class="btn btn-interest ${isSaved ? 'saved' : ''}" onclick="toggleInterest('${ev.title.replace(/'/g, "\\'")}')">
+              ${isSaved ? '⭐ Saved' : '☆ Interested'}
+            </button>
+            <a href="${ev.link}" target="_blank" class="btn btn-outline">Official Site ↗</a>
+            <button class="btn btn-calendar" onclick="downloadICS('${ev.title.replace(/'/g, "\\'")}', '${ev.date}', '${ev.link}')">
+              🔔 Alert 14-days before
+            </button>
+          </div>
         </div>
-      `).join('');
+      `}).join('');
     }
 
     loadEvents();
