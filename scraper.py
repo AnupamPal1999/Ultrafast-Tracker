@@ -27,37 +27,49 @@ CATEGORIES = {
     "Laser Sources & Development": ["fiber laser", "solid-state", "diode laser", "opcpa", "amplifier"]
 }
 
-# --- 1. DIRECT RSS & EVENT FEEDS (Laserlab, Lightsources, Societies, Facilities) ---
-DIRECT_FEEDS = [
-    {"name": "Laserlab-Europe", "url": "https://laserlab-europe.eu/events/category/laserlab-europe/feed/"},
-    {"name": "Laser4EU", "url": "https://laser4eu.eu/feed/"},
-    {"name": "Lightsources.org", "url": "https://lightsources.org/for-users/events/feed/"},
-    {"name": "Optica Events", "url": "https://www.optica.org/events/rss"},
-    {"name": "SPIE Conferences", "url": "https://spie.org/conferences-and-exhibitions/rss"},
-    {"name": "APS Physics", "url": "https://physics.aps.org/feeds/all"},
-    {"name": "EPS", "url": "https://www.eps.org/events/event_list.asp?show=&rss=1"},
-    {"name": "European XFEL", "url": "https://www.xfel.eu/news_and_events/news/rss/index_eng.xml"},
-    {"name": "CERN Indico", "url": "https://indico.cern.ch/export/feed/rss.xml"},
-    {"name": "ELI Beams", "url": "https://www.eli-beams.eu/feed/"},
-    {"name": "ELI ALPS", "url": "https://www.eli-alps.hu/en/rss"}
+# --- ALL SOURCES SPLIT INTO EVEN AND ODD LISTS ---
+ALL_DIRECT_FEEDS = [
+    {"name": "Laserlab-Europe", "url": "https://laserlab-europe.eu/events/category/laserlab-europe/feed/"}, # 0 (Even)
+    {"name": "Laser4EU", "url": "https://laser4eu.eu/feed/"}, # 1 (Odd)
+    {"name": "Lightsources.org", "url": "https://lightsources.org/for-users/events/feed/"}, # 2 (Even)
+    {"name": "Optica Events", "url": "https://www.optica.org/events/rss"}, # 3 (Odd)
+    {"name": "SPIE Conferences", "url": "https://spie.org/conferences-and-exhibitions/rss"}, # 4 (Even)
+    {"name": "APS Physics", "url": "https://physics.aps.org/feeds/all"}, # 5 (Odd)
+    {"name": "EPS", "url": "https://www.eps.org/events/event_list.asp?show=&rss=1"}, # 6 (Even)
+    {"name": "European XFEL", "url": "https://www.xfel.eu/news_and_events/news/rss/index_eng.xml"}, # 7 (Odd)
+    {"name": "CERN Indico", "url": "https://indico.cern.ch/export/feed/rss.xml"}, # 8 (Even)
+    {"name": "ELI Beams", "url": "https://www.eli-beams.eu/feed/"}, # 9 (Odd)
+    {"name": "ELI ALPS", "url": "https://www.eli-alps.hu/en/rss"} # 10 (Even)
 ]
 
-# --- 2. DEEP-CRAWL HUBS (Institutes & Academic Labs) ---
-EVENT_HUBS = [
-    "https://mbi-berlin.de/news-and-events",
-    "https://www.llc.lu.se/events",
-    "https://arcnl.nl/en/news-events",
-    "https://www.lle.rochester.edu/events/",
-    "https://phys.ethz.ch/news-and-events.html",
-    "https://actu.epfl.ch/",
-    "https://www.psi.ch/en/media/events",
-    "https://www.gsi.de/en/news/events",
-    "https://www.elettra.eu/news.html",
-    "https://www.physics.ox.ac.uk/events",
-    "https://www.imperial.ac.uk/physics/events/",
-    "https://www.kcl.ac.uk/news",
-    "https://www.qub.ac.uk/News/"
+ALL_EVENT_HUBS = [
+    "https://mbi-berlin.de/news-and-events", # 0 (Even)
+    "https://www.llc.lu.se/events", # 1 (Odd)
+    "https://arcnl.nl/en/news-events", # 2 (Even)
+    "https://www.lle.rochester.edu/events/", # 3 (Odd)
+    "https://phys.ethz.ch/news-and-events.html", # 4 (Even)
+    "https://actu.epfl.ch/", # 5 (Odd)
+    "https://www.psi.ch/en/media/events", # 6 (Even)
+    "https://www.gsi.de/en/news/events", # 7 (Odd)
+    "https://www.elettra.eu/news.html", # 8 (Even)
+    "https://www.physics.ox.ac.uk/events", # 9 (Odd)
+    "https://www.imperial.ac.uk/physics/events/", # 10 (Even)
+    "https://www.kcl.ac.uk/news", # 11 (Odd)
+    "https://www.qub.ac.uk/News/" # 12 (Even)
 ]
+
+def get_today_split():
+    """Determines whether to check Even or Odd sources based on the day of the month."""
+    day_of_month = datetime.now().day
+    is_even_day = (day_of_month % 2 == 0)
+    
+    # Split direct feeds
+    feeds = [f for i, f in enumerate(ALL_DIRECT_FEEDS) if (i % 2 == 0) == is_even_day]
+    # Split event hubs
+    hubs = [h for i, h in enumerate(ALL_EVENT_HUBS) if (i % 2 == 0) == is_even_day]
+    
+    print(f"Today is day {day_of_month} ({'Even' pisc if is_even_day else 'Odd'} batch). Scraping {len(feeds)} feeds and {len(hubs)} hubs.")
+    return feeds, hubs
 
 def extract_dates(text):
     months_regex = r'(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)'
@@ -88,12 +100,13 @@ def is_valid_event(text):
     text_lower = text.lower()
     return any(ind in text_lower for ind in EVENT_INDICATORS) and not "press release" in text_lower
 
-def fetch_all_events():
+def fetch_current_batch_events():
     events = {}
     today_date = datetime.now().date()
+    feeds, hubs = get_today_split()
 
-    # --- ENGINE 1: Direct Feeds ---
-    for feed in DIRECT_FEEDS:
+    # --- ENGINE 1: Current Batch Direct Feeds ---
+    for feed in feeds:
         try:
             parsed = feedparser.parse(feed["url"])
             for entry in parsed.entries:
@@ -120,8 +133,8 @@ def fetch_all_events():
         except Exception:
             pass
 
-    # --- ENGINE 2: Deep Hub Crawler ---
-    for hub in EVENT_HUBS:
+    # --- ENGINE 2: Current Batch Deep Hub Crawler ---
+    for hub in hubs:
         try:
             hub_content = trafilatura.fetch_url(hub)
             if not hub_content: continue
@@ -155,16 +168,38 @@ def fetch_all_events():
         except Exception:
             pass
 
-    sorted_events = sorted(list(events.values()), key=lambda x: x['date'])
-    return sorted_events
+    return list(events.values())
 
 if __name__ == "__main__":
-    collected = fetch_all_events()
+    # Load existing events so alternating runs don't overwrite the other half of the list
+    existing_events = []
+    try:
+        with open("events.json", "r", encoding="utf-8") as f:
+            data = json.load(f)
+            existing_events = data.get("events", [])
+    except:
+        pass
+
+    # Filter out past events from existing pool
+    today_date = datetime.now().date()
+    valid_existing = {re.sub(r'[^a-zA-Z0-9]', '', e['title']).lower(): e for e in existing_events if datetime.strptime(e['date'], "%Y-%m-%d").date() >= today_date}
+
+    # Fetch new batch
+    new_batch = fetch_current_batch_events()
+
+    # Merge new batch into existing pool
+    for ev in new_batch:
+        key = re.sub(r'[^a-zA-Z0-9]', '', ev['title']).lower()
+        valid_existing[key] = ev  # Overwrites or adds fresh entry
+
+    final_events = sorted(list(valid_existing.values()), key=lambda x: x['date'])
+
     output_data = {
         "last_updated": datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC"),
-        "total_events": len(collected),
-        "events": collected
+        "total_events": len(final_events),
+        "events": final_events
     }
+
     with open("events.json", "w", encoding="utf-8") as f:
         json.dump(output_data, f, indent=2, ensure_ascii=False)
-    print(f"Successfully saved {len(collected)} total events.")
+    print(f"Successfully saved {len(final_events)} total combined events.")
