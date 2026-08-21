@@ -1,39 +1,83 @@
 {
-  "last_updated": "2026-08-21 14:15 UTC",
-  "total_events": 3,
+  "last_updated": "2026-08-21 14:29 UTC",
+  "total_events": 7,
   "events": [
     {
-      "title": "Skip To Content",
-      "organizer": "Optica",
+      "title": "All events | University of Oxford Department of Physics",
+      "organizer": "Oxford Physics",
       "category": "Ultrafast Science & Non-Linear Optics",
+      "type": "Conference",
+      "location": "See Link",
+      "display_date": "28 August 2026",
+      "date": "2026-08-28",
+      "link": "https://www.physics.ox.ac.uk/all-events",
+      "description": "28 August 2026       Seminars and colloquia           Special CMP Seminar: Artificial Symmetry Design for Emergent Spin Topologies and Their Excitations CMP seminar   12 September 2026                    Public talks and lectures           Astronomy ..."
+    },
+    {
+      "title": "News & Events – Department of Physics | ETH Zurich",
+      "organizer": "ETH Zurich",
+      "category": "Ultrafast Science & Non-Linear Optics",
+      "type": "Conference",
+      "location": "See Link",
+      "display_date": "30 August 2026",
+      "date": "2026-08-30",
+      "link": "https://phys.ethz.ch/news-and-events.html#footer-contact",
+      "description": "News & Events Latest news                                                                  D-PHYS at Scientifica 2026 Switzerland’s largest science festival is back from 22 to 30 August 2026 with the theme \"How we create knowledge\". Find out where to..."
+    },
+    {
+      "title": "SPIE Sensors + Imaging",
+      "organizer": "SPIE",
+      "category": "Ultrafast Science & Non-Linear Optics",
+      "type": "Conference",
+      "location": "See Link",
+      "display_date": "16 September",
+      "date": "2026-09-16",
+      "link": "https://spie.org/conferences-and-exhibitions/sensors-and-imaging",
+      "description": "SPIE Sensors + Imaging combines two of Europe’s best photonics conferences – SPIE Environmental Remote Sensing and SPIE Security + Defence The premier yearly European event that showcases the latest sensor and photonic technologies for imaging and mo..."
+    },
+    {
+      "title": "Industry Events | Optica",
+      "organizer": "Optica",
+      "category": "Soft X-Ray & Attosecond",
+      "type": "Conference",
+      "location": "See Link",
+      "display_date": "September 24 - 25, 2026",
+      "date": "2026-09-24",
+      "link": "https://www.optica.org/industry/industry_events/",
+      "description": "Industry Events Industry Industry Events Grow your business network at an Optica industry event. -                                          Interested in Event Sponsorship?                                                                              ..."
+    },
+    {
+      "title": "ETH News | ETH Zurich",
+      "organizer": "ETH Zurich",
+      "category": "Soft X-Ray & Attosecond",
+      "type": "Conference",
+      "location": "See Link",
+      "display_date": "2 December",
+      "date": "2026-12-02",
+      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpmb3JtYXRlL3Vtd2VsdHdpc3NlbnNjaGFmdGVuL25hY2hoYWx0aWdrZWl0&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "ETH News All stories that have been tagged with Sustainability Study reveals weaknesses in farm sustainability monitoring News The sustainability of tropical products can only be verified using reliable data on production practices. A new study, usin..."
+    },
+    {
+      "title": "Manuscript Guidelines and Policies",
+      "organizer": "SPIE",
+      "category": "Ultrafast Science & Non-Linear Optics",
+      "type": "Conference",
+      "location": "See Link",
+      "display_date": "March 16",
+      "date": "2027-03-16",
+      "link": "https://spie.org/conferences-and-exhibitions/event-resources/manuscript-guidelines-and-policies",
+      "description": "Increase your visibility and expand your network. Reach thousands by being published in the world's largest collection of optics and photonics research. The information on this page will facilitate the preparation and submission of your work to the P..."
+    },
+    {
+      "title": "D-PHYS News – Department of Physics | ETH Zurich",
+      "organizer": "ETH Zurich",
+      "category": "Soft X-Ray & Attosecond",
       "type": "School",
-      "location": "See Optica Site",
-      "display_date": "01 October 2026",
-      "date": "2026-10-01",
-      "link": "https://www.optica.org#content",
-      "description": "Skip To Content Other Sites Other sites × BEAM FIO+LS Green Photonics Guide Living History NPI OFC OPN Optica Publishing Group Optics 4 Kids Prism Foundation Overview About Schools & Training Programs..."
-    },
-    {
-      "title": "Frontiers in Optics + Laser Science\n\r\n                            27 September - 01 October 2026\r\n                        \nRegister online to save time onsite. Experience FiO LS Technical Sessions, Plenary and Visionary Speakers, special events and more.",
-      "organizer": "Optica",
-      "category": "Ultrafast Science & Non-Linear Optics",
-      "type": "Conference",
-      "location": "See Optica Site",
-      "display_date": "01 October 2026",
-      "date": "2026-10-01",
-      "link": "https://www.optica.orghttps://www.frontiersinoptics.com/registration",
-      "description": "Featured Events Frontiers in Optics + Laser Science 27 September - 01 October 2026 Register online to save time onsite. Experience FiO LS Technical Sessions, Plenary and Visionary Speakers, special ev..."
-    },
-    {
-      "title": "Optica Laser Congress and Exhibition\n\r\n                            11 - 15 October 2026\r\n                        \nRegister by 28 August to save with advance registration rates. Join laser science and technology leaders this October in Vilnius, Lithuania.\nAdvance registration deadline: 28 August 2026 23:59",
-      "organizer": "Optica",
-      "category": "Ultrafast Science & Non-Linear Optics",
-      "type": "Conference",
-      "location": "See Optica Site",
-      "display_date": "11 - 15 October 2026",
-      "date": "2026-10-11",
-      "link": "https://www.optica.orghttps://www.optica.org/events/congress/laser_congress/registration/",
-      "description": "Optica Laser Congress and Exhibition 11 - 15 October 2026 Register by 28 August to save with advance registration rates. Join laser science and technology leaders this October in Vilnius, Lithuania. A..."
+      "location": "See Link",
+      "display_date": "17 June",
+      "date": "2027-06-17",
+      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=c3BlY2lhbGludGVyZXN0OnBoeXMvcXVhbnR1bQ&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "D-PHYS News All stories that have been tagged with Institute for Quantum Electronics (IQE) Securing research grants to break new ground - Research - Funding - D-PHYS - Quantum sciences - Particle physics - Institute for Quantum Electronics (IQE) - Ph..."
     }
   ]
 }
