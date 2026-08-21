@@ -29,67 +29,81 @@ CATEGORIES = {
 
 # --- ALL SOURCES SPLIT INTO EVEN AND ODD LISTS ---
 ALL_DIRECT_FEEDS = [
-    {"name": "Laserlab-Europe", "url": "https://laserlab-europe.eu/events/category/laserlab-europe/feed/"}, # 0 (Even)
-    {"name": "Laser4EU", "url": "https://laser4eu.eu/feed/"}, # 1 (Odd)
-    {"name": "Lightsources.org", "url": "https://lightsources.org/for-users/events/feed/"}, # 2 (Even)
-    {"name": "Optica Events", "url": "https://www.optica.org/events/rss"}, # 3 (Odd)
-    {"name": "SPIE Conferences", "url": "https://spie.org/conferences-and-exhibitions/rss"}, # 4 (Even)
-    {"name": "APS Physics", "url": "https://physics.aps.org/feeds/all"}, # 5 (Odd)
-    {"name": "EPS", "url": "https://www.eps.org/events/event_list.asp?show=&rss=1"}, # 6 (Even)
-    {"name": "European XFEL", "url": "https://www.xfel.eu/news_and_events/news/rss/index_eng.xml"}, # 7 (Odd)
-    {"name": "CERN Indico", "url": "https://indico.cern.ch/export/feed/rss.xml"}, # 8 (Even)
-    {"name": "ELI Beams", "url": "https://www.eli-beams.eu/feed/"}, # 9 (Odd)
-    {"name": "ELI ALPS", "url": "https://www.eli-alps.hu/en/rss"} # 10 (Even)
+    {"name": "Laserlab-Europe", "url": "https://laserlab-europe.eu/events/category/laserlab-europe/feed/"},
+    {"name": "Laser4EU", "url": "https://laser4eu.eu/feed/"},
+    {"name": "Lightsources.org", "url": "https://lightsources.org/for-users/events/feed/"},
+    {"name": "Optica Events", "url": "https://www.optica.org/events/rss"},
+    {"name": "SPIE Conferences", "url": "https://spie.org/conferences-and-exhibitions/rss"},
+    {"name": "APS Physics", "url": "https://physics.aps.org/feeds/all"},
+    {"name": "EPS", "url": "https://www.eps.org/events/event_list.asp?show=&rss=1"},
+    {"name": "European XFEL", "url": "https://www.xfel.eu/news_and_events/news/rss/index_eng.xml"},
+    {"name": "CERN Indico", "url": "https://indico.cern.ch/export/feed/rss.xml"},
+    {"name": "ELI Beams", "url": "https://www.eli-beams.eu/feed/"},
+    {"name": "ELI ALPS", "url": "https://www.eli-alps.hu/en/rss"}
 ]
 
 ALL_EVENT_HUBS = [
-    "https://mbi-berlin.de/news-and-events", # 0 (Even)
-    "https://www.llc.lu.se/events", # 1 (Odd)
-    "https://arcnl.nl/en/news-events", # 2 (Even)
-    "https://www.lle.rochester.edu/events/", # 3 (Odd)
-    "https://phys.ethz.ch/news-and-events.html", # 4 (Even)
-    "https://actu.epfl.ch/", # 5 (Odd)
-    "https://www.psi.ch/en/media/events", # 6 (Even)
-    "https://www.gsi.de/en/news/events", # 7 (Odd)
-    "https://www.elettra.eu/news.html", # 8 (Even)
-    "https://www.physics.ox.ac.uk/events", # 9 (Odd)
-    "https://www.imperial.ac.uk/physics/events/", # 10 (Even)
-    "https://www.kcl.ac.uk/news", # 11 (Odd)
-    "https://www.qub.ac.uk/News/" # 12 (Even)
+    "https://mbi-berlin.de/news-and-events",
+    "https://www.llc.lu.se/events",
+    "https://arcnl.nl/en/news-events",
+    "https://www.lle.rochester.edu/events/",
+    "https://phys.ethz.ch/news-and-events.html",
+    "https://actu.epfl.ch/",
+    "https://www.psi.ch/en/media/events",
+    "https://www.gsi.de/en/news/events",
+    "https://www.elettra.eu/news.html",
+    "https://www.physics.ox.ac.uk/events",
+    "https://www.imperial.ac.uk/physics/events/",
+    "https://www.kcl.ac.uk/news",
+    "https://www.qub.ac.uk/News/"
 ]
 
 def get_today_split():
-    """Determines whether to check Even or Odd sources based on the day of the month."""
     day_of_month = datetime.now().day
     is_even_day = (day_of_month % 2 == 0)
     
-    # Split direct feeds
     feeds = [f for i, f in enumerate(ALL_DIRECT_FEEDS) if (i % 2 == 0) == is_even_day]
-    # Split event hubs
     hubs = [h for i, h in enumerate(ALL_EVENT_HUBS) if (i % 2 == 0) == is_even_day]
     
     batch_name = "Even" if is_even_day else "Odd"
-    print(f"Today is day {day_of_month} ({batch_name} batch). Scraping {len(feeds)} feeds and {len(hubs)} hubs.")
+    print(f"--- Running {batch_name} Batch (Day {day_of_month}) ---")
     return feeds, hubs
+
+def parse_smart_date(month_str, day_str, year_str=None):
+    """If the year is missing from the website text, intelligently calculate if it's this year or next year."""
+    today = datetime.now().date()
+    try:
+        if year_str:
+            year = int(year_str)
+        else:
+            # Test with current year
+            tmp_date = date_parser.parse(f"{month_str} {day_str} {today.year}").date()
+            year = today.year + 1 if tmp_date < today else today.year
+            
+        final_date = date_parser.parse(f"{month_str} {day_str} {year}").strftime("%Y-%m-%d")
+        return final_date
+    except:
+        return None
 
 def extract_dates(text):
     months_regex = r'(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)'
-    p1 = rf'\b({months_regex})\s+(\d{{1,2}})(?:\s*-\s*\d{{1,2}})?(?:st|nd|rd|th)?(?:,\s*)?\s+(202[4-9])\b'
-    p2 = rf'\b(\d{{1,2}})(?:\s*-\s*\d{{1,2}})?(?:st|nd|rd|th)?\s+({months_regex})\s+(202[4-9])\b'
     
-    try:
-        m1 = re.search(p1, text, re.IGNORECASE)
-        if m1:
-            month, start_day, year = m1.groups()
-            sort_date = date_parser.parse(f"{month} {start_day} {year}").strftime("%Y-%m-%d")
-            return m1.group(0).strip(), sort_date
-        m2 = re.search(p2, text, re.IGNORECASE)
-        if m2:
-            start_day, month, year = m2.groups()
-            sort_date = date_parser.parse(f"{month} {start_day} {year}").strftime("%Y-%m-%d")
-            return m2.group(0).strip(), sort_date
-    except:
-        pass
+    # Notice the year (202X) is now OPTIONAL (the trailing ? block)
+    p1 = rf'\b({months_regex})\s+(\d{{1,2}})(?:\s*-\s*\d{{1,2}})?(?:st|nd|rd|th)?(?:(?:,\s*|\s+)(202[4-9]))?\b'
+    p2 = rf'\b(\d{{1,2}})(?:\s*-\s*\d{{1,2}})?(?:st|nd|rd|th)?\s+({months_regex})(?:(?:,\s*|\s+)(202[4-9]))?\b'
+    
+    match1 = re.search(p1, text, re.IGNORECASE)
+    if match1:
+        month, start_day, year = match1.groups()
+        sort_date = parse_smart_date(month, start_day, year)
+        if sort_date: return match1.group(0).strip(), sort_date
+        
+    match2 = re.search(p2, text, re.IGNORECASE)
+    if match2:
+        start_day, month, year = match2.groups()
+        sort_date = parse_smart_date(month, start_day, year)
+        if sort_date: return match2.group(0).strip(), sort_date
+
     return None, None
 
 def classify_event(text):
@@ -106,7 +120,7 @@ def fetch_current_batch_events():
     today_date = datetime.now().date()
     feeds, hubs = get_today_split()
 
-    # --- ENGINE 1: Current Batch Direct Feeds ---
+    print("\n--- Scanning RSS Feeds ---")
     for feed in feeds:
         try:
             parsed = feedparser.parse(feed["url"])
@@ -121,20 +135,20 @@ def fetch_current_batch_events():
                         if datetime.strptime(sort_date, "%Y-%m-%d").date() >= today_date:
                             clean_title = re.sub(r'[^a-zA-Z0-9]', '', title).lower()
                             events[clean_title] = {
-                                "title": title,
-                                "organizer": feed["name"],
-                                "category": classify_event(combined),
+                                "title": title, "organizer": feed["name"], "category": classify_event(combined),
                                 "type": "School" if "school" in combined.lower() else "Conference",
-                                "location": "See Official Link",
-                                "display_date": disp_date,
-                                "date": sort_date,
-                                "link": entry.get("link", "#"),
-                                "description": summary[:250] + "..."
+                                "location": "See Official Link", "display_date": disp_date,
+                                "date": sort_date, "link": entry.get("link", "#"), "description": summary[:250] + "..."
                             }
-        except Exception:
-            pass
+                            print(f"[SUCCESS] Added: {title} ({sort_date})")
+                        else:
+                            print(f"[SKIPPED - PAST EVENT] {title}")
+                    else:
+                        print(f"[SKIPPED - NO EXACT DATE] {title}")
+        except Exception as e:
+            print(f"[ERROR] Failed to read {feed['name']}: {e}")
 
-    # --- ENGINE 2: Current Batch Deep Hub Crawler ---
+    print("\n--- Scanning Deep Hubs ---")
     for hub in hubs:
         try:
             hub_content = trafilatura.fetch_url(hub)
@@ -150,24 +164,25 @@ def fetch_current_batch_events():
                     if not text or not any(kw in text.lower() for kw in KEYWORDS): continue
                     
                     disp_date, sort_date = extract_dates(text)
+                    title = trafilatura.extract_metadata(page_data).title or "Academic Event"
+                    
                     if disp_date and sort_date:
                         if datetime.strptime(sort_date, "%Y-%m-%d").date() >= today_date:
-                            title = trafilatura.extract_metadata(page_data).title or "Academic Event"
                             clean_title = re.sub(r'[^a-zA-Z0-9]', '', title).lower()
                             if clean_title not in events:
                                 events[clean_title] = {
-                                    "title": title,
-                                    "organizer": "Institute Hub Crawler",
-                                    "category": classify_event(text),
+                                    "title": title, "organizer": "Institute Hub Crawler", "category": classify_event(text),
                                     "type": "School" if "school" in text.lower() else "Conference",
-                                    "location": "See Official Link",
-                                    "display_date": disp_date,
-                                    "date": sort_date,
-                                    "link": url,
-                                    "description": text[:250] + "..."
+                                    "location": "See Official Link", "display_date": disp_date,
+                                    "date": sort_date, "link": url, "description": text[:250] + "..."
                                 }
-        except Exception:
-            pass
+                                print(f"[SUCCESS] Added deep link: {title}")
+                        else:
+                            print(f"[SKIPPED - PAST EVENT] {title}")
+                    else:
+                        print(f"[SKIPPED - NO EXACT DATE] {title}")
+        except Exception as e:
+            print(f"[ERROR] Deep scrape failed for {hub}: {e}")
 
     return list(events.values())
 
@@ -199,4 +214,4 @@ if __name__ == "__main__":
 
     with open("events.json", "w", encoding="utf-8") as f:
         json.dump(output_data, f, indent=2, ensure_ascii=False)
-    print(f"Successfully saved {len(final_events)} total combined events.")
+    print(f"\nSuccessfully saved {len(final_events)} total combined events.")
