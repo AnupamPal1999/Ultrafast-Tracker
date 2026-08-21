@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ultrafast & Laser Science Event Tracker</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --accent: #38bdf8;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --tag-bg: #334155;
+      --border: #334155;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    header {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1rem;
+    }
+    h1 { margin: 0 0 0.5rem 0; font-size: 1.8rem; color: var(--accent); }
+    .subtitle { color: var(--text-muted); font-size: 0.95rem; }
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    input[type="text"] {
+      flex: 1;
+      min-width: 250px;
+      padding: 0.6rem 1rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--card-bg);
+      color: var(--text);
+      outline: none;
+    }
+    select {
+      padding: 0.6rem 1rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--card-bg);
+      color: var(--text);
+      outline: none;
+    }
+    .event-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    .event-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.2rem;
+      transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+    .event-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+    .event-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 0.5rem;
+      gap: 1rem;
+    }
+    .event-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #fff;
+      text-decoration: none;
+    }
+    .event-title:hover { text-decoration: underline; color: var(--accent); }
+    .tags { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+    .tag {
+      background: var(--tag-bg);
+      color: var(--accent);
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      font-weight: 500;
+    }
+    .meta {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin: 0.4rem 0 0.8rem 0;
+      display: flex;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+    }
+    .description {
+      color: #cbd5e1;
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>⚡ Ultrafast & Laser Science Portal</h1>
+      <div class="subtitle">Curated conferences, summer schools, and workshops in Attosecond Science, HHG, & Laser Development.</div>
+      <div class="meta" style="margin-top: 0.5rem;" id="sync-info">Loading synchronization status...</div>
+    </header>
+
+    <div class="controls">
+      <input type="text" id="search" placeholder="Search keywords (e.g. HHG, GRC, Ti:Sa, Prague)..." oninput="renderEvents()">
+      <select id="category-filter" onchange="renderEvents()">
+        <option value="All">All Categories</option>
+        <option value="Attosecond & HHG">Attosecond & HHG</option>
+        <option value="Ultrafast Science">Ultrafast Science</option>
+        <option value="Laser Sources & Development">Laser Sources & Development</option>
+      </select>
+      <select id="type-filter" onchange="renderEvents()">
+        <option value="All">All Types</option>
+        <option value="Conference">Conferences</option>
+        <option value="Summer School">Summer Schools</option>
+        <option value="Workshop">Workshops</option>
+      </select>
+    </div>
+
+    <div class="event-grid" id="events-container"></div>
+
+    <footer>
+      Auto-updated weekly via GitHub Actions.
+    </footer>
+  </div>
+
+  <script>
+    let eventsData = [];
+
+    async function loadEvents() {
+      try {
+        const res = await fetch('events.json?t=' + Date.now());
+        const data = await res.json();
+        eventsData = data.events;
+        document.getElementById('sync-info').innerText = `Last updated: ${data.last_updated} \vert{} Active events:${data.total_events}`;
+        renderEvents();
+      } catch (err) {
+        document.getElementById('events-container').innerHTML = '<p style="color:#ef4444">Error loading events.json. Make sure the scraper has run.</p>';
+      }
+    }
+
+    function renderEvents() {
+      const search = document.getElementById('search').value.toLowerCase();
+      const category = document.getElementById('category-filter').value;
+      const type = document.getElementById('type-filter').value;
+
+      const filtered = eventsData.filter(ev => {
+        const matchesSearch = ev.title.toLowerCase().includes(search) || 
+                              ev.description.toLowerCase().includes(search) ||
+                              ev.location.toLowerCase().includes(search);
+        const matchesCategory = category === "All" || ev.category === category;
+        const matchesType = type === "All" || ev.type === type;
+        return matchesSearch && matchesCategory && matchesType;
+      });
+
+      const container = document.getElementById('events-container');
+      if (filtered.length === 0) {
+        container.innerHTML = '<p style="color:var(--text-muted)">No matching conferences found.</p>';
+        return;
+      }
+
+      container.innerHTML = filtered.map(ev => `
+        <div class="event-card">
+          <div class="event-header">
+            <a href="${ev.link}" target="_blank" rel="noopener" class="event-title">${ev.title}</a>
+            <div class="tags">
+              <span class="tag">${ev.type}</span>
+              <span class="tag" style="background: #1e3a8a;">${ev.category}</span>
+            </div>
+          </div>
+          <div class="meta">
+            <span>📅 ${ev.date}</span>
+            <span>📍 ${ev.location}</span>
+            <span>🏛️ ${ev.organizer}</span>
+          </div>
+          <div class="description">${ev.description}</div>
+        </div>
+      `).join('');
+    }
+
+    loadEvents();
+  </script>
+</body>
+</html>
