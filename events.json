@@ -1,5 +1,83 @@
 {
-  "last_updated": "2026-08-21 13:50 UTC",
-  "total_events": 0,
-  "events": []
+  "last_updated": "2026-08-21 13:58 UTC",
+  "total_events": 7,
+  "events": [
+    {
+      "title": "All events",
+      "organizer": "HTML Hub Crawler",
+      "category": "Ultrafast Science & Non-Linear Optics",
+      "type": "Conference",
+      "location": "See Official Link",
+      "display_date": "28 August 2026",
+      "date": "2026-08-28",
+      "link": "https://www.physics.ox.ac.uk/all-events",
+      "description": "28 August 2026\n      Seminars and colloquia\n          Special CMP Seminar: Artificial Symmetry Design for Emergent Spin Topologies and Their Excitations\nCMP seminar\n  12 September 2026\n      \n            Public talks and lectures\n          Astronomy ..."
+    },
+    {
+      "title": "Events",
+      "organizer": "HTML Hub Crawler",
+      "category": "Soft X-Ray & Attosecond",
+      "type": "School",
+      "location": "See Official Link",
+      "display_date": "September 15th, 2026",
+      "date": "2026-09-15",
+      "link": "https://lightsources.org/for-users/events/#content",
+      "description": "The SME Call for Proposals is Now Open.  The application is open throughout the project and implemented as a rolling call. The RIANA – TNA Access is Now Open. We accept user proposals based on a “continuous call” concept. Applications for Pre-proposa..."
+    },
+    {
+      "title": "Crystallography and Large Scale Facilities 2026",
+      "organizer": "HTML Hub Crawler",
+      "category": "Soft X-Ray & Attosecond",
+      "type": "School",
+      "location": "See Official Link",
+      "display_date": "September 25th",
+      "date": "2026-09-25",
+      "link": "https://www.synchrotron-soleil.fr/en/events/cristallography-and-large-scale-facilities-2026",
+      "description": "Crystallography and Large Scale Facilities 2026\nThe 10th edition of the ‘Crystallography and Large Scale Facilities’ school will take place at the SOLEIL synchrotron site in Saint-Aubin from 2 to 6 November 2026.\nThe main objectives of this thematic ..."
+    },
+    {
+      "title": "XAFS50.FR",
+      "organizer": "HTML Hub Crawler",
+      "category": "Soft X-Ray & Attosecond",
+      "type": "School",
+      "location": "See Official Link",
+      "display_date": "October 5",
+      "date": "2026-10-05",
+      "link": "https://www.synchrotron-soleil.fr/en/events/xafs50fr",
+      "description": "XAFS50.FR\n50 Years of XAFS Adventure in France: From the Pioneers of LURE to 4th-Generation Sources\n \nThe XAFS50.FR conference will take place at SOLEIL from October 5 to 9, 2026.\nHow can we observe the environment around atoms ? Over the past 50 yea..."
+    },
+    {
+      "title": "Workshop Frontiers in Science at SR facilities",
+      "organizer": "HTML Hub Crawler",
+      "category": "Soft X-Ray & Attosecond",
+      "type": "Conference",
+      "location": "See Official Link",
+      "display_date": "October 12th",
+      "date": "2026-10-12",
+      "link": "https://www.synchrotron-soleil.fr/en/events/workshop-frontiers-science-sr-facilities",
+      "description": "Workshop Frontiers in Science at SR facilities\nWe are pleased to announce the first workshop on Frontiers in Science at 4th generation synchrotron facilities, to be held October 12th & 13th, 2026 at SOLEIL.\nIts scientific scope is intentionally broad..."
+    },
+    {
+      "title": "Registration Now Open for the IAEA Annual Training Workshop on Synchrotron Techniques and Applications at SESAME | SESAME | Synchrotron-light for Experimental Science and Applications in the Middle East",
+      "organizer": "HTML Hub Crawler",
+      "category": "Soft X-Ray & Attosecond",
+      "type": "Conference",
+      "location": "See Official Link",
+      "display_date": "19 November 2026",
+      "date": "2026-11-19",
+      "link": "https://www.sesame.org.jo/events/registration-now-open-iaea-annual-training-workshop-synchrotron-techniques-and-applications",
+      "description": "SESAME is pleased to announce that applications are now open for the IAEA Annual Training Workshop on Synchrotron Techniques and Applications, which will take place at SESAME from 15 to 19 November 2026. The workshop is organised by the International..."
+    },
+    {
+      "title": "MEDSI School 2026 - Thailand",
+      "organizer": "HTML Hub Crawler",
+      "category": "Soft X-Ray & Attosecond",
+      "type": "School",
+      "location": "See Official Link",
+      "display_date": "30 November",
+      "date": "2026-11-30",
+      "link": "https://indico.slri.or.th/event/36/",
+      "description": "MEDSI School 2026 – Thailand\nPrecision Engineering for the Next Generation of Light Sources\n30 November – 4 December 2026 | Pattaya, Thailand\nThe MEDSI School 2026, hosted by the Synchrotron Light Research Institute (SLRI), is an intensive internatio..."
+    }
+  ]
 }
