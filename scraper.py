@@ -25,28 +25,20 @@ CATEGORIES = {
     "Laser Sources & Development": ["fiber laser", "solid-state", "diode laser", "opcpa", "amplifier"]
 }
 
-# --- THE ULTIMATE MASTER LIST ---
 FEEDS = [
-    # Swiss & German Academic Powerhouses
     {"name": "ETH Zurich", "url": "https://phys.ethz.ch/news-and-events.xml"},
     {"name": "EPFL", "url": "https://actu.epfl.ch/api/v1/channels/1/news/rss/"},
     {"name": "CALA / LMU Munich", "url": "https://www.physik.lmu.de/en/news/rss.xml"},
     {"name": "Max Born Institute (MBI Berlin)", "url": "https://mbi-berlin.de/rss.xml"},
     {"name": "Max Planck (MPQ)", "url": "https://www.mpq.mpg.de/rss.xml"},
     {"name": "Helmholtz Association", "url": "https://www.helmholtz.de/newsroom/rss.xml"},
-
-    # UK Physics Hubs (Attosecond & Laser-Plasma)
     {"name": "Oxford Physics", "url": "https://www.physics.ox.ac.uk/events/rss"},
     {"name": "Imperial College", "url": "https://www.imperial.ac.uk/physics/news/rss/"},
     {"name": "King's College London", "url": "https://www.kcl.ac.uk/news/rss"},
     {"name": "Queen's University Belfast", "url": "https://www.qub.ac.uk/news/rss"},
-
-    # Top Global Institutes
     {"name": "Lund Laser Centre", "url": "https://www.llc.lu.se/rss"},
     {"name": "ARCNL Netherlands", "url": "https://arcnl.nl/feed"},
     {"name": "Univ of Rochester (LLE)", "url": "https://www.lle.rochester.edu/feed/"},
-
-    # Major Accelerators & FELs
     {"name": "CERN (Indico Events)", "url": "https://indico.cern.ch/export/feed/rss.xml"},
     {"name": "Paul Scherrer Institute (PSI)", "url": "https://www.psi.ch/en/media/rss.xml"},
     {"name": "GSI / FAIR", "url": "https://www.gsi.de/en/bottommenu/press_releases.xml"},
@@ -56,21 +48,15 @@ FEEDS = [
     {"name": "ESRF (European Synchrotron)", "url": "https://www.esrf.fr/news/rss.xml"},
     {"name": "ELI Beams", "url": "https://www.eli-beams.eu/feed/"},
     {"name": "ELI ALPS", "url": "https://www.eli-alps.hu/en/rss"},
-    
-    # European Networks & Funding
     {"name": "Erasmus+ & CORDIS (EU Events)", "url": "https://cordis.europa.eu/rss/events_en.xml"},
     {"name": "Laserlab-Europe", "url": "https://www.laserlab-europe.eu/events/events-rss"},
     {"name": "Laser4EU", "url": "https://laser4eu.eu/feed/"},
     {"name": "Lightsources.org", "url": "https://lightsources.org/feed/"},
-
-    # Corporate Giants (Lasers, EUV & Metrology)
     {"name": "ASML", "url": "https://www.asml.com/rss/news.xml"},
     {"name": "TRUMPF Lasers", "url": "https://www.trumpf.com/en_INT/newsroom/rss.xml"},
     {"name": "ZEISS SMT", "url": "https://www.zeiss.com/semiconductor-manufacturing-technology/news.rss"},
     {"name": "Thales Group", "url": "https://www.thalesgroup.com/en/rss.xml"},
     {"name": "Amplitude Lasers", "url": "https://amplitude-laser.com/feed/"},
-
-    # Global Societies
     {"name": "Optica Events", "url": "https://www.optica.org/events/rss"},
     {"name": "SPIE Conferences", "url": "https://spie.org/conferences-and-exhibitions/rss"},
     {"name": "APS Physics", "url": "https://physics.aps.org/feeds/all"},
@@ -78,15 +64,9 @@ FEEDS = [
 ]
 
 def extract_exact_dates(text):
-    """
-    STRICT MODE: The text MUST contain a specific Day, Month, and Year.
-    Generic mentions of "October 2026" or "annually" will be rejected.
-    """
     months_regex = r'(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)'
     
-    # Pattern 1: Month DD-DD, YYYY (e.g., October 12-14, 2026)
     p1 = rf'\b({months_regex})\s+(\d{{1,2}})(?:\s*-\s*\d{{1,2}})?(?:st|nd|rd|th)?(?:,\s*)?\s+(202[4-9])\b'
-    # Pattern 2: DD-DD Month YYYY (e.g., 12-14 October 2026)
     p2 = rf'\b(\d{{1,2}})(?:\s*-\s*\d{{1,2}})?(?:st|nd|rd|th)?\s+({months_regex})\s+(202[4-9])\b'
     
     try:
@@ -103,8 +83,6 @@ def extract_exact_dates(text):
             return m2.group(0).strip(), sort_date
     except:
         pass
-        
-    # If no exact day is found, return None. The event is rejected.
     return None, None
 
 def classify_event(text):
@@ -121,7 +99,6 @@ def is_actual_event(text):
 
 def fetch_feed_events():
     events = []
-    # Grab the exact current date to strictly filter out the past
     today_date = datetime.now().date()
     
     for feed_info in FEEDS:
@@ -139,7 +116,6 @@ def fetch_feed_events():
                     if "school" in combined.lower(): event_type = "School"
                     elif any(w in combined.lower() for w in ["workshop", "symposium", "seminar"]): event_type = "Workshop"
                     
-                    # Call the strict date extractor
                     display_date, sort_date = extract_exact_dates(combined)
                     
                     if display_date and sort_date:
@@ -154,13 +130,12 @@ def fetch_feed_events():
                             "link": entry.get("link", "#"),
                             "description": summary[:250] + "..."
                         })
-        except Exception as e:
+        except Exception:
             pass
 
     valid_events = {}
     for ev in events:
         try:
-            # STRICT FUTURE FILTER: Compare event date strictly against today's midnight
             ev_date_obj = datetime.strptime(ev['date'], "%Y-%m-%d").date()
             if ev_date_obj >= today_date:
                 clean_title = re.sub(r'[^a-zA-Z0-9]', '', ev['title']).lower()
