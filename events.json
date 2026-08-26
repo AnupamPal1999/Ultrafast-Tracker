@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-08-25 01:20 UTC",
-  "total_events": 9,
+  "last_updated": "2026-08-26 01:23 UTC",
+  "total_events": 10,
   "events": [
     {
       "title": "All events | University of Oxford Department of Physics",
@@ -21,7 +21,7 @@
       "location": "See Link",
       "display_date": "30 August 2026",
       "date": "2026-08-30",
-      "link": "https://phys.ethz.ch/news-and-events.html#footer-contact",
+      "link": "https://phys.ethz.ch/news-and-events.html",
       "description": "News & Events Latest news                                                                  D-PHYS at Scientifica 2026 Switzerland’s largest science festival is back from 22 to 30 August 2026 with the theme \"How we create knowledge\". Find out where to..."
     },
     {
@@ -36,15 +36,37 @@
       "description": "Industry Events Industry Industry Events Grow your business network at an Optica industry event. -                                          Interested in Event Sponsorship?                                                                              ..."
     },
     {
-      "title": "SPIE Photonics West",
-      "organizer": "SPIE",
-      "category": "Ultrafast Science & Non-Linear Optics",
+      "title": "ETH News | ETH Zurich",
+      "organizer": "ETH Zurich",
+      "category": "Soft X-Ray & Attosecond",
       "type": "Conference",
+      "location": "See Link",
+      "display_date": "2 December",
+      "date": "2026-12-02",
+      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpmb3JtYXRlL3Vtd2VsdHdpc3NlbnNjaGFmdGVuL25hY2hoYWx0aWdrZWl0&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "ETH News All stories that have been tagged with Sustainability Study reveals weaknesses in farm sustainability monitoring News The sustainability of tropical products can only be verified using reliable data on production practices. A new study, usin..."
+    },
+    {
+      "title": "D-PHYS News – Department of Physics | ETH Zurich",
+      "organizer": "ETH Zurich",
+      "category": "Soft X-Ray & Attosecond",
+      "type": "School",
+      "location": "See Link",
+      "display_date": "January 6-8",
+      "date": "2027-01-06",
+      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=c3BlY2lhbGludGVyZXN0OnBoeXMvcGFydGljbGUtcGh5c2ljcw&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "D-PHYS News All stories that have been tagged with Particle Physics (IPA) Securing research grants to break new ground - Research - Funding - D-PHYS - Quantum sciences - Particle physics - Institute for Quantum Electronics (IQE) - Physics - Particle ..."
+    },
+    {
+      "title": "SPIE Event Policies and Resources",
+      "organizer": "SPIE",
+      "category": "Soft X-Ray & Attosecond",
+      "type": "School",
       "location": "See Link",
       "display_date": "30 January",
       "date": "2027-01-30",
-      "link": "https://spie.org/conferences-and-exhibitions/photonics-west",
-      "description": "SPIE Photonics West is the world’s largest optics and photonics technologies event. Present your research in biomedical optics, biophotonics, industrial lasers, optoelectronics, microfabrication, displays, quantum, and emerging vision technologies.  ..."
+      "link": "https://spie.org/conferences-and-exhibitions/event-resources",
+      "description": "Events Events Events Home Event Resources Become an Exhibitor Get the SPIE App Event Policies Official Contractors Press Registration Events Calendar All Upcoming Events Conferences Exhibitions SPIE.Online Upcoming Webinars Recorded Webinars Featured..."
     },
     {
       "title": "News from SPIE Events",
@@ -58,6 +80,17 @@
       "description": "Events Events Events Home Event Resources Become an Exhibitor Get the SPIE App Event Policies Official Contractors Press Registration Events Calendar All Upcoming Events Conferences Exhibitions SPIE.Online Upcoming Webinars Recorded Webinars Featured..."
     },
     {
+      "title": "SPIE Photonics West",
+      "organizer": "SPIE",
+      "category": "Ultrafast Science & Non-Linear Optics",
+      "type": "Conference",
+      "location": "See Link",
+      "display_date": "30 January",
+      "date": "2027-01-30",
+      "link": "https://spie.org/conferences-and-exhibitions/photonics-west",
+      "description": "SPIE Photonics West is the world’s largest optics and photonics technologies event. Present your research in biomedical optics, biophotonics, industrial lasers, optoelectronics, microfabrication, displays, quantum, and emerging vision technologies.  ..."
+    },
+    {
       "title": "âSPIE Conferences App - App Store",
       "organizer": "SPIE",
       "category": "Ultrafast Science & Non-Linear Optics",
@@ -69,37 +102,15 @@
       "description": "Hold the program and exhibition guides for all current and upcoming SPIE conferences and exhibitions in the palm of your hand. â¢ Complete programs of all SPIE symposia including events, exhibitors, and participants. â¢ Sync My Schedule between your ..."
     },
     {
-      "title": "Manuscript Guidelines and Policies",
+      "title": "SPIE Defense + Security",
       "organizer": "SPIE",
       "category": "Ultrafast Science & Non-Linear Optics",
       "type": "Conference",
       "location": "See Link",
-      "display_date": "March 16",
-      "date": "2027-03-16",
-      "link": "https://spie.org/conferences-and-exhibitions/event-resources/manuscript-guidelines-and-policies",
-      "description": "Increase your visibility and expand your network. Reach thousands by being published in the world's largest collection of optics and photonics research. The information on this page will facilitate the preparation and submission of your work to the P..."
-    },
-    {
-      "title": "ETH News | ETH Zurich",
-      "organizer": "ETH Zurich",
-      "category": "Soft X-Ray & Attosecond",
-      "type": "School",
-      "location": "See Link",
-      "display_date": "11 June",
-      "date": "2027-06-11",
-      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpmb3JtYXRlL2luZm9ybWF0aW9ucy11bmQtY29tcHV0ZXJ0ZWNobm9sb2dpZS9pbmZvcm1hdGlvbnMtdW5kLWNvbXB1dGVydGVjaG5vbG9naWU&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "ETH News All stories that have been tagged with Computer and information technology Inside this computer chip, the memory vibrates Quantum computers still face limits when it comes to storing information. Researchers at ETH Zurich are now turning to ..."
-    },
-    {
-      "title": "D-PHYS News – Department of Physics | ETH Zurich",
-      "organizer": "ETH Zurich",
-      "category": "Ultrafast Science & Non-Linear Optics",
-      "type": "School",
-      "location": "See Link",
-      "display_date": "17 June",
-      "date": "2027-06-17",
-      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=c3BlY2lhbGludGVyZXN0OnBoeXMvc29saWQtc3RhdGU&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "D-PHYS News All stories that have been tagged with Laboratory for Solid State Physics (LFKP) Best of two worlds: Superconducting qubits and mechanical resonators for quantum computing - Laboratory for Solid State Physics (LFKP) - Research - Physics -..."
+      "display_date": "22 April",
+      "date": "2027-04-22",
+      "link": "https://spie.org/conferences-and-exhibitions/defense-and-security",
+      "description": "Share your research on advanced optics and photonics in Orlando. The 2027 call for papers is open. Explore the 2027 call for papers and submit your recent work to the premier international conference on advanced technologies for defense and security...."
     }
   ]
 }
