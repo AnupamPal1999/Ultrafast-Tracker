@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-08-29 06:05 UTC",
-  "total_events": 6,
+  "last_updated": "2026-08-30 04:10 UTC",
+  "total_events": 7,
   "events": [
     {
       "title": "News & Events – Department of Physics | ETH Zurich",
@@ -10,7 +10,7 @@
       "location": "See Link",
       "display_date": "30 August 2026",
       "date": "2026-08-30",
-      "link": "https://phys.ethz.ch/news-and-events.html#footer",
+      "link": "https://phys.ethz.ch/news-and-events.html#content",
       "description": "News & Events Latest news                                                                  D-PHYS at Scientifica 2026 Switzerland’s largest science festival is back from 22 to 30 August 2026 with the theme \"How we create knowledge\". Find out where to..."
     },
     {
@@ -21,8 +21,8 @@
       "location": "See Link",
       "display_date": "30 August 2026",
       "date": "2026-08-30",
-      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=c3BlY2lhbGludGVyZXN0OnBoeXM&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "D-PHYS News All stories that have been tagged with D-PHYS D-PHYS at Scientifica 2026 - Events - D-PHYS - Physics Switzerland’s largest science festival is back from 22 to 30 August 2026 with the theme \"How we create knowledge\". Find out where to meet..."
+      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpaw&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "D-PHYS News All stories that have been tagged with Physics D-PHYS at Scientifica 2026 - Events - D-PHYS - Physics Switzerland’s largest science festival is back from 22 to 30 August 2026 with the theme \"How we create knowledge\". Find out where to mee..."
     },
     {
       "title": "All events | University of Oxford Department of Physics",
@@ -47,26 +47,37 @@
       "description": "Industry Events Industry Industry Events Grow your business network at an Optica industry event. -                                          Interested in Event Sponsorship?                                                                              ..."
     },
     {
-      "title": "ETH News | ETH Zurich",
-      "organizer": "ETH Zurich",
-      "category": "Soft X-Ray & Attosecond",
-      "type": "Conference",
-      "location": "See Link",
-      "display_date": "19 December",
-      "date": "2026-12-19",
-      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpaw&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "ETH News All stories that have been tagged with Physics A 3D scanner for electromagnetic fields News Researchers at ETH Zurich have developed a method that uses a single ion to detect electromagnetic fields above a surface and to create a three-dimen..."
-    },
-    {
-      "title": "âSPIE Conferences App - App Store",
+      "title": "Manuscript Guidelines and Policies",
       "organizer": "SPIE",
       "category": "Ultrafast Science & Non-Linear Optics",
       "type": "Conference",
       "location": "See Link",
-      "display_date": "Feb 24",
-      "date": "2027-02-24",
-      "link": "https://apps.apple.com/us/app/spie-conferences/id349678364",
-      "description": "Hold the program and exhibition guides for all current and upcoming SPIE conferences and exhibitions in the palm of your hand. â¢ Complete programs of all SPIE symposia including events, exhibitors, and participants. â¢ Sync My Schedule between your ..."
+      "display_date": "March 16",
+      "date": "2027-03-16",
+      "link": "https://spie.org/conferences-and-exhibitions/event-resources/manuscript-guidelines-and-policies",
+      "description": "Increase your visibility and expand your network. Reach thousands by being published in the world's largest collection of optics and photonics research. The information on this page will facilitate the preparation and submission of your work to the P..."
+    },
+    {
+      "title": "ETH News | ETH Zurich",
+      "organizer": "ETH Zurich",
+      "category": "Soft X-Ray & Attosecond",
+      "type": "School",
+      "location": "See Link",
+      "display_date": "May 5th",
+      "date": "2027-05-05",
+      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpmb3JtYXRlL2luZ2VuaWV1cndpc3NlbnNjaGFmdGVuL2VsZWt0cm90ZWNobmlr&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "ETH News All stories that have been tagged with Electrical engineering Mission Mars: Students build a rover and a drone - News - Homehero A rover, a drone and around 80 ETH students: the new CRATER student initiative is competing in the European Rove..."
+    },
+    {
+      "title": "SPIE Optics and Photonics",
+      "organizer": "SPIE",
+      "category": "Ultrafast Science & Non-Linear Optics",
+      "type": "Conference",
+      "location": "See Link",
+      "display_date": "29 August",
+      "date": "2027-08-29",
+      "link": "https://spie.org/conferences-and-exhibitions/optics-and-photonics",
+      "description": "So glad you could join us - we look forward to returning to beautiful San Diego again next year. Mark your calendar: 29 August - 2 September 2027 You are invited to share your latest insights and breakthroughs at this dynamic annual meeting as you jo..."
     }
   ]
 }
