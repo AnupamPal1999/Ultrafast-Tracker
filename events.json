@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-08-31 04:15 UTC",
-  "total_events": 5,
+  "last_updated": "2026-09-01 04:01 UTC",
+  "total_events": 7,
   "events": [
     {
       "title": "All events | University of Oxford Department of Physics",
@@ -25,37 +25,59 @@
       "description": "Industry Events Industry Industry Events Grow your business network at an Optica industry event. -                                          Interested in Event Sponsorship?                                                                              ..."
     },
     {
+      "title": "Student Conference Support",
+      "organizer": "SPIE",
+      "category": "Ultrafast Science & Non-Linear Optics",
+      "type": "School",
+      "location": "See Link",
+      "display_date": "12 October 2026",
+      "date": "2026-10-12",
+      "link": "https://spie.org/membership/student-hub/student-conference-support",
+      "description": "The Society offers a limited number of supplemental travel grants (airfare/lodging) and conference registration fee waivers to selected SPIE Student Members who are presenting at an SPIE meeting. Conferences will be added on an ongoing basis as their..."
+    },
+    {
       "title": "ETH News | ETH Zurich",
       "organizer": "ETH Zurich",
       "category": "Soft X-Ray & Attosecond",
       "type": "Conference",
       "location": "See Link",
-      "display_date": "2 December",
-      "date": "2026-12-02",
-      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpmb3JtYXRlL3Vtd2VsdHdpc3NlbnNjaGFmdGVuL25hY2hoYWx0aWdrZWl0&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "ETH News All stories that have been tagged with Sustainability Study reveals weaknesses in farm sustainability monitoring News The sustainability of tropical products can only be verified using reliable data on production practices. A new study, usin..."
+      "display_date": "10 December",
+      "date": "2026-12-10",
+      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpay9xdWFudGVud2lzc2Vuc2NoYWZ0ZW4&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "ETH News All stories that have been tagged with Quantum sciences Inside this computer chip, the memory vibrates Quantum computers still face limits when it comes to storing information. Researchers at ETH Zurich are now turning to mechanical vibratio..."
     },
     {
-      "title": "D-PHYS News – Department of Physics | ETH Zurich",
-      "organizer": "ETH Zurich",
-      "category": "Soft X-Ray & Attosecond",
-      "type": "School",
-      "location": "See Link",
-      "display_date": "January 6-8",
-      "date": "2027-01-06",
-      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=c3BlY2lhbGludGVyZXN0OnBoeXMvcGFydGljbGUtcGh5c2ljcw&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "D-PHYS News All stories that have been tagged with Particle Physics (IPA) Securing research grants to break new ground - Research - Funding - D-PHYS - Quantum sciences - Particle physics - Institute for Quantum Electronics (IQE) - Physics - Particle ..."
-    },
-    {
-      "title": "SPIE Astronomical Telescopes + Instrumentation",
+      "title": "SPIE Photonics West",
       "organizer": "SPIE",
       "category": "Ultrafast Science & Non-Linear Optics",
       "type": "Conference",
       "location": "See Link",
-      "display_date": "14 July 2028",
-      "date": "2028-07-14",
-      "link": "https://spie.org/conferences-and-exhibitions/astronomical-telescopes-and-instrumentation",
-      "description": "Save the dates for 2028 Thank you for joining us in Copenhagen, Denmark for SPIE Astronomical Telescopes + Instrumentation 2026, the most valuable technical event for ground-based, airborne, and space-based telescopes, and their supporting instrument..."
+      "display_date": "30 January",
+      "date": "2027-01-30",
+      "link": "https://spie.org/conferences-and-exhibitions/photonics-west",
+      "description": "SPIE Photonics West is the world’s largest optics and photonics technologies event. Present your research in biomedical optics, biophotonics, industrial lasers, optoelectronics, microfabrication, displays, quantum, and emerging vision technologies.  ..."
+    },
+    {
+      "title": "SPIE Event Policies and Resources",
+      "organizer": "SPIE",
+      "category": "Soft X-Ray & Attosecond",
+      "type": "School",
+      "location": "See Link",
+      "display_date": "30 January",
+      "date": "2027-01-30",
+      "link": "https://spie.org/conferences-and-exhibitions/event-resources",
+      "description": "Events Events Events Home Event Resources Become an Exhibitor Get the SPIE App Event Policies Official Contractors Press Registration Events Calendar All Upcoming Events Conferences Exhibitions SPIE.Online Upcoming Webinars Recorded Webinars Featured..."
+    },
+    {
+      "title": "D-PHYS News – Department of Physics | ETH Zurich",
+      "organizer": "ETH Zurich",
+      "category": "Ultrafast Science & Non-Linear Optics",
+      "type": "School",
+      "location": "See Link",
+      "display_date": "17 June",
+      "date": "2027-06-17",
+      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=c3BlY2lhbGludGVyZXN0OnBoeXMvc29saWQtc3RhdGU&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "D-PHYS News All stories that have been tagged with Laboratory for Solid State Physics (LFKP) Best of two worlds: Superconducting qubits and mechanical resonators for quantum computing - Laboratory for Solid State Physics (LFKP) - Research - Physics -..."
     }
   ]
 }
