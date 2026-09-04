@@ -1,18 +1,7 @@
 {
-  "last_updated": "2026-09-03 03:24 UTC",
-  "total_events": 6,
+  "last_updated": "2026-09-04 03:22 UTC",
+  "total_events": 7,
   "events": [
-    {
-      "title": "D-PHYS News – Department of Physics | ETH Zurich",
-      "organizer": "ETH Zurich",
-      "category": "Ultrafast Science & Non-Linear Optics",
-      "type": "Conference",
-      "location": "See Link",
-      "display_date": "3 September",
-      "date": "2026-09-03",
-      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpay9xdWFudGVud2lzc2Vuc2NoYWZ0ZW4&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "D-PHYS News All stories that have been tagged with Quantum sciences Securing research grants to break new ground - Research - Funding - D-PHYS - Quantum sciences - Particle physics - Institute for Quantum Electronics (IQE) - Physics - Particle Physic..."
-    },
     {
       "title": "All events | University of Oxford Department of Physics",
       "organizer": "Oxford Physics",
@@ -22,18 +11,7 @@
       "display_date": "12 September 2026",
       "date": "2026-09-12",
       "link": "https://www.physics.ox.ac.uk/all-events",
-      "description": "12 September 2026                    Public talks and lectures           Astronomy for All: 'The universe from beginning to end' by Prof Brian Schmidt Chaired by Professor Rob Fender, this lecture is part of Green Templeton’s Astronomy for All series..."
-    },
-    {
-      "title": "SPIE Sensors + Imaging",
-      "organizer": "SPIE",
-      "category": "Ultrafast Science & Non-Linear Optics",
-      "type": "Conference",
-      "location": "See Link",
-      "display_date": "16 September",
-      "date": "2026-09-16",
-      "link": "https://spie.org/conferences-and-exhibitions/sensors-and-imaging",
-      "description": "SPIE Sensors + Imaging combines two of Europe’s best photonics conferences – SPIE Environmental Remote Sensing and SPIE Security + Defence The premier yearly European event that showcases the latest sensor and photonic technologies for imaging and mo..."
+      "description": "12 September 2026                    Public talks and lectures           Astronomy for all: The universe from beginning to end Chaired by Professor Rob Fender, this lecture is part of Green Templeton’s Astronomy for All series.                       ..."
     },
     {
       "title": "Industry Events | Optica",
@@ -47,26 +25,59 @@
       "description": "Industry Events Industry Industry Events Grow your business network at an Optica industry event. -                                          Interested in Event Sponsorship?                                                                              ..."
     },
     {
+      "title": "SPIE Event Policies and Resources",
+      "organizer": "SPIE",
+      "category": "Soft X-Ray & Attosecond",
+      "type": "School",
+      "location": "See Link",
+      "display_date": "30 January",
+      "date": "2027-01-30",
+      "link": "https://spie.org/conferences-and-exhibitions/event-resources",
+      "description": "Events Events Events Home Event Resources Become an Exhibitor Get the SPIE App Event Policies Official Contractors Press Registration Events Calendar All Upcoming Events Conferences Exhibitions SPIE.Online Upcoming Webinars Recorded Webinars Featured..."
+    },
+    {
+      "title": "D-PHYS News – Department of Physics | ETH Zurich",
+      "organizer": "ETH Zurich",
+      "category": "Soft X-Ray & Attosecond",
+      "type": "School",
+      "location": "See Link",
+      "display_date": "17 June",
+      "date": "2027-06-17",
+      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=c3BlY2lhbGludGVyZXN0OnBoeXMvcXVhbnR1bQ&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "D-PHYS News All stories that have been tagged with Institute for Quantum Electronics (IQE) Securing research grants to break new ground - Research - Funding - D-PHYS - Quantum sciences - Particle physics - Institute for Quantum Electronics (IQE) - Ph..."
+    },
+    {
       "title": "ETH News | ETH Zurich",
       "organizer": "ETH Zurich",
       "category": "Soft X-Ray & Attosecond",
       "type": "Conference",
       "location": "See Link",
-      "display_date": "10 December",
-      "date": "2026-12-10",
-      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpay9xdWFudGVud2lzc2Vuc2NoYWZ0ZW4&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "ETH News All stories that have been tagged with Quantum sciences Inside this computer chip, the memory vibrates Quantum computers still face limits when it comes to storing information. Researchers at ETH Zurich are now turning to mechanical vibratio..."
+      "display_date": "24 July",
+      "date": "2027-07-24",
+      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpmb3JtYXRlL2NoZW1pZS9jaGVtaWU&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "ETH News All stories that have been tagged with Chemistry The chemist who thinks like a mathematician News Why do certain chemical processes happen despite being nigh-on impossible from a theoretical perspective? The theoretical chemist Jeremy Richar..."
     },
     {
-      "title": "SPIE Defense + Security",
+      "title": "SPIE Photonics Europe",
       "organizer": "SPIE",
       "category": "Ultrafast Science & Non-Linear Optics",
       "type": "Conference",
       "location": "See Link",
-      "display_date": "22 April",
-      "date": "2027-04-22",
-      "link": "https://spie.org/conferences-and-exhibitions/defense-and-security",
-      "description": "Share your research on advanced optics and photonics in Orlando. The 2027 call for papers is open. Explore the 2027 call for papers and submit your recent work to the premier international conference on advanced technologies for defense and security...."
+      "display_date": "6 April 2028",
+      "date": "2028-04-06",
+      "link": "https://spie.org/conferences-and-exhibitions/photonics-europe",
+      "description": "Thank you for another great event. We look forward to seeing you in 2028! Hear research presented at the only cross-disciplinary event highlighting compelling optics and photonics technologies—from digital optics to quantum technologies to optical im..."
+    },
+    {
+      "title": "SPIE Astronomical Telescopes + Instrumentation",
+      "organizer": "SPIE",
+      "category": "Ultrafast Science & Non-Linear Optics",
+      "type": "Conference",
+      "location": "See Link",
+      "display_date": "14 July 2028",
+      "date": "2028-07-14",
+      "link": "https://spie.org/conferences-and-exhibitions/astronomical-telescopes-and-instrumentation",
+      "description": "Save the dates for 2028 Thank you for joining us in Copenhagen, Denmark for SPIE Astronomical Telescopes + Instrumentation 2026, the most valuable technical event for ground-based, airborne, and space-based telescopes, and their supporting instrument..."
     }
   ]
 }
