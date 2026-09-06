@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-05 03:25 UTC",
-  "total_events": 8,
+  "last_updated": "2026-09-06 03:25 UTC",
+  "total_events": 9,
   "events": [
     {
       "title": "All events | University of Oxford Department of Physics",
@@ -12,6 +12,17 @@
       "date": "2026-09-12",
       "link": "https://www.physics.ox.ac.uk/all-events",
       "description": "12 September 2026                    Public talks and lectures           Astronomy for all: The universe from beginning to end Chaired by Professor Rob Fender, this lecture is part of Green Templeton’s Astronomy for All series.                       ..."
+    },
+    {
+      "title": "SPIE Sensors + Imaging",
+      "organizer": "SPIE",
+      "category": "Ultrafast Science & Non-Linear Optics",
+      "type": "Conference",
+      "location": "See Link",
+      "display_date": "16 September",
+      "date": "2026-09-16",
+      "link": "https://spie.org/conferences-and-exhibitions/sensors-and-imaging",
+      "description": "SPIE Sensors + Imaging combines two of Europe’s best photonics conferences – SPIE Environmental Remote Sensing and SPIE Security + Defence The premier yearly European event that showcases the latest sensor and photonic technologies for imaging and mo..."
     },
     {
       "title": "Industry Events | Optica",
@@ -41,43 +52,43 @@
       "category": "Soft X-Ray & Attosecond",
       "type": "Conference",
       "location": "See Link",
-      "display_date": "19 December",
-      "date": "2026-12-19",
-      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpaw&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "ETH News All stories that have been tagged with Physics A 3D scanner for electromagnetic fields News Researchers at ETH Zurich have developed a method that uses a single ion to detect electromagnetic fields above a surface and to create a three-dimen..."
+      "display_date": "2 December",
+      "date": "2026-12-02",
+      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpmb3JtYXRlL3Vtd2VsdHdpc3NlbnNjaGFmdGVuL25hY2hoYWx0aWdrZWl0&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "ETH News All stories that have been tagged with Sustainability Study reveals weaknesses in farm sustainability monitoring News The sustainability of tropical products can only be verified using reliable data on production practices. A new study, usin..."
     },
     {
-      "title": "SPIE Event Policies and Resources",
-      "organizer": "SPIE",
-      "category": "Soft X-Ray & Attosecond",
-      "type": "School",
-      "location": "See Link",
-      "display_date": "30 January",
-      "date": "2027-01-30",
-      "link": "https://spie.org/conferences-and-exhibitions/event-resources",
-      "description": "Events Events Events Home Event Resources Become an Exhibitor Get the SPIE App Event Policies Official Contractors Press Registration Events Calendar All Upcoming Events Conferences Exhibitions SPIE.Online Upcoming Webinars Recorded Webinars Featured..."
-    },
-    {
-      "title": "SPIE Biophotonics Summer School",
+      "title": "âSPIE Conferences App - App Store",
       "organizer": "SPIE",
       "category": "Ultrafast Science & Non-Linear Optics",
-      "type": "School",
+      "type": "Conference",
       "location": "See Link",
-      "display_date": "12 - 19 June 2027",
-      "date": "2027-06-12",
-      "link": "https://spie.org/community-support/student-funding-opportunities-/biophotonics-summer-school",
-      "description": "The SPIE Biophotonics Summer School, formerly the Hven Biophotonics Graduate Summer School, was founded in 2003. The biennial school provides graduate-level biophotonics education for students and first-year postdoctoral researchers at the highest in..."
+      "display_date": "Feb 24",
+      "date": "2027-02-24",
+      "link": "https://apps.apple.com/us/app/spie-conferences/id349678364",
+      "description": "Hold the program and exhibition guides for all current and upcoming SPIE conferences and exhibitions in the palm of your hand. â¢ Complete programs of all SPIE symposia including events, exhibitors, and participants. â¢ Sync My Schedule between your ..."
     },
     {
       "title": "D-PHYS News – Department of Physics | ETH Zurich",
       "organizer": "ETH Zurich",
-      "category": "Ultrafast Science & Non-Linear Optics",
-      "type": "Conference",
+      "category": "Soft X-Ray & Attosecond",
+      "type": "School",
       "location": "See Link",
-      "display_date": "3 September",
-      "date": "2027-09-03",
-      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpay9xdWFudGVud2lzc2Vuc2NoYWZ0ZW4&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "D-PHYS News All stories that have been tagged with Quantum sciences Securing research grants to break new ground - Research - Funding - D-PHYS - Quantum sciences - Particle physics - Institute for Quantum Electronics (IQE) - Physics - Particle Physic..."
+      "display_date": "17 June",
+      "date": "2027-06-17",
+      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=c3BlY2lhbGludGVyZXN0OnBoeXMvcXVhbnR1bQ&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "D-PHYS News All stories that have been tagged with Institute for Quantum Electronics (IQE) Securing research grants to break new ground - Research - Funding - D-PHYS - Quantum sciences - Particle physics - Institute for Quantum Electronics (IQE) - Ph..."
+    },
+    {
+      "title": "EPFL | LinkedIn",
+      "organizer": "EPFL",
+      "category": "Soft X-Ray & Attosecond",
+      "type": "School",
+      "location": "See Link",
+      "display_date": "August 20",
+      "date": "2027-08-20",
+      "link": "https://www.linkedin.com/school/epfl/",
+      "description": "By harnessing the properties of gallium nitride, engineers in Elison Matioli's lab at the EPFL School of Engineering have built a tiny transistor that can handle very high voltage with minimal energy loss, a key requirement for AI data centers, elect..."
     },
     {
       "title": "SPIE Photonics Europe",
