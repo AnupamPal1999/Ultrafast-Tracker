@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-10 03:34 UTC",
-  "total_events": 7,
+  "last_updated": "2026-09-11 03:32 UTC",
+  "total_events": 5,
   "events": [
     {
       "title": "Industry Events | Optica",
@@ -14,26 +14,15 @@
       "description": "Industry Events Industry Industry Events Grow your business network at an Optica industry event. -                                          Interested in Event Sponsorship?                                                                              ..."
     },
     {
-      "title": "ETH News | ETH Zurich",
-      "organizer": "ETH Zurich",
-      "category": "Soft X-Ray & Attosecond",
-      "type": "Conference",
-      "location": "See Link",
-      "display_date": "2 December",
-      "date": "2026-12-02",
-      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpmb3JtYXRlL3Vtd2VsdHdpc3NlbnNjaGFmdGVuL25hY2hoYWx0aWdrZWl0&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "ETH News All stories that have been tagged with Sustainability Low-carbon concrete put to the climate test - News - Homehero Researchers at ETH Zurich have developed a new approach that enables the service life of reinforced concrete to be predicted ..."
-    },
-    {
-      "title": "News from SPIE Events",
+      "title": "SPIE Photonics West",
       "organizer": "SPIE",
-      "category": "Soft X-Ray & Attosecond",
-      "type": "School",
+      "category": "Ultrafast Science & Non-Linear Optics",
+      "type": "Conference",
       "location": "See Link",
       "display_date": "30 January",
       "date": "2027-01-30",
-      "link": "https://spie.org/news/events",
-      "description": "Events Events Events Home Event Resources Become an Exhibitor Get the SPIE App Event Policies Official Contractors Press Registration Events Calendar All Upcoming Events Conferences Exhibitions SPIE.Online Upcoming Webinars Recorded Webinars Featured..."
+      "link": "https://spie.org/conferences-and-exhibitions/photonics-west",
+      "description": "SPIE Photonics West is the world’s largest optics and photonics technologies event. Present your research in biomedical optics, biophotonics, industrial lasers, optoelectronics, microfabrication, displays, quantum, and emerging vision technologies.  ..."
     },
     {
       "title": "âSPIE Conferences App - App Store",
@@ -49,35 +38,24 @@
     {
       "title": "D-PHYS News – Department of Physics | ETH Zurich",
       "organizer": "ETH Zurich",
-      "category": "Soft X-Ray & Attosecond",
-      "type": "School",
+      "category": "Ultrafast Science & Non-Linear Optics",
+      "type": "Conference",
       "location": "See Link",
       "display_date": "17 June",
       "date": "2027-06-17",
-      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=c3BlY2lhbGludGVyZXN0OnBoeXMvcXVhbnR1bQ&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "D-PHYS News All stories that have been tagged with Institute for Quantum Electronics (IQE) Securing research grants to break new ground - Research - Funding - D-PHYS - Quantum sciences - Particle physics - Institute for Quantum Electronics (IQE) - Ph..."
+      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpay90ZWlsY2hlbnBoeXNpaw&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "D-PHYS News All stories that have been tagged with Particle physics Securing research grants to break new ground - Research - Funding - D-PHYS - Quantum sciences - Particle physics - Institute for Quantum Electronics (IQE) - Physics - Particle Physic..."
     },
     {
-      "title": "SPIE Optics and Photonics",
-      "organizer": "SPIE",
-      "category": "Ultrafast Science & Non-Linear Optics",
+      "title": "ETH News | ETH Zurich",
+      "organizer": "ETH Zurich",
+      "category": "Soft X-Ray & Attosecond",
       "type": "Conference",
       "location": "See Link",
-      "display_date": "29 August",
-      "date": "2027-08-29",
-      "link": "https://spie.org/conferences-and-exhibitions/optics-and-photonics",
-      "description": "So glad you could join us - we look forward to returning to beautiful San Diego again next year. Mark your calendar: 29 August - 2 September 2027 You are invited to share your latest insights and breakthroughs at this dynamic annual meeting as you jo..."
-    },
-    {
-      "title": "SPIE Photonics Europe",
-      "organizer": "SPIE",
-      "category": "Ultrafast Science & Non-Linear Optics",
-      "type": "Conference",
-      "location": "See Link",
-      "display_date": "6 April 2028",
-      "date": "2028-04-06",
-      "link": "https://spie.org/conferences-and-exhibitions/photonics-europe",
-      "description": "Thank you for another great event. We look forward to seeing you in 2028! Hear research presented at the only cross-disciplinary event highlighting compelling optics and photonics technologies—from digital optics to quantum technologies to optical im..."
+      "display_date": "24 July",
+      "date": "2027-07-24",
+      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpmb3JtYXRlL2NoZW1pZS9jaGVtaWU&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "ETH News All stories that have been tagged with Chemistry The chemist who thinks like a mathematician News Why do certain chemical processes happen despite being nigh-on impossible from a theoretical perspective? The theoretical chemist Jeremy Richar..."
     }
   ]
 }
