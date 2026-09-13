@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-12 03:35 UTC",
-  "total_events": 6,
+  "last_updated": "2026-09-13 03:42 UTC",
+  "total_events": 7,
   "events": [
     {
       "title": "All events | University of Oxford Department of Physics",
@@ -8,10 +8,10 @@
       "category": "Ultrafast Science & Non-Linear Optics",
       "type": "Conference",
       "location": "See Link",
-      "display_date": "12 September 2026",
-      "date": "2026-09-12",
+      "display_date": "18 - 20 September 2026",
+      "date": "2026-09-18",
       "link": "https://www.physics.ox.ac.uk/all-events",
-      "description": "12 September 2026                    Public talks and lectures           Astronomy for all: The universe from beginning to end Chaired by Professor Rob Fender, this lecture is part of Green Templeton’s Astronomy for All series.                       ..."
+      "description": "18 - 20 September 2026                       Alumni events           Meeting Minds Oxford 2026 Join us in Oxford to talk about how we are turning today's biggest challenges into tomorrow's boldest breakthroughs.   18 September 2026                   ..."
     },
     {
       "title": "Industry Events | Optica",
@@ -25,37 +25,48 @@
       "description": "Industry Events Industry Industry Events Grow your business network at an Optica industry event. -                                          Interested in Event Sponsorship?                                                                              ..."
     },
     {
-      "title": "Student Conference Support",
-      "organizer": "SPIE",
-      "category": "Ultrafast Science & Non-Linear Optics",
-      "type": "School",
+      "title": "ETH News | ETH Zurich",
+      "organizer": "ETH Zurich",
+      "category": "Soft X-Ray & Attosecond",
+      "type": "Conference",
       "location": "See Link",
-      "display_date": "12 October 2026",
-      "date": "2026-10-12",
-      "link": "https://spie.org/membership/student-hub/student-conference-support",
-      "description": "The Society offers a limited number of supplemental travel grants (airfare/lodging) and conference registration fee waivers to selected SPIE Student Members who are presenting at an SPIE meeting. Conferences will be added on an ongoing basis as their..."
+      "display_date": "19 December",
+      "date": "2026-12-19",
+      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpaw&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "ETH News All stories that have been tagged with Physics A 3D scanner for electromagnetic fields News Researchers at ETH Zurich have developed a method that uses a single ion to detect electromagnetic fields above a surface and to create a three-dimen..."
     },
     {
-      "title": "SPIE Biophotonics Summer School",
+      "title": "SPIE Event Policies and Resources",
       "organizer": "SPIE",
-      "category": "Ultrafast Science & Non-Linear Optics",
+      "category": "Soft X-Ray & Attosecond",
       "type": "School",
       "location": "See Link",
-      "display_date": "12 - 19 June 2027",
-      "date": "2027-06-12",
-      "link": "https://spie.org/community-support/student-funding-opportunities-/biophotonics-summer-school",
-      "description": "The SPIE Biophotonics Summer School, formerly the Hven Biophotonics Graduate Summer School, was founded in 2003. The biennial school provides graduate-level biophotonics education for students and first-year postdoctoral researchers at the highest in..."
+      "display_date": "30 January",
+      "date": "2027-01-30",
+      "link": "https://spie.org/conferences-and-exhibitions/event-resources",
+      "description": "Events Events Events Home Event Resources Become an Exhibitor Get the SPIE App Event Policies Official Contractors Press Registration Events Calendar All Upcoming Events Conferences Exhibitions SPIE.Online Upcoming Webinars Recorded Webinars Featured..."
+    },
+    {
+      "title": "SPIE Photonics West",
+      "organizer": "SPIE",
+      "category": "Ultrafast Science & Non-Linear Optics",
+      "type": "Conference",
+      "location": "See Link",
+      "display_date": "30 January",
+      "date": "2027-01-30",
+      "link": "https://spie.org/conferences-and-exhibitions/photonics-west",
+      "description": "SPIE Photonics West is the world’s largest optics and photonics technologies event. Present your research in biomedical optics, biophotonics, industrial lasers, optoelectronics, microfabrication, displays, quantum, and emerging vision technologies.  ..."
     },
     {
       "title": "D-PHYS News – Department of Physics | ETH Zurich",
       "organizer": "ETH Zurich",
       "category": "Ultrafast Science & Non-Linear Optics",
-      "type": "School",
+      "type": "Conference",
       "location": "See Link",
-      "display_date": "17 June",
-      "date": "2027-06-17",
-      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=c3BlY2lhbGludGVyZXN0OnBoeXMvc29saWQtc3RhdGU&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "D-PHYS News All stories that have been tagged with Laboratory for Solid State Physics (LFKP) Making X-ray movies for ultrafast dynamics in nanomatter - Laboratory for Solid State Physics (LFKP) - Research - Physics - D-PHYS An international research ..."
+      "display_date": "3 September",
+      "date": "2027-09-03",
+      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpay9xdWFudGVud2lzc2Vuc2NoYWZ0ZW4&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "D-PHYS News All stories that have been tagged with Quantum sciences Securing research grants to break new ground - Research - Funding - D-PHYS - Quantum sciences - Particle physics - Institute for Quantum Electronics (IQE) - Physics - Particle Physic..."
     },
     {
       "title": "SPIE Astronomical Telescopes + Instrumentation",
