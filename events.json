@@ -1,18 +1,7 @@
 {
-  "last_updated": "2026-09-18 03:39 UTC",
-  "total_events": 4,
+  "last_updated": "2026-09-19 03:37 UTC",
+  "total_events": 6,
   "events": [
-    {
-      "title": "All events | University of Oxford Department of Physics",
-      "organizer": "Oxford Physics",
-      "category": "Ultrafast Science & Non-Linear Optics",
-      "type": "Conference",
-      "location": "See Link",
-      "display_date": "18 - 20 September 2026",
-      "date": "2026-09-18",
-      "link": "https://www.physics.ox.ac.uk/all-events",
-      "description": "18 - 20 September 2026                       Alumni events           Meeting Minds Oxford 2026 Join us in Oxford to talk about how we are turning today's biggest challenges into tomorrow's boldest breakthroughs.   18 September 2026                   ..."
-    },
     {
       "title": "Industry Events | Optica",
       "organizer": "Optica",
@@ -23,6 +12,17 @@
       "date": "2026-09-24",
       "link": "https://www.optica.org/industry/industry_events/",
       "description": "Industry Events Industry Industry Events Grow your business network at an Optica industry event. -                                          Interested in Event Sponsorship?                                                                              ..."
+    },
+    {
+      "title": "News from SPIE Events",
+      "organizer": "SPIE",
+      "category": "Soft X-Ray & Attosecond",
+      "type": "School",
+      "location": "See Link",
+      "display_date": "30 January",
+      "date": "2027-01-30",
+      "link": "https://spie.org/news/events",
+      "description": "Events Events Events Home Event Resources Become an Exhibitor Get the SPIE App Event Policies Official Contractors Press Registration Events Calendar All Upcoming Events Conferences Exhibitions SPIE.Online Upcoming Webinars Recorded Webinars Featured..."
     },
     {
       "title": "âSPIE Conferences App - App Store",
@@ -36,6 +36,17 @@
       "description": "Hold the program and exhibition guides for all current and upcoming SPIE conferences and exhibitions in the palm of your hand. â¢ Complete programs of all SPIE symposia including events, exhibitors, and participants. â¢ Sync My Schedule between your ..."
     },
     {
+      "title": "Manuscript Guidelines and Policies",
+      "organizer": "SPIE",
+      "category": "Ultrafast Science & Non-Linear Optics",
+      "type": "Conference",
+      "location": "See Link",
+      "display_date": "March 16",
+      "date": "2027-03-16",
+      "link": "https://spie.org/conferences-and-exhibitions/event-resources/manuscript-guidelines-and-policies",
+      "description": "Increase your visibility and expand your network. Reach thousands by being published in the world's largest collection of optics and photonics research. The information on this page will facilitate the preparation and submission of your work to the P..."
+    },
+    {
       "title": "ETH News | ETH Zurich",
       "organizer": "ETH Zurich",
       "category": "Soft X-Ray & Attosecond",
@@ -45,6 +56,17 @@
       "date": "2027-04-05",
       "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpay90ZWlsY2hlbnBoeXNpaw&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
       "description": "ETH News All stories that have been tagged with Particle physics Novel Particle Beam Could Challenge Einstein’s Theory of Gravity News Researchers at ETH Zurich and the Paul Scherrer Institute have produced an intense, cold beam of exotic atoms. They..."
+    },
+    {
+      "title": "SPIE Photonics Europe",
+      "organizer": "SPIE",
+      "category": "Ultrafast Science & Non-Linear Optics",
+      "type": "Conference",
+      "location": "See Link",
+      "display_date": "6 April 2028",
+      "date": "2028-04-06",
+      "link": "https://spie.org/conferences-and-exhibitions/photonics-europe",
+      "description": "Thank you for another great event. We look forward to seeing you in 2028! Hear research presented at the only cross-disciplinary event highlighting compelling optics and photonics technologies—from digital optics to quantum technologies to optical im..."
     }
   ]
 }
