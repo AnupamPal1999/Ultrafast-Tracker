@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-19 03:37 UTC",
+  "last_updated": "2026-09-20 03:54 UTC",
   "total_events": 6,
   "events": [
     {
@@ -14,17 +14,6 @@
       "description": "Industry Events Industry Industry Events Grow your business network at an Optica industry event. -                                          Interested in Event Sponsorship?                                                                              ..."
     },
     {
-      "title": "News from SPIE Events",
-      "organizer": "SPIE",
-      "category": "Soft X-Ray & Attosecond",
-      "type": "School",
-      "location": "See Link",
-      "display_date": "30 January",
-      "date": "2027-01-30",
-      "link": "https://spie.org/news/events",
-      "description": "Events Events Events Home Event Resources Become an Exhibitor Get the SPIE App Event Policies Official Contractors Press Registration Events Calendar All Upcoming Events Conferences Exhibitions SPIE.Online Upcoming Webinars Recorded Webinars Featured..."
-    },
-    {
       "title": "âSPIE Conferences App - App Store",
       "organizer": "SPIE",
       "category": "Ultrafast Science & Non-Linear Optics",
@@ -36,26 +25,26 @@
       "description": "Hold the program and exhibition guides for all current and upcoming SPIE conferences and exhibitions in the palm of your hand. â¢ Complete programs of all SPIE symposia including events, exhibitors, and participants. â¢ Sync My Schedule between your ..."
     },
     {
-      "title": "Manuscript Guidelines and Policies",
-      "organizer": "SPIE",
-      "category": "Ultrafast Science & Non-Linear Optics",
-      "type": "Conference",
-      "location": "See Link",
-      "display_date": "March 16",
-      "date": "2027-03-16",
-      "link": "https://spie.org/conferences-and-exhibitions/event-resources/manuscript-guidelines-and-policies",
-      "description": "Increase your visibility and expand your network. Reach thousands by being published in the world's largest collection of optics and photonics research. The information on this page will facilitate the preparation and submission of your work to the P..."
-    },
-    {
       "title": "ETH News | ETH Zurich",
       "organizer": "ETH Zurich",
       "category": "Soft X-Ray & Attosecond",
-      "type": "Conference",
+      "type": "School",
       "location": "See Link",
-      "display_date": "5 April",
-      "date": "2027-04-05",
-      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpay90ZWlsY2hlbnBoeXNpaw&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "ETH News All stories that have been tagged with Particle physics Novel Particle Beam Could Challenge Einstein’s Theory of Gravity News Researchers at ETH Zurich and the Paul Scherrer Institute have produced an intense, cold beam of exotic atoms. They..."
+      "display_date": "11 June",
+      "date": "2027-06-11",
+      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpmb3JtYXRlL2luZm9ybWF0aW9ucy11bmQtY29tcHV0ZXJ0ZWNobm9sb2dpZS9pbmZvcm1hdGlvbnMtdW5kLWNvbXB1dGVydGVjaG5vbG9naWU&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "ETH News All stories that have been tagged with Computer and information technology Inside this computer chip, the memory vibrates Quantum computers still face limits when it comes to storing information. Researchers at ETH Zurich are now turning to ..."
+    },
+    {
+      "title": "SPIE Biophotonics Summer School",
+      "organizer": "SPIE",
+      "category": "Ultrafast Science & Non-Linear Optics",
+      "type": "School",
+      "location": "See Link",
+      "display_date": "12 - 19 June 2027",
+      "date": "2027-06-12",
+      "link": "https://spie.org/community-support/student-funding-opportunities-/biophotonics-summer-school",
+      "description": "The SPIE Biophotonics Summer School, formerly the Hven Biophotonics Graduate Summer School, was founded in 2003. The biennial school provides graduate-level biophotonics education for students and first-year postdoctoral researchers at the highest in..."
     },
     {
       "title": "SPIE Photonics Europe",
@@ -67,6 +56,17 @@
       "date": "2028-04-06",
       "link": "https://spie.org/conferences-and-exhibitions/photonics-europe",
       "description": "Thank you for another great event. We look forward to seeing you in 2028! Hear research presented at the only cross-disciplinary event highlighting compelling optics and photonics technologies—from digital optics to quantum technologies to optical im..."
+    },
+    {
+      "title": "SPIE Astronomical Telescopes + Instrumentation",
+      "organizer": "SPIE",
+      "category": "Ultrafast Science & Non-Linear Optics",
+      "type": "Conference",
+      "location": "See Link",
+      "display_date": "14 July 2028",
+      "date": "2028-07-14",
+      "link": "https://spie.org/conferences-and-exhibitions/astronomical-telescopes-and-instrumentation",
+      "description": "Titles include Simulation Technologies for Optoelectronics, Volume 1: Light Waves, The Ultimate Infrared Radiometry Handbook for R&D Professionals, and more. Titles include Simulation Technologies for Optoelectronics, Volume 1: Light Waves, The Ultim..."
     }
   ]
 }
