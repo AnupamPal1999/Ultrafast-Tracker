@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-20 03:54 UTC",
-  "total_events": 6,
+  "last_updated": "2026-09-21 03:49 UTC",
+  "total_events": 7,
   "events": [
     {
       "title": "Industry Events | Optica",
@@ -14,37 +14,59 @@
       "description": "Industry Events Industry Industry Events Grow your business network at an Optica industry event. -                                          Interested in Event Sponsorship?                                                                              ..."
     },
     {
-      "title": "âSPIE Conferences App - App Store",
-      "organizer": "SPIE",
+      "title": "All events | University of Oxford Department of Physics",
+      "organizer": "Oxford Physics",
       "category": "Ultrafast Science & Non-Linear Optics",
       "type": "Conference",
       "location": "See Link",
-      "display_date": "Feb 24",
-      "date": "2027-02-24",
-      "link": "https://apps.apple.com/us/app/spie-conferences/id349678364",
-      "description": "Hold the program and exhibition guides for all current and upcoming SPIE conferences and exhibitions in the palm of your hand. â¢ Complete programs of all SPIE symposia including events, exhibitors, and participants. â¢ Sync My Schedule between your ..."
+      "display_date": "25 September 2026",
+      "date": "2026-09-25",
+      "link": "https://www.physics.ox.ac.uk/all-events",
+      "description": "25 September 2026                    Public talks and lectures           Quantum Universe: Less than Nothing, More than Everything Mr Rakhat-Bi Abdyssagin will speak about metaphorical correlations between quantum mechanics and avant-garde music.   3..."
     },
     {
       "title": "ETH News | ETH Zurich",
       "organizer": "ETH Zurich",
       "category": "Soft X-Ray & Attosecond",
-      "type": "School",
+      "type": "Conference",
       "location": "See Link",
-      "display_date": "11 June",
-      "date": "2027-06-11",
-      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpmb3JtYXRlL2luZm9ybWF0aW9ucy11bmQtY29tcHV0ZXJ0ZWNobm9sb2dpZS9pbmZvcm1hdGlvbnMtdW5kLWNvbXB1dGVydGVjaG5vbG9naWU&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "ETH News All stories that have been tagged with Computer and information technology Inside this computer chip, the memory vibrates Quantum computers still face limits when it comes to storing information. Researchers at ETH Zurich are now turning to ..."
+      "display_date": "19 December",
+      "date": "2026-12-19",
+      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpaw&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "ETH News All stories that have been tagged with Physics Novel Particle Beam Could Challenge Einstein’s Theory of Gravity News Researchers at ETH Zurich and the Paul Scherrer Institute have produced an intense, cold beam of exotic atoms. They aim to u..."
     },
     {
-      "title": "SPIE Biophotonics Summer School",
+      "title": "SPIE Defense + Security",
       "organizer": "SPIE",
+      "category": "Ultrafast Science & Non-Linear Optics",
+      "type": "Conference",
+      "location": "See Link",
+      "display_date": "22 April",
+      "date": "2027-04-22",
+      "link": "https://spie.org/conferences-and-exhibitions/defense-and-security",
+      "description": "Share your research on advanced optics and photonics in Orlando. The 2027 call for papers is open. Explore the 2027 call for papers and submit your recent work to the premier international conference on advanced technologies for defense and security...."
+    },
+    {
+      "title": "D-PHYS News – Department of Physics | ETH Zurich",
+      "organizer": "ETH Zurich",
       "category": "Ultrafast Science & Non-Linear Optics",
       "type": "School",
       "location": "See Link",
-      "display_date": "12 - 19 June 2027",
-      "date": "2027-06-12",
-      "link": "https://spie.org/community-support/student-funding-opportunities-/biophotonics-summer-school",
-      "description": "The SPIE Biophotonics Summer School, formerly the Hven Biophotonics Graduate Summer School, was founded in 2003. The biennial school provides graduate-level biophotonics education for students and first-year postdoctoral researchers at the highest in..."
+      "display_date": "17 June",
+      "date": "2027-06-17",
+      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=c3BlY2lhbGludGVyZXN0OnBoeXMvc29saWQtc3RhdGU&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "D-PHYS News All stories that have been tagged with Laboratory for Solid State Physics (LFKP) Making X-ray movies for ultrafast dynamics in nanomatter - Laboratory for Solid State Physics (LFKP) - Research - Physics - D-PHYS An international research ..."
+    },
+    {
+      "title": "SPIE Sensors + Imaging",
+      "organizer": "SPIE",
+      "category": "Ultrafast Science & Non-Linear Optics",
+      "type": "Conference",
+      "location": "See Link",
+      "display_date": "16 September 2027",
+      "date": "2027-09-16",
+      "link": "https://spie.org/conferences-and-exhibitions/sensors-and-imaging",
+      "description": "So happy you could join us - we look forward to meeting you in Sweden next year. Mark your calendar: 12–16 September 2027 | Stockholm, Sweden SPIE Sensors + Imaging combines two of Europe’s best photonics conferences – SPIE Environmental Remote Sensi..."
     },
     {
       "title": "SPIE Photonics Europe",
@@ -56,17 +78,6 @@
       "date": "2028-04-06",
       "link": "https://spie.org/conferences-and-exhibitions/photonics-europe",
       "description": "Thank you for another great event. We look forward to seeing you in 2028! Hear research presented at the only cross-disciplinary event highlighting compelling optics and photonics technologies—from digital optics to quantum technologies to optical im..."
-    },
-    {
-      "title": "SPIE Astronomical Telescopes + Instrumentation",
-      "organizer": "SPIE",
-      "category": "Ultrafast Science & Non-Linear Optics",
-      "type": "Conference",
-      "location": "See Link",
-      "display_date": "14 July 2028",
-      "date": "2028-07-14",
-      "link": "https://spie.org/conferences-and-exhibitions/astronomical-telescopes-and-instrumentation",
-      "description": "Titles include Simulation Technologies for Optoelectronics, Volume 1: Light Waves, The Ultimate Infrared Radiometry Handbook for R&D Professionals, and more. Titles include Simulation Technologies for Optoelectronics, Volume 1: Light Waves, The Ultim..."
     }
   ]
 }
