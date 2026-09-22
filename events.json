@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-21 03:49 UTC",
-  "total_events": 7,
+  "last_updated": "2026-09-22 03:47 UTC",
+  "total_events": 10,
   "events": [
     {
       "title": "Industry Events | Optica",
@@ -25,59 +25,92 @@
       "description": "25 September 2026                    Public talks and lectures           Quantum Universe: Less than Nothing, More than Everything Mr Rakhat-Bi Abdyssagin will speak about metaphorical correlations between quantum mechanics and avant-garde music.   3..."
     },
     {
+      "title": "Student Conference Support",
+      "organizer": "SPIE",
+      "category": "Ultrafast Science & Non-Linear Optics",
+      "type": "School",
+      "location": "See Link",
+      "display_date": "12 October 2026",
+      "date": "2026-10-12",
+      "link": "https://spie.org/membership/student-hub/student-conference-support",
+      "description": "The Society offers a limited number of supplemental travel grants (airfare/lodging) and conference registration fee waivers to selected SPIE Student Members who are presenting at an SPIE meeting. Conferences will be added on an ongoing basis as their..."
+    },
+    {
       "title": "ETH News | ETH Zurich",
       "organizer": "ETH Zurich",
       "category": "Soft X-Ray & Attosecond",
       "type": "Conference",
       "location": "See Link",
-      "display_date": "19 December",
-      "date": "2026-12-19",
-      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpaw&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "ETH News All stories that have been tagged with Physics Novel Particle Beam Could Challenge Einstein’s Theory of Gravity News Researchers at ETH Zurich and the Paul Scherrer Institute have produced an intense, cold beam of exotic atoms. They aim to u..."
+      "display_date": "10 December",
+      "date": "2026-12-10",
+      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpay9xdWFudGVud2lzc2Vuc2NoYWZ0ZW4&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "ETH News All stories that have been tagged with Quantum sciences The ideal setting for sensitive experiments - Homehero - Globe magazine The product of almost two decades of planning, ETH Zurich’s new HPQ physics building on the Hönggerberg campus is..."
     },
     {
-      "title": "SPIE Defense + Security",
+      "title": "News from SPIE Events",
+      "organizer": "SPIE",
+      "category": "Soft X-Ray & Attosecond",
+      "type": "School",
+      "location": "See Link",
+      "display_date": "30 January",
+      "date": "2027-01-30",
+      "link": "https://spie.org/news/events",
+      "description": "Events Events Events Home Event Resources Become an Exhibitor Become a Sponsor Get the SPIE App Event Policies Official Contractors Press Registration Events Calendar All Upcoming Events Conferences Exhibitions SPIE.Online Upcoming Webinars Recorded ..."
+    },
+    {
+      "title": "SPIE Event Policies and Resources",
+      "organizer": "SPIE",
+      "category": "Soft X-Ray & Attosecond",
+      "type": "School",
+      "location": "See Link",
+      "display_date": "30 January",
+      "date": "2027-01-30",
+      "link": "https://spie.org/conferences-and-exhibitions/event-resources",
+      "description": "Events Events Events Home Event Resources Become an Exhibitor Become a Sponsor Get the SPIE App Event Policies Official Contractors Press Registration Events Calendar All Upcoming Events Conferences Exhibitions SPIE.Online Upcoming Webinars Recorded ..."
+    },
+    {
+      "title": "âSPIE Conferences App - App Store",
       "organizer": "SPIE",
       "category": "Ultrafast Science & Non-Linear Optics",
       "type": "Conference",
       "location": "See Link",
-      "display_date": "22 April",
-      "date": "2027-04-22",
-      "link": "https://spie.org/conferences-and-exhibitions/defense-and-security",
-      "description": "Share your research on advanced optics and photonics in Orlando. The 2027 call for papers is open. Explore the 2027 call for papers and submit your recent work to the premier international conference on advanced technologies for defense and security...."
+      "display_date": "Feb 24",
+      "date": "2027-02-24",
+      "link": "https://apps.apple.com/us/app/spie-conferences/id349678364",
+      "description": "Hold the program and exhibition guides for all current and upcoming SPIE conferences and exhibitions in the palm of your hand. â¢ Complete programs of all SPIE symposia including events, exhibitors, and participants. â¢ Sync My Schedule between your ..."
+    },
+    {
+      "title": "Manuscript Guidelines and Policies",
+      "organizer": "SPIE",
+      "category": "Ultrafast Science & Non-Linear Optics",
+      "type": "Conference",
+      "location": "See Link",
+      "display_date": "March 16",
+      "date": "2027-03-16",
+      "link": "https://spie.org/conferences-and-exhibitions/event-resources/manuscript-guidelines-and-policies",
+      "description": "Increase your visibility and expand your network. Reach thousands by being published in the world's largest collection of optics and photonics research. The information on this page will facilitate the preparation and submission of your work to the P..."
     },
     {
       "title": "D-PHYS News – Department of Physics | ETH Zurich",
       "organizer": "ETH Zurich",
-      "category": "Ultrafast Science & Non-Linear Optics",
+      "category": "Soft X-Ray & Attosecond",
       "type": "School",
       "location": "See Link",
       "display_date": "17 June",
       "date": "2027-06-17",
-      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=c3BlY2lhbGludGVyZXN0OnBoeXMvc29saWQtc3RhdGU&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "D-PHYS News All stories that have been tagged with Laboratory for Solid State Physics (LFKP) Making X-ray movies for ultrafast dynamics in nanomatter - Laboratory for Solid State Physics (LFKP) - Research - Physics - D-PHYS An international research ..."
+      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=c3BlY2lhbGludGVyZXN0OnBoeXMvdGhlb3JldGljYWw&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "D-PHYS News All stories that have been tagged with Institute for Theoretical Physics (ITP) What a jigsaw and wooden grill skewers have in common - Events - Institute for Theoretical Physics (ITP) - Physics - D-PHYS - Quantum sciences An outreach proj..."
     },
     {
-      "title": "SPIE Sensors + Imaging",
+      "title": "SPIE Optics and Photonics",
       "organizer": "SPIE",
       "category": "Ultrafast Science & Non-Linear Optics",
       "type": "Conference",
       "location": "See Link",
-      "display_date": "16 September 2027",
-      "date": "2027-09-16",
-      "link": "https://spie.org/conferences-and-exhibitions/sensors-and-imaging",
-      "description": "So happy you could join us - we look forward to meeting you in Sweden next year. Mark your calendar: 12–16 September 2027 | Stockholm, Sweden SPIE Sensors + Imaging combines two of Europe’s best photonics conferences – SPIE Environmental Remote Sensi..."
-    },
-    {
-      "title": "SPIE Photonics Europe",
-      "organizer": "SPIE",
-      "category": "Ultrafast Science & Non-Linear Optics",
-      "type": "Conference",
-      "location": "See Link",
-      "display_date": "6 April 2028",
-      "date": "2028-04-06",
-      "link": "https://spie.org/conferences-and-exhibitions/photonics-europe",
-      "description": "Thank you for another great event. We look forward to seeing you in 2028! Hear research presented at the only cross-disciplinary event highlighting compelling optics and photonics technologies—from digital optics to quantum technologies to optical im..."
+      "display_date": "29 August",
+      "date": "2027-08-29",
+      "link": "https://spie.org/conferences-and-exhibitions/optics-and-photonics",
+      "description": "So glad you could join us - we look forward to returning to beautiful San Diego again next year. Mark your calendar: 29 August - 2 September 2027 You are invited to share your latest insights and breakthroughs at this dynamic annual meeting as you jo..."
     }
   ]
 }
