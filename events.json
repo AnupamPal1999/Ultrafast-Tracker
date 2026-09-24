@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-23 03:48 UTC",
+  "last_updated": "2026-09-24 03:37 UTC",
   "total_events": 7,
   "events": [
     {
@@ -25,6 +25,28 @@
       "description": "25 September 2026                    Public talks and lectures           Quantum Universe: Less than Nothing, More than Everything Mr Rakhat-Bi Abdyssagin will speak about metaphorical correlations between quantum mechanics and avant-garde music.   3..."
     },
     {
+      "title": "Student Conference Support",
+      "organizer": "SPIE",
+      "category": "Ultrafast Science & Non-Linear Optics",
+      "type": "School",
+      "location": "See Link",
+      "display_date": "12 October 2026",
+      "date": "2026-10-12",
+      "link": "https://spie.org/membership/student-hub/student-conference-support",
+      "description": "The Society offers a limited number of supplemental travel grants (airfare/lodging) and conference registration fee waivers to selected SPIE Student Members who are presenting at an SPIE meeting. Conferences will be added on an ongoing basis as their..."
+    },
+    {
+      "title": "âSPIE Conferences App - App Store",
+      "organizer": "SPIE",
+      "category": "Ultrafast Science & Non-Linear Optics",
+      "type": "Conference",
+      "location": "See Link",
+      "display_date": "Feb 24",
+      "date": "2027-02-24",
+      "link": "https://apps.apple.com/us/app/spie-conferences/id349678364",
+      "description": "Hold the program and exhibition guides for all current and upcoming SPIE conferences and exhibitions in the palm of your hand. â¢ Complete programs of all SPIE symposia including events, exhibitors, and participants. â¢ Sync My Schedule between your ..."
+    },
+    {
       "title": "ETH News | ETH Zurich",
       "organizer": "ETH Zurich",
       "category": "Soft X-Ray & Attosecond",
@@ -34,28 +56,6 @@
       "date": "2027-04-05",
       "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpay90ZWlsY2hlbnBoeXNpaw&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
       "description": "ETH News All stories that have been tagged with Particle physics Novel Particle Beam Could Challenge Einstein’s Theory of Gravity News Researchers at ETH Zurich and the Paul Scherrer Institute have produced an intense, cold beam of exotic atoms. They..."
-    },
-    {
-      "title": "SPIE Biophotonics Summer School",
-      "organizer": "SPIE",
-      "category": "Ultrafast Science & Non-Linear Optics",
-      "type": "School",
-      "location": "See Link",
-      "display_date": "12 - 19 June 2027",
-      "date": "2027-06-12",
-      "link": "https://spie.org/community-support/student-funding-opportunities-/biophotonics-summer-school",
-      "description": "The SPIE Biophotonics Summer School, formerly the Hven Biophotonics Graduate Summer School, was founded in 2003. The biennial school provides graduate-level biophotonics education for students and first-year postdoctoral researchers at the highest in..."
-    },
-    {
-      "title": "D-PHYS News – Department of Physics | ETH Zurich",
-      "organizer": "ETH Zurich",
-      "category": "Ultrafast Science & Non-Linear Optics",
-      "type": "School",
-      "location": "See Link",
-      "display_date": "17 June",
-      "date": "2027-06-17",
-      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=c3BlY2lhbGludGVyZXN0OnBoeXMvc29saWQtc3RhdGU&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "D-PHYS News All stories that have been tagged with Laboratory for Solid State Physics (LFKP) Making X-ray movies for ultrafast dynamics in nanomatter - Laboratory for Solid State Physics (LFKP) - Research - Physics - D-PHYS An international research ..."
     },
     {
       "title": "SPIE Optics and Photonics",
