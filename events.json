@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-25 03:56 UTC",
-  "total_events": 8,
+  "last_updated": "2026-09-26 03:59 UTC",
+  "total_events": 4,
   "events": [
     {
       "title": "All events | University of Oxford Department of Physics",
@@ -8,10 +8,10 @@
       "category": "Ultrafast Science & Non-Linear Optics",
       "type": "Conference",
       "location": "See Link",
-      "display_date": "25 September 2026",
-      "date": "2026-09-25",
+      "display_date": "3 October 2026",
+      "date": "2026-10-03",
       "link": "https://www.physics.ox.ac.uk/all-events",
-      "description": "25 September 2026                    Public talks and lectures           Quantum Universe: Less than Nothing, More than Everything Mr Rakhat-Bi Abdyssagin will speak about metaphorical correlations between quantum mechanics and avant-garde music.   3..."
+      "description": "3 October 2026                    Alumni events           Afternoon of Astrophysics: Galaxies from the dawn of the Universe to the present day Alumni and invited guests are welcome to join us for an afternoon of astrophysics.   6 October 2026        ..."
     },
     {
       "title": "ETH News | ETH Zurich",
@@ -19,43 +19,10 @@
       "category": "Soft X-Ray & Attosecond",
       "type": "Conference",
       "location": "See Link",
-      "display_date": "19 December",
-      "date": "2026-12-19",
-      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpaw&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "ETH News All stories that have been tagged with Physics Novel particle beam could challenge Einstein’s theory of gravity News Researchers at ETH Zurich and the Paul Scherrer Institute have produced an intense, cold beam of exotic atoms. They aim to u..."
-    },
-    {
-      "title": "SPIE Photonics West",
-      "organizer": "SPIE",
-      "category": "Ultrafast Science & Non-Linear Optics",
-      "type": "Conference",
-      "location": "See Link",
-      "display_date": "30 January",
-      "date": "2027-01-30",
-      "link": "https://spie.org/conferences-and-exhibitions/photonics-west",
-      "description": "SPIE Photonics West is the world’s largest optics and photonics technologies event. Present your research in biomedical optics, biophotonics, industrial lasers, optoelectronics, microfabrication, displays, quantum, and emerging vision technologies.  ..."
-    },
-    {
-      "title": "News from SPIE Events",
-      "organizer": "SPIE",
-      "category": "Soft X-Ray & Attosecond",
-      "type": "School",
-      "location": "See Link",
-      "display_date": "30 January",
-      "date": "2027-01-30",
-      "link": "https://spie.org/news/events",
-      "description": "Events Events Events Home Event Resources Become an Exhibitor Become a Sponsor Get the SPIE App Event Policies Official Contractors Press Registration Events Calendar All Upcoming Events Conferences Exhibitions SPIE.Online Upcoming Webinars Recorded ..."
-    },
-    {
-      "title": "âSPIE Conferences App - App Store",
-      "organizer": "SPIE",
-      "category": "Ultrafast Science & Non-Linear Optics",
-      "type": "Conference",
-      "location": "See Link",
-      "display_date": "Feb 24",
-      "date": "2027-02-24",
-      "link": "https://apps.apple.com/us/app/spie-conferences/id349678364",
-      "description": "Hold the program and exhibition guides for all current and upcoming SPIE conferences and exhibitions in the palm of your hand. â¢ Complete programs of all SPIE symposia including events, exhibitors, and participants. â¢ Sync My Schedule between your ..."
+      "display_date": "5 April",
+      "date": "2027-04-05",
+      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpay90ZWlsY2hlbnBoeXNpaw&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "ETH News All stories that have been tagged with Particle physics Novel particle beam could challenge Einstein’s theory of gravity News Researchers at ETH Zurich and the Paul Scherrer Institute have produced an intense, cold beam of exotic atoms. They..."
     },
     {
       "title": "SPIE Defense + Security",
@@ -78,17 +45,6 @@
       "date": "2027-09-03",
       "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpay9xdWFudGVud2lzc2Vuc2NoYWZ0ZW4&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
       "description": "D-PHYS News All stories that have been tagged with Quantum sciences What a jigsaw and wooden grill skewers have in common - Events - Institute for Theoretical Physics (ITP) - Physics - D-PHYS - Quantum sciences An outreach project provided an opportu..."
-    },
-    {
-      "title": "SPIE Astronomical Telescopes + Instrumentation",
-      "organizer": "SPIE",
-      "category": "Ultrafast Science & Non-Linear Optics",
-      "type": "Conference",
-      "location": "See Link",
-      "display_date": "14 July 2028",
-      "date": "2028-07-14",
-      "link": "https://spie.org/conferences-and-exhibitions/astronomical-telescopes-and-instrumentation",
-      "description": "Titles include Simulation Technologies for Optoelectronics, Volume 1: Light Waves, The Ultimate Infrared Radiometry Handbook for R&D Professionals, and more. Titles include Simulation Technologies for Optoelectronics, Volume 1: Light Waves, The Ultim..."
     }
   ]
 }
