@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-09-28 04:12 UTC",
-  "total_events": 2,
+  "last_updated": "2026-09-29 04:43 UTC",
+  "total_events": 4,
   "events": [
     {
       "title": "All events | University of Oxford Department of Physics",
@@ -14,15 +14,37 @@
       "description": "3 October 2026                    Alumni events           Afternoon of Astrophysics: Galaxies from the dawn of the Universe to the present day Alumni and invited guests are welcome to join us for an afternoon of astrophysics.   6 October 2026        ..."
     },
     {
+      "title": "âSPIE Conferences App - App Store",
+      "organizer": "SPIE",
+      "category": "Ultrafast Science & Non-Linear Optics",
+      "type": "Conference",
+      "location": "See Link",
+      "display_date": "Feb 24",
+      "date": "2027-02-24",
+      "link": "https://apps.apple.com/us/app/spie-conferences/id349678364",
+      "description": "Hold the program and exhibition guides for all current and upcoming SPIE conferences and exhibitions in the palm of your hand. â¢ Complete programs of all SPIE symposia including events, exhibitors, and participants. â¢ Sync My Schedule between your ..."
+    },
+    {
+      "title": "ETH News | ETH Zurich",
+      "organizer": "ETH Zurich",
+      "category": "Soft X-Ray & Attosecond",
+      "type": "Conference",
+      "location": "See Link",
+      "display_date": "5 April",
+      "date": "2027-04-05",
+      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpay90ZWlsY2hlbnBoeXNpaw&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "ETH News All stories that have been tagged with Particle physics Novel particle beam could challenge Einstein’s theory of gravity News Researchers at ETH Zurich and the Paul Scherrer Institute have produced an intense, cold beam of exotic atoms. They..."
+    },
+    {
       "title": "D-PHYS News – Department of Physics | ETH Zurich",
       "organizer": "ETH Zurich",
       "category": "Ultrafast Science & Non-Linear Optics",
-      "type": "School",
+      "type": "Conference",
       "location": "See Link",
-      "display_date": "17 June",
-      "date": "2027-06-17",
-      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=c3BlY2lhbGludGVyZXN0OnBoeXMvc29saWQtc3RhdGU&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "D-PHYS News All stories that have been tagged with Laboratory for Solid State Physics (LFKP) Making X-ray movies for ultrafast dynamics in nanomatter - Laboratory for Solid State Physics (LFKP) - Research - Physics - D-PHYS An international research ..."
+      "display_date": "3 September",
+      "date": "2027-09-03",
+      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpay9xdWFudGVud2lzc2Vuc2NoYWZ0ZW4&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "D-PHYS News All stories that have been tagged with Quantum sciences What a jigsaw and wooden grill skewers have in common - Events - Institute for Theoretical Physics (ITP) - Physics - D-PHYS - Quantum sciences An outreach project provided an opportu..."
     }
   ]
 }
