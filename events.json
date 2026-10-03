@@ -1,17 +1,17 @@
 {
-  "last_updated": "2026-10-02 04:31 UTC",
+  "last_updated": "2026-10-03 04:16 UTC",
   "total_events": 2,
   "events": [
     {
-      "title": "All events | University of Oxford Department of Physics",
-      "organizer": "Oxford Physics",
-      "category": "Ultrafast Science & Non-Linear Optics",
+      "title": "ETH News | ETH Zurich",
+      "organizer": "ETH Zurich",
+      "category": "Soft X-Ray & Attosecond",
       "type": "Conference",
       "location": "See Link",
-      "display_date": "3 October 2026",
-      "date": "2026-10-03",
-      "link": "https://www.physics.ox.ac.uk/all-events",
-      "description": "3 October 2026                    Alumni events           Afternoon of Astrophysics: Galaxies from the dawn of the Universe to the present day Alumni and invited guests are welcome to join us for an afternoon of astrophysics.   6 October 2026        ..."
+      "display_date": "5 April",
+      "date": "2027-04-05",
+      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpay90ZWlsY2hlbnBoeXNpaw&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "ETH News All stories that have been tagged with Particle physics Novel particle beam could challenge Einstein’s theory of gravity News Researchers at ETH Zurich and the Paul Scherrer Institute have produced an intense, cold beam of exotic atoms. They..."
     },
     {
       "title": "D-PHYS News – Department of Physics | ETH Zurich",
