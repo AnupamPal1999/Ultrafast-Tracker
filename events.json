@@ -1,7 +1,18 @@
 {
-  "last_updated": "2026-10-14 03:55 UTC",
-  "total_events": 3,
+  "last_updated": "2026-10-15 03:37 UTC",
+  "total_events": 4,
   "events": [
+    {
+      "title": "ETH News | ETH Zurich",
+      "organizer": "ETH Zurich",
+      "category": "Soft X-Ray & Attosecond",
+      "type": "Conference",
+      "location": "See Link",
+      "display_date": "10 December",
+      "date": "2026-12-10",
+      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpay9xdWFudGVud2lzc2Vuc2NoYWZ0ZW4&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "ETH News All stories that have been tagged with Quantum sciences The ideal setting for sensitive experiments - Homehero - Globe magazine The product of almost two decades of planning, ETH Zurich’s new HPQ physics building on the Hönggerberg campus is..."
+    },
     {
       "title": "âSPIE Conferences App - App Store",
       "organizer": "SPIE",
@@ -27,13 +38,13 @@
     {
       "title": "D-PHYS News – Department of Physics | ETH Zurich",
       "organizer": "ETH Zurich",
-      "category": "Soft X-Ray & Attosecond",
-      "type": "School",
+      "category": "Ultrafast Science & Non-Linear Optics",
+      "type": "Conference",
       "location": "See Link",
-      "display_date": "17 June",
-      "date": "2027-06-17",
-      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=c3BlY2lhbGludGVyZXN0OnBoeXMvdGhlb3JldGljYWw&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "D-PHYS News All stories that have been tagged with Institute for Theoretical Physics (ITP) What a jigsaw and wooden grill skewers have in common - Events - Institute for Theoretical Physics (ITP) - Physics - D-PHYS - Quantum sciences An outreach proj..."
+      "display_date": "3 September",
+      "date": "2027-09-03",
+      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpay9xdWFudGVud2lzc2Vuc2NoYWZ0ZW4&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "D-PHYS News All stories that have been tagged with Quantum sciences What a jigsaw and wooden grill skewers have in common - Events - Institute for Theoretical Physics (ITP) - Physics - D-PHYS - Quantum sciences An outreach project provided an opportu..."
     }
   ]
 }
