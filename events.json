@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-10-15 03:37 UTC",
-  "total_events": 4,
+  "last_updated": "2026-10-16 03:33 UTC",
+  "total_events": 2,
   "events": [
     {
       "title": "ETH News | ETH Zurich",
@@ -14,17 +14,6 @@
       "description": "ETH News All stories that have been tagged with Quantum sciences The ideal setting for sensitive experiments - Homehero - Globe magazine The product of almost two decades of planning, ETH Zurich’s new HPQ physics building on the Hönggerberg campus is..."
     },
     {
-      "title": "âSPIE Conferences App - App Store",
-      "organizer": "SPIE",
-      "category": "Ultrafast Science & Non-Linear Optics",
-      "type": "Conference",
-      "location": "See Link",
-      "display_date": "Feb 24",
-      "date": "2027-02-24",
-      "link": "https://apps.apple.com/us/app/spie-conferences/id349678364",
-      "description": "Hold the program and exhibition guides for all current and upcoming SPIE conferences and exhibitions in the palm of your hand. â¢ Complete programs of all SPIE symposia including events, exhibitors, and participants. â¢ Sync My Schedule between your ..."
-    },
-    {
       "title": "Optica Biophotonics Congress | Optica",
       "organizer": "Optica",
       "category": "Ultrafast Science & Non-Linear Optics",
@@ -34,17 +23,6 @@
       "date": "2027-04-18",
       "link": "https://www.optica.org/events/congress/biophotonics_congress/",
       "description": "Optica Biophotonics Congress Event Optica Biophotonics Congress                                                                                      18 - 21 April 2027                                          Embassy Suites by Hilton Denver Downtown ..."
-    },
-    {
-      "title": "D-PHYS News – Department of Physics | ETH Zurich",
-      "organizer": "ETH Zurich",
-      "category": "Ultrafast Science & Non-Linear Optics",
-      "type": "Conference",
-      "location": "See Link",
-      "display_date": "3 September",
-      "date": "2027-09-03",
-      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpay9xdWFudGVud2lzc2Vuc2NoYWZ0ZW4&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "D-PHYS News All stories that have been tagged with Quantum sciences What a jigsaw and wooden grill skewers have in common - Events - Institute for Theoretical Physics (ITP) - Physics - D-PHYS - Quantum sciences An outreach project provided an opportu..."
     }
   ]
 }
