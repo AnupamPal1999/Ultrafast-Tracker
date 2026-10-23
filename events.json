@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-10-22 03:42 UTC",
-  "total_events": 2,
+  "last_updated": "2026-10-23 03:48 UTC",
+  "total_events": 3,
   "events": [
     {
       "title": "ETH News | ETH Zurich",
@@ -14,15 +14,26 @@
       "description": "ETH News All stories that have been tagged with Spin-offs and patents Spin-off developing “conductors” for quantum computers News Quantum computers only work when a control system reliably delivers algorithms to the hardware while immediately detecti..."
     },
     {
-      "title": "âSPIE Conferences App - App Store",
+      "title": "Student Conference Support",
       "organizer": "SPIE",
       "category": "Ultrafast Science & Non-Linear Optics",
-      "type": "Conference",
+      "type": "School",
       "location": "See Link",
-      "display_date": "Feb 24",
-      "date": "2027-02-24",
-      "link": "https://apps.apple.com/us/app/spie-conferences/id349678364",
-      "description": "Hold the program and exhibition guides for all current and upcoming SPIE conferences and exhibitions in the palm of your hand. â¢ Complete programs of all SPIE symposia including events, exhibitors, and participants. â¢ Sync My Schedule between your ..."
+      "display_date": "12 November 2026",
+      "date": "2026-11-12",
+      "link": "https://spie.org/membership/student-hub/student-conference-support",
+      "description": "The Society offers a limited number of supplemental travel grants (airfare/lodging) and conference registration fee waivers to selected SPIE Student Members who are presenting at an SPIE meeting. Conferences will be added on an ongoing basis as their..."
+    },
+    {
+      "title": "D-PHYS News – Department of Physics | ETH Zurich",
+      "organizer": "ETH Zurich",
+      "category": "Ultrafast Science & Non-Linear Optics",
+      "type": "School",
+      "location": "See Link",
+      "display_date": "17 June",
+      "date": "2027-06-17",
+      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=c3BlY2lhbGludGVyZXN0OnBoeXMvc29saWQtc3RhdGU&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "D-PHYS News All stories that have been tagged with Laboratory for Solid State Physics (LFKP) Staying open to the next surprise - Laboratory for Solid State Physics (LFKP) - Physics - D-PHYS - People A conversation with Dr Antonius Armanious about unc..."
     }
   ]
 }
