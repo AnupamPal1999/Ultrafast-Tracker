@@ -1,28 +1,28 @@
 {
-  "last_updated": "2026-10-23 03:48 UTC",
-  "total_events": 3,
+  "last_updated": "2026-10-24 03:40 UTC",
+  "total_events": 4,
   "events": [
     {
-      "title": "ETH News | ETH Zurich",
-      "organizer": "ETH Zurich",
-      "category": "Soft X-Ray & Attosecond",
-      "type": "Conference",
-      "location": "See Link",
-      "display_date": "23 October",
-      "date": "2026-10-23",
-      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpzY2hsYWd3b3J0ZS9zcGluLW9mZnM&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "ETH News All stories that have been tagged with Spin-offs and patents Spin-off developing “conductors” for quantum computers News Quantum computers only work when a control system reliably delivers algorithms to the hardware while immediately detecti..."
-    },
-    {
-      "title": "Student Conference Support",
+      "title": "SPIE Event Policies and Resources",
       "organizer": "SPIE",
-      "category": "Ultrafast Science & Non-Linear Optics",
+      "category": "Soft X-Ray & Attosecond",
       "type": "School",
       "location": "See Link",
-      "display_date": "12 November 2026",
-      "date": "2026-11-12",
-      "link": "https://spie.org/membership/student-hub/student-conference-support",
-      "description": "The Society offers a limited number of supplemental travel grants (airfare/lodging) and conference registration fee waivers to selected SPIE Student Members who are presenting at an SPIE meeting. Conferences will be added on an ongoing basis as their..."
+      "display_date": "30 January",
+      "date": "2027-01-30",
+      "link": "https://spie.org/conferences-and-exhibitions/event-resources",
+      "description": "Events Events Events Home Event Resources Become an Exhibitor Become a Sponsor Get the SPIE App Event Policies Official Contractors Press Registration Events Calendar All Upcoming Events Conferences Exhibitions SPIE.Online Upcoming Webinars Recorded ..."
+    },
+    {
+      "title": "Manuscript Guidelines and Policies",
+      "organizer": "SPIE",
+      "category": "Ultrafast Science & Non-Linear Optics",
+      "type": "Conference",
+      "location": "See Link",
+      "display_date": "March 16",
+      "date": "2027-03-16",
+      "link": "https://spie.org/conferences-and-exhibitions/event-resources/manuscript-guidelines-and-policies",
+      "description": "Increase your visibility and expand your network. Reach thousands by being published in the world's largest collection of optics and photonics research. The information on this page will facilitate the preparation and submission of your work to the P..."
     },
     {
       "title": "D-PHYS News – Department of Physics | ETH Zurich",
@@ -34,6 +34,17 @@
       "date": "2027-06-17",
       "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=c3BlY2lhbGludGVyZXN0OnBoeXMvc29saWQtc3RhdGU&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
       "description": "D-PHYS News All stories that have been tagged with Laboratory for Solid State Physics (LFKP) Staying open to the next surprise - Laboratory for Solid State Physics (LFKP) - Physics - D-PHYS - People A conversation with Dr Antonius Armanious about unc..."
+    },
+    {
+      "title": "ETH News | ETH Zurich",
+      "organizer": "ETH Zurich",
+      "category": "Soft X-Ray & Attosecond",
+      "type": "Conference",
+      "location": "See Link",
+      "display_date": "23 October",
+      "date": "2027-10-23",
+      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpzY2hsYWd3b3J0ZS9zcGluLW9mZnM&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "ETH News All stories that have been tagged with Spin-offs and patents Spin-off developing “conductors” for quantum computers News Quantum computers only work when a control system reliably delivers algorithms to the hardware while immediately detecti..."
     }
   ]
 }
