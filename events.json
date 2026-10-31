@@ -1,7 +1,18 @@
 {
-  "last_updated": "2026-10-30 04:47 UTC",
-  "total_events": 3,
+  "last_updated": "2026-10-31 04:32 UTC",
+  "total_events": 4,
   "events": [
+    {
+      "title": "âSPIE Conferences App - App Store",
+      "organizer": "SPIE",
+      "category": "Ultrafast Science & Non-Linear Optics",
+      "type": "Conference",
+      "location": "See Link",
+      "display_date": "Feb 24",
+      "date": "2027-02-24",
+      "link": "https://apps.apple.com/us/app/spie-conferences/id349678364",
+      "description": "Hold the program and exhibition guides for all current and upcoming SPIE conferences and exhibitions in the palm of your hand. â¢ Complete programs of all SPIE symposia including events, exhibitors, and participants. â¢ Sync My Schedule between your ..."
+    },
     {
       "title": "ETH News | ETH Zurich",
       "organizer": "ETH Zurich",
@@ -14,26 +25,26 @@
       "description": "ETH News All stories that have been tagged with Particle physics Novel particle beam could challenge Einstein’s theory of gravity News Researchers at ETH Zurich and the Paul Scherrer Institute have produced an intense, cold beam of exotic atoms. They..."
     },
     {
-      "title": "SPIE Biophotonics Summer School",
-      "organizer": "SPIE",
-      "category": "Ultrafast Science & Non-Linear Optics",
-      "type": "School",
-      "location": "See Link",
-      "display_date": "12 - 19 June 2027",
-      "date": "2027-06-12",
-      "link": "https://spie.org/community-support/student-funding-opportunities-/biophotonics-summer-school",
-      "description": "The SPIE Biophotonics Summer School, formerly the Hven Biophotonics Graduate Summer School, was founded in 2003. The biennial school provides graduate-level biophotonics education for students and first-year postdoctoral researchers at the highest in..."
-    },
-    {
       "title": "D-PHYS News – Department of Physics | ETH Zurich",
       "organizer": "ETH Zurich",
-      "category": "Ultrafast Science & Non-Linear Optics",
+      "category": "Soft X-Ray & Attosecond",
       "type": "School",
       "location": "See Link",
       "display_date": "17 June",
       "date": "2027-06-17",
-      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=c3BlY2lhbGludGVyZXN0OnBoeXMvc29saWQtc3RhdGU&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "D-PHYS News All stories that have been tagged with Laboratory for Solid State Physics (LFKP) Staying open to the next surprise - Laboratory for Solid State Physics (LFKP) - Physics - D-PHYS - People A conversation with Dr Antonius Armanious about unc..."
+      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=c3BlY2lhbGludGVyZXN0OnBoeXMvdGhlb3JldGljYWw&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "D-PHYS News All stories that have been tagged with Institute for Theoretical Physics (ITP) What a jigsaw and wooden grill skewers have in common - Events - Institute for Theoretical Physics (ITP) - Physics - D-PHYS - Quantum sciences An outreach proj..."
+    },
+    {
+      "title": "Scientific Events | News & Events | PSI",
+      "organizer": "PSI",
+      "category": "Ultrafast Science & Non-Linear Optics",
+      "type": "School",
+      "location": "See Link",
+      "display_date": "Oct 01",
+      "date": "2027-10-01",
+      "link": "https://www.psi.ch/en/news/scientific-events",
+      "description": "Scientific Events Show filters Title From Date To Date 31 Oct 01. - 07. November 2026 •Conference •Congressi Stefano Franscini (CSF) 31 Oct The 2nd UPLIFT School for “Artificial Intelligence in Radiotherapy” Dr Zhang, Ye, Lomax, Antony John 02 Nov 02..."
     }
   ]
 }
