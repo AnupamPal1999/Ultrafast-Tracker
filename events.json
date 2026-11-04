@@ -1,28 +1,17 @@
 {
-  "last_updated": "2026-11-03 05:43 UTC",
+  "last_updated": "2026-11-04 05:14 UTC",
   "total_events": 4,
   "events": [
     {
-      "title": "ETH News | ETH Zurich",
-      "organizer": "ETH Zurich",
+      "title": "EPFL | LinkedIn",
+      "organizer": "EPFL",
       "category": "Soft X-Ray & Attosecond",
-      "type": "Conference",
+      "type": "School",
       "location": "See Link",
-      "display_date": "10 December",
-      "date": "2026-12-10",
-      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpay9xdWFudGVud2lzc2Vuc2NoYWZ0ZW4&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "ETH News All stories that have been tagged with Quantum sciences Spin-off developing “conductors” for quantum computers News Quantum computers only work when a control system reliably delivers algorithms to the hardware while immediately detecting an..."
-    },
-    {
-      "title": "âSPIE Conferences App - App Store",
-      "organizer": "SPIE",
-      "category": "Ultrafast Science & Non-Linear Optics",
-      "type": "Conference",
-      "location": "See Link",
-      "display_date": "Feb 24",
-      "date": "2027-02-24",
-      "link": "https://apps.apple.com/us/app/spie-conferences/id349678364",
-      "description": "Hold the program and exhibition guides for all current and upcoming SPIE conferences and exhibitions in the palm of your hand. â¢ Complete programs of all SPIE symposia including events, exhibitors, and participants. â¢ Sync My Schedule between your ..."
+      "display_date": "16 November",
+      "date": "2026-11-16",
+      "link": "https://www.linkedin.com/school/epfl/",
+      "description": "Technology is evolving at an unprecedented pace, and microelectronics is at the heart of that transformation. But how do we ensure that engineering innovation has a real impact? On 16 November, we welcome Tsu-Jae Liu, President of the National Academ..."
     },
     {
       "title": "D-PHYS News – Department of Physics | ETH Zurich",
@@ -30,10 +19,10 @@
       "category": "Soft X-Ray & Attosecond",
       "type": "School",
       "location": "See Link",
-      "display_date": "17 June",
-      "date": "2027-06-17",
-      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=c3BlY2lhbGludGVyZXN0OnBoeXMvdGhlb3JldGljYWw&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "D-PHYS News All stories that have been tagged with Institute for Theoretical Physics (ITP) What a jigsaw and wooden grill skewers have in common - Events - Institute for Theoretical Physics (ITP) - Physics - D-PHYS - Quantum sciences An outreach proj..."
+      "display_date": "January 6-8",
+      "date": "2027-01-06",
+      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=c3BlY2lhbGludGVyZXN0OnBoeXMvcGFydGljbGUtcGh5c2ljcw&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "D-PHYS News All stories that have been tagged with Particle Physics (IPA) Pretraining makes AI better at interpreting neutrino interactions - Particle physics - Research - Physics - Particle Physics (IPA) - D-PHYS Researchers from the Institute for P..."
     },
     {
       "title": "Scientific Events | News & Events | PSI",
@@ -45,6 +34,17 @@
       "date": "2027-10-01",
       "link": "https://www.psi.ch/en/news/scientific-events",
       "description": "Scientific Events Show filters Title From Date To Date 31 Oct 01. - 07. November 2026 •Conference •Congressi Stefano Franscini (CSF) 31 Oct The 2nd UPLIFT School for “Artificial Intelligence in Radiotherapy” Dr Zhang, Ye, Lomax, Antony John 04 Nov 04..."
+    },
+    {
+      "title": "ETH News | ETH Zurich",
+      "organizer": "ETH Zurich",
+      "category": "Soft X-Ray & Attosecond",
+      "type": "Conference",
+      "location": "See Link",
+      "display_date": "23 October",
+      "date": "2027-10-23",
+      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpzY2hsYWd3b3J0ZS9zcGluLW9mZnM&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "ETH News All stories that have been tagged with Spin-offs and patents New flexible drone can withstand collisions News ETH Zurich researchers have developed FlexiQuad, a soft drone whose frame deforms in a controlled manner when it collides with obst..."
     }
   ]
 }
