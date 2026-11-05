@@ -1,17 +1,17 @@
 {
-  "last_updated": "2026-11-04 05:14 UTC",
+  "last_updated": "2026-11-05 05:35 UTC",
   "total_events": 4,
   "events": [
     {
-      "title": "EPFL | LinkedIn",
-      "organizer": "EPFL",
+      "title": "ETH News | ETH Zurich",
+      "organizer": "ETH Zurich",
       "category": "Soft X-Ray & Attosecond",
-      "type": "School",
+      "type": "Conference",
       "location": "See Link",
-      "display_date": "16 November",
-      "date": "2026-11-16",
-      "link": "https://www.linkedin.com/school/epfl/",
-      "description": "Technology is evolving at an unprecedented pace, and microelectronics is at the heart of that transformation. But how do we ensure that engineering innovation has a real impact? On 16 November, we welcome Tsu-Jae Liu, President of the National Academ..."
+      "display_date": "19 December",
+      "date": "2026-12-19",
+      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpaw&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "ETH News All stories that have been tagged with Physics Novel particle beam could challenge Einstein’s theory of gravity News Researchers at ETH Zurich and the Paul Scherrer Institute have produced an intense, cold beam of exotic atoms. They aim to u..."
     },
     {
       "title": "D-PHYS News – Department of Physics | ETH Zurich",
@@ -25,6 +25,17 @@
       "description": "D-PHYS News All stories that have been tagged with Particle Physics (IPA) Pretraining makes AI better at interpreting neutrino interactions - Particle physics - Research - Physics - Particle Physics (IPA) - D-PHYS Researchers from the Institute for P..."
     },
     {
+      "title": "âSPIE Conferences App - App Store",
+      "organizer": "SPIE",
+      "category": "Ultrafast Science & Non-Linear Optics",
+      "type": "Conference",
+      "location": "See Link",
+      "display_date": "Feb 24",
+      "date": "2027-02-24",
+      "link": "https://apps.apple.com/us/app/spie-conferences/id349678364",
+      "description": "Hold the program and exhibition guides for all current and upcoming SPIE conferences and exhibitions in the palm of your hand. â¢ Complete programs of all SPIE symposia including events, exhibitors, and participants. â¢ Sync My Schedule between your ..."
+    },
+    {
       "title": "Scientific Events | News & Events | PSI",
       "organizer": "PSI",
       "category": "Ultrafast Science & Non-Linear Optics",
@@ -33,18 +44,7 @@
       "display_date": "Oct 01",
       "date": "2027-10-01",
       "link": "https://www.psi.ch/en/news/scientific-events",
-      "description": "Scientific Events Show filters Title From Date To Date 31 Oct 01. - 07. November 2026 •Conference •Congressi Stefano Franscini (CSF) 31 Oct The 2nd UPLIFT School for “Artificial Intelligence in Radiotherapy” Dr Zhang, Ye, Lomax, Antony John 04 Nov 04..."
-    },
-    {
-      "title": "ETH News | ETH Zurich",
-      "organizer": "ETH Zurich",
-      "category": "Soft X-Ray & Attosecond",
-      "type": "Conference",
-      "location": "See Link",
-      "display_date": "23 October",
-      "date": "2027-10-23",
-      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpzY2hsYWd3b3J0ZS9zcGluLW9mZnM&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "ETH News All stories that have been tagged with Spin-offs and patents New flexible drone can withstand collisions News ETH Zurich researchers have developed FlexiQuad, a soft drone whose frame deforms in a controlled manner when it collides with obst..."
+      "description": "Scientific Events Show filters Title From Date To Date 31 Oct 01. - 07. November 2026 •Conference •Congressi Stefano Franscini (CSF) 31 Oct The 2nd UPLIFT School for “Artificial Intelligence in Radiotherapy” Dr Zhang, Ye, Lomax, Antony John 05 Nov 05..."
     }
   ]
 }
