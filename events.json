@@ -1,7 +1,18 @@
 {
-  "last_updated": "2026-11-06 05:32 UTC",
-  "total_events": 4,
+  "last_updated": "2026-11-07 05:01 UTC",
+  "total_events": 5,
   "events": [
+    {
+      "title": "SPIE Photonics West",
+      "organizer": "SPIE",
+      "category": "Ultrafast Science & Non-Linear Optics",
+      "type": "Conference",
+      "location": "See Link",
+      "display_date": "30 January",
+      "date": "2027-01-30",
+      "link": "https://spie.org/conferences-and-exhibitions/photonics-west",
+      "description": "SPIE Photonics West is the world’s largest optics and photonics technologies event, including the latest research in biomedical optics, biophotonics, industrial lasers, optoelectronics, microfabrication, displays, quantum, and emerging vision technol..."
+    },
     {
       "title": "âSPIE Conferences App - App Store",
       "organizer": "SPIE",
@@ -28,12 +39,12 @@
       "title": "D-PHYS News – Department of Physics | ETH Zurich",
       "organizer": "ETH Zurich",
       "category": "Ultrafast Science & Non-Linear Optics",
-      "type": "School",
+      "type": "Conference",
       "location": "See Link",
-      "display_date": "17 June",
-      "date": "2027-06-17",
-      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=c3BlY2lhbGludGVyZXN0OnBoeXMvc29saWQtc3RhdGU&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "D-PHYS News All stories that have been tagged with Laboratory for Solid State Physics (LFKP) Staying open to the next surprise - Laboratory for Solid State Physics (LFKP) - Physics - D-PHYS - People A conversation with Dr Antonius Armanious about unc..."
+      "display_date": "3 September",
+      "date": "2027-09-03",
+      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpay9xdWFudGVud2lzc2Vuc2NoYWZ0ZW4&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "D-PHYS News All stories that have been tagged with Quantum sciences What a jigsaw and wooden grill skewers have in common - Events - Institute for Theoretical Physics (ITP) - Physics - D-PHYS - Quantum sciences An outreach project provided an opportu..."
     },
     {
       "title": "Scientific Events | News & Events | PSI",
@@ -44,7 +55,7 @@
       "display_date": "Oct 01",
       "date": "2027-10-01",
       "link": "https://www.psi.ch/en/news/scientific-events",
-      "description": "Scientific Events Show filters Title From Date To Date 31 Oct 01. - 07. November 2026 •Conference •Congressi Stefano Franscini (CSF) 31 Oct The 2nd UPLIFT School for “Artificial Intelligence in Radiotherapy” Dr Zhang, Ye, Lomax, Antony John 05 Nov 05..."
+      "description": "Scientific Events Show filters Title From Date To Date 31 Oct 01. - 07. November 2026 •Conference •Congressi Stefano Franscini (CSF) 31 Oct The 2nd UPLIFT School for “Artificial Intelligence in Radiotherapy” Dr Zhang, Ye, Lomax, Antony John 10 Nov 10..."
     }
   ]
 }
