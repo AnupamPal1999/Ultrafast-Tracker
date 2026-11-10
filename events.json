@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-11-09 05:03 UTC",
-  "total_events": 5,
+  "last_updated": "2026-11-10 06:21 UTC",
+  "total_events": 3,
   "events": [
     {
       "title": "Scientific Events | News & Events | PSI",
@@ -14,48 +14,26 @@
       "description": "Scientific Events Show filters Title From Date To Date 10 Nov 10. November 2026 • 13:00 - 17:30 •Conference 10 Nov Sustainable Fuels & Chemicals - Overcoming Technological and Regulatory Challenges Bach, Christian, Prof. Betz, Regina 11 Nov 11. - 12...."
     },
     {
+      "title": "D-PHYS News – Department of Physics | ETH Zurich",
+      "organizer": "ETH Zurich",
+      "category": "Soft X-Ray & Attosecond",
+      "type": "School",
+      "location": "See Link",
+      "display_date": "January 6-8",
+      "date": "2027-01-06",
+      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=c3BlY2lhbGludGVyZXN0OnBoeXMvcGFydGljbGUtcGh5c2ljcw&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "D-PHYS News All stories that have been tagged with Particle Physics (IPA) Pretraining makes AI better at interpreting neutrino interactions - Particle physics - Research - Physics - Particle Physics (IPA) - D-PHYS Researchers from the Institute for P..."
+    },
+    {
       "title": "ETH News | ETH Zurich",
       "organizer": "ETH Zurich",
       "category": "Soft X-Ray & Attosecond",
       "type": "Conference",
       "location": "See Link",
-      "display_date": "10 December",
-      "date": "2026-12-10",
-      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpay9xdWFudGVud2lzc2Vuc2NoYWZ0ZW4&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "ETH News All stories that have been tagged with Quantum sciences Spin-off developing “conductors” for quantum computers News Quantum computers only work when a control system reliably delivers algorithms to the hardware while immediately detecting an..."
-    },
-    {
-      "title": "âSPIE Conferences App - App Store",
-      "organizer": "SPIE",
-      "category": "Ultrafast Science & Non-Linear Optics",
-      "type": "Conference",
-      "location": "See Link",
-      "display_date": "Feb 24",
-      "date": "2027-02-24",
-      "link": "https://apps.apple.com/us/app/spie-conferences/id349678364",
-      "description": "Hold the program and exhibition guides for all current and upcoming SPIE conferences and exhibitions in the palm of your hand. â¢ Complete programs of all SPIE symposia including events, exhibitors, and participants. â¢ Sync My Schedule between your ..."
-    },
-    {
-      "title": "Manuscript Guidelines and Policies",
-      "organizer": "SPIE",
-      "category": "Ultrafast Science & Non-Linear Optics",
-      "type": "Conference",
-      "location": "See Link",
-      "display_date": "March 16",
-      "date": "2027-03-16",
-      "link": "https://spie.org/conferences-and-exhibitions/event-resources/manuscript-guidelines-and-policies",
-      "description": "Increase your visibility and expand your network. Reach thousands by being published in the world's largest collection of optics and photonics research. The information on this page will facilitate the preparation and submission of your work to the P..."
-    },
-    {
-      "title": "D-PHYS News – Department of Physics | ETH Zurich",
-      "organizer": "ETH Zurich",
-      "category": "Ultrafast Science & Non-Linear Optics",
-      "type": "School",
-      "location": "See Link",
-      "display_date": "17 June",
-      "date": "2027-06-17",
-      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=c3BlY2lhbGludGVyZXN0OnBoeXMvc29saWQtc3RhdGU&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "D-PHYS News All stories that have been tagged with Laboratory for Solid State Physics (LFKP) Staying open to the next surprise - Laboratory for Solid State Physics (LFKP) - Physics - D-PHYS - People A conversation with Dr Antonius Armanious about unc..."
+      "display_date": "23 October",
+      "date": "2027-10-23",
+      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpzY2hsYWd3b3J0ZS9zcGluLW9mZnM&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "ETH News All stories that have been tagged with Spin-offs and patents How plastic waste transforms into higher-value products News A team of researchers at ETH Zurich is upcycling waste made from polyethylene and polypropylene – two of the world’s mo..."
     }
   ]
 }
