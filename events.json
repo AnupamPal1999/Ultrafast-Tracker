@@ -1,29 +1,7 @@
 {
-  "last_updated": "2026-11-11 05:05 UTC",
-  "total_events": 4,
+  "last_updated": "2026-11-12 06:10 UTC",
+  "total_events": 3,
   "events": [
-    {
-      "title": "Scientific Events | News & Events | PSI",
-      "organizer": "PSI",
-      "category": "Ultrafast Science & Non-Linear Optics",
-      "type": "Conference",
-      "location": "See Link",
-      "display_date": "Nov 11",
-      "date": "2026-11-11",
-      "link": "https://www.psi.ch/en/news/scientific-events",
-      "description": "Scientific Events Show filters Title From Date To Date 11 Nov 11. - 12. November 2026 •Conference •Aula Martinsberg, BBB Berufsfachschule Baden 11 Nov Condensed Matter Retreat 2026 @ BBB Baden Dr Gerber, Simon, Colonna, Nicola, Mazzone, Daniel Gabrie..."
-    },
-    {
-      "title": "ETH News | ETH Zurich",
-      "organizer": "ETH Zurich",
-      "category": "Soft X-Ray & Attosecond",
-      "type": "Conference",
-      "location": "See Link",
-      "display_date": "19 December",
-      "date": "2026-12-19",
-      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpaw&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "ETH News All stories that have been tagged with Physics Novel particle beam could challenge Einstein’s theory of gravity News Researchers at ETH Zurich and the Paul Scherrer Institute have produced an intense, cold beam of exotic atoms. They aim to u..."
-    },
     {
       "title": "âSPIE Conferences App - App Store",
       "organizer": "SPIE",
@@ -45,6 +23,17 @@
       "date": "2027-06-17",
       "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpay90ZWlsY2hlbnBoeXNpaw&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
       "description": "D-PHYS News All stories that have been tagged with Particle physics Pretraining makes AI better at interpreting neutrino interactions - Particle physics - Research - Physics - Particle Physics (IPA) - D-PHYS Researchers from the Institute for Particl..."
+    },
+    {
+      "title": "Scientific Events | News & Events | PSI",
+      "organizer": "PSI",
+      "category": "Ultrafast Science & Non-Linear Optics",
+      "type": "Conference",
+      "location": "See Link",
+      "display_date": "Nov 11",
+      "date": "2027-11-11",
+      "link": "https://www.psi.ch/en/news/scientific-events",
+      "description": "Scientific Events Show filters Title From Date To Date 11 Nov 11. - 12. November 2026 •Conference •Aula Martinsberg, BBB Berufsfachschule Baden 11 Nov Condensed Matter Retreat 2026 @ BBB Baden Dr Gerber, Simon, Colonna, Nicola, Mazzone, Daniel Gabrie..."
     }
   ]
 }
