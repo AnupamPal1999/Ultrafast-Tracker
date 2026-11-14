@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-11-13 05:31 UTC",
-  "total_events": 5,
+  "last_updated": "2026-11-14 05:22 UTC",
+  "total_events": 4,
   "events": [
     {
       "title": "Scientific Events | News & Events | PSI",
@@ -11,18 +11,7 @@
       "display_date": "Nov 17",
       "date": "2026-11-17",
       "link": "https://www.psi.ch/en/news/scientific-events",
-      "description": "Scientific Events Show filters Title From Date To Date 17 Nov 17. November 2026 • 10:45 - 12:00 •Event •OHSA/B17, PSI 17 Nov Debugging Python Mr Viessmann, Hans-Nikolai 20 Nov 20. November 2026 • 11:15 - 12:15 •Auditorium (WHGA/001) 20 Nov From graph..."
-    },
-    {
-      "title": "âSPIE Conferences App - App Store",
-      "organizer": "SPIE",
-      "category": "Ultrafast Science & Non-Linear Optics",
-      "type": "Conference",
-      "location": "See Link",
-      "display_date": "Feb 24",
-      "date": "2027-02-24",
-      "link": "https://apps.apple.com/us/app/spie-conferences/id349678364",
-      "description": "Hold the program and exhibition guides for all current and upcoming SPIE conferences and exhibitions in the palm of your hand. â¢ Complete programs of all SPIE symposia including events, exhibitors, and participants. â¢ Sync My Schedule between your ..."
+      "description": "Scientific Events Show filters Title From Date To Date 17 Nov 17. November 2026 • 10:45 - 12:00 •Event •OHSA/B17, PSI 17 Nov Debugging Python Mr Viessmann, Hans-Nikolai 18 Nov 18. November 2026 • 15:00 - 16:00 •Event •OVGA/200 18 Nov Spectroscopic Si..."
     },
     {
       "title": "ETH News | ETH Zurich",
@@ -30,10 +19,21 @@
       "category": "Soft X-Ray & Attosecond",
       "type": "Conference",
       "location": "See Link",
-      "display_date": "5 April",
-      "date": "2027-04-05",
-      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpay90ZWlsY2hlbnBoeXNpaw&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "ETH News All stories that have been tagged with Particle physics Novel particle beam could challenge Einstein’s theory of gravity News Researchers at ETH Zurich and the Paul Scherrer Institute have produced an intense, cold beam of exotic atoms. They..."
+      "display_date": "10 December",
+      "date": "2026-12-10",
+      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpay9xdWFudGVud2lzc2Vuc2NoYWZ0ZW4&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "ETH News All stories that have been tagged with Quantum sciences Spin-off developing “conductors” for quantum computers News Quantum computers only work when a control system reliably delivers algorithms to the hardware while immediately detecting an..."
+    },
+    {
+      "title": "Manuscript Guidelines and Policies",
+      "organizer": "SPIE",
+      "category": "Ultrafast Science & Non-Linear Optics",
+      "type": "Conference",
+      "location": "See Link",
+      "display_date": "March 16",
+      "date": "2027-03-16",
+      "link": "https://spie.org/conferences-and-exhibitions/event-resources/manuscript-guidelines-and-policies",
+      "description": "Increase your visibility and expand your network. Reach thousands by being published in the world's largest collection of optics and photonics research. The information on this page will facilitate the preparation and submission of your work to the P..."
     },
     {
       "title": "D-PHYS News – Department of Physics | ETH Zurich",
@@ -41,21 +41,10 @@
       "category": "Ultrafast Science & Non-Linear Optics",
       "type": "Conference",
       "location": "See Link",
-      "display_date": "17 June",
-      "date": "2027-06-17",
-      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpay90ZWlsY2hlbnBoeXNpaw&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "D-PHYS News All stories that have been tagged with Particle physics Pretraining makes AI better at interpreting neutrino interactions - Particle physics - Research - Physics - Particle Physics (IPA) - D-PHYS Researchers from the Institute for Particl..."
-    },
-    {
-      "title": "SPIE Photonics Europe",
-      "organizer": "SPIE",
-      "category": "Ultrafast Science & Non-Linear Optics",
-      "type": "Conference",
-      "location": "See Link",
-      "display_date": "6 April 2028",
-      "date": "2028-04-06",
-      "link": "https://spie.org/conferences-and-exhibitions/photonics-europe",
-      "description": "Thank you for another great event. We look forward to seeing you in 2028! Hear research presented at the only cross-disciplinary event highlighting compelling optics and photonics technologies—from digital optics to quantum technologies to optical im..."
+      "display_date": "3 September",
+      "date": "2027-09-03",
+      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpay9xdWFudGVud2lzc2Vuc2NoYWZ0ZW4&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "D-PHYS News All stories that have been tagged with Quantum sciences What a jigsaw and wooden grill skewers have in common - Events - Institute for Theoretical Physics (ITP) - Physics - D-PHYS - Quantum sciences An outreach project provided an opportu..."
     }
   ]
 }
