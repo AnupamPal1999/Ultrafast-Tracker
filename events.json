@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-15 05:18 UTC",
+  "last_updated": "2026-11-16 05:16 UTC",
   "total_events": 3,
   "events": [
     {
@@ -14,26 +14,26 @@
       "description": "Scientific Events Show filters Title From Date To Date 17 Nov 17. November 2026 • 10:45 - 12:00 •Event •OHSA/B17, PSI 17 Nov Debugging Python Mr Viessmann, Hans-Nikolai 18 Nov 18. November 2026 • 15:00 - 16:00 •Event •OVGA/200 18 Nov Spectroscopic Si..."
     },
     {
+      "title": "D-PHYS News – Department of Physics | ETH Zurich",
+      "organizer": "ETH Zurich",
+      "category": "Ultrafast Science & Non-Linear Optics",
+      "type": "School",
+      "location": "See Link",
+      "display_date": "17 June",
+      "date": "2027-06-17",
+      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=c3BlY2lhbGludGVyZXN0OnBoeXMvc29saWQtc3RhdGU&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "D-PHYS News All stories that have been tagged with Laboratory for Solid State Physics (LFKP) Staying open to the next surprise - Laboratory for Solid State Physics (LFKP) - Physics - D-PHYS - People A conversation with Dr Antonius Armanious about unc..."
+    },
+    {
       "title": "ETH News | ETH Zurich",
       "organizer": "ETH Zurich",
       "category": "Soft X-Ray & Attosecond",
       "type": "Conference",
       "location": "See Link",
-      "display_date": "5 April",
-      "date": "2027-04-05",
-      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpay90ZWlsY2hlbnBoeXNpaw&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "ETH News All stories that have been tagged with Particle physics Novel particle beam could challenge Einstein’s theory of gravity News Researchers at ETH Zurich and the Paul Scherrer Institute have produced an intense, cold beam of exotic atoms. They..."
-    },
-    {
-      "title": "D-PHYS News – Department of Physics | ETH Zurich",
-      "organizer": "ETH Zurich",
-      "category": "Ultrafast Science & Non-Linear Optics",
-      "type": "Conference",
-      "location": "See Link",
-      "display_date": "17 June",
-      "date": "2027-06-17",
-      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpay90ZWlsY2hlbnBoeXNpaw&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "D-PHYS News All stories that have been tagged with Particle physics Pretraining makes AI better at interpreting neutrino interactions - Particle physics - Research - Physics - Particle Physics (IPA) - D-PHYS Researchers from the Institute for Particl..."
+      "display_date": "23 October",
+      "date": "2027-10-23",
+      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpzY2hsYWd3b3J0ZS9zcGluLW9mZnM&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "ETH News All stories that have been tagged with Spin-offs and patents How plastic waste transforms into higher-value products News A team of researchers at ETH Zurich is upcycling waste made from polyethylene and polypropylene – two of the world’s mo..."
     }
   ]
 }
