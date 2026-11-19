@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-18 06:20 UTC",
+  "last_updated": "2026-11-19 06:22 UTC",
   "total_events": 3,
   "events": [
     {
@@ -8,10 +8,21 @@
       "category": "Ultrafast Science & Non-Linear Optics",
       "type": "Conference",
       "location": "See Link",
-      "display_date": "Nov 18",
-      "date": "2026-11-18",
+      "display_date": "Nov 20",
+      "date": "2026-11-20",
       "link": "https://www.psi.ch/en/news/scientific-events",
-      "description": "Scientific Events Show filters Title From Date To Date 18 Nov 18. November 2026 • 15:00 - 16:00 •Event •OVGA/200 18 Nov Spectroscopic Signatures in Na$_x$MnO$_2$ Cathodes for Na-ion batteries: A Computational Study Based on Density-Functional Theory ..."
+      "description": "Scientific Events Show filters Title From Date To Date 20 Nov 20. November 2026 • 11:15 - 12:15 •Auditorium (WHGA/001) 20 Nov From graphene quantum devices to quantum science and technology in Switzerland Klaus Ensslin 23 Nov 23. November 2026 • 11:0..."
+    },
+    {
+      "title": "D-PHYS News – Department of Physics | ETH Zurich",
+      "organizer": "ETH Zurich",
+      "category": "Soft X-Ray & Attosecond",
+      "type": "School",
+      "location": "See Link",
+      "display_date": "January 6-8",
+      "date": "2027-01-06",
+      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=c3BlY2lhbGludGVyZXN0OnBoeXMvcGFydGljbGUtcGh5c2ljcw&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "D-PHYS News All stories that have been tagged with Particle Physics (IPA) Pretraining makes AI better at interpreting neutrino interactions - Particle physics - Research - Physics - Particle Physics (IPA) - D-PHYS Researchers from the Institute for P..."
     },
     {
       "title": "ETH News | ETH Zurich",
@@ -23,17 +34,6 @@
       "date": "2027-04-05",
       "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpay90ZWlsY2hlbnBoeXNpaw&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
       "description": "ETH News All stories that have been tagged with Particle physics Novel particle beam could challenge Einstein’s theory of gravity News Researchers at ETH Zurich and the Paul Scherrer Institute have produced an intense, cold beam of exotic atoms. They..."
-    },
-    {
-      "title": "D-PHYS News – Department of Physics | ETH Zurich",
-      "organizer": "ETH Zurich",
-      "category": "Soft X-Ray & Attosecond",
-      "type": "School",
-      "location": "See Link",
-      "display_date": "17 June",
-      "date": "2027-06-17",
-      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=c3BlY2lhbGludGVyZXN0OnBoeXMvdGhlb3JldGljYWw&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "D-PHYS News All stories that have been tagged with Institute for Theoretical Physics (ITP) What a jigsaw and wooden grill skewers have in common - Events - Institute for Theoretical Physics (ITP) - Physics - D-PHYS - Quantum sciences An outreach proj..."
     }
   ]
 }
