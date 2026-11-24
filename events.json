@@ -1,17 +1,17 @@
 {
-  "last_updated": "2026-11-23 06:14 UTC",
-  "total_events": 2,
+  "last_updated": "2026-11-24 08:52 UTC",
+  "total_events": 3,
   "events": [
     {
       "title": "Scientific Events | News & Events | PSI",
       "organizer": "PSI",
-      "category": "Ultrafast Science & Non-Linear Optics",
+      "category": "Soft X-Ray & Attosecond",
       "type": "Conference",
       "location": "See Link",
-      "display_date": "Nov 23",
-      "date": "2026-11-23",
+      "display_date": "Nov 25",
+      "date": "2026-11-25",
       "link": "https://www.psi.ch/en/news/scientific-events",
-      "description": "Scientific Events Show filters Title From Date To Date 23 Nov 23. November 2026 • 11:00 - 11:45 •Event •WBGB/019 23 Nov Particle Theory Seminar: NLO Running in the SMEFT and Beyond Lukas Born 23 Nov 23. November 2026 • 16:00 - 17:00 •Event 23 Nov An ..."
+      "description": "Scientific Events Show filters Title From Date To Date 25 Nov 25. November 2026 • 14:30 - 15:30 •Event •WBGB/019 25 Nov Modelling and beam instability studies for Future ERL-based Applications Mr Vanhecke, Lode 25 Nov 25. November 2026 • 15:00 - 16:0..."
     },
     {
       "title": "D-PHYS News – Department of Physics | ETH Zurich",
@@ -23,6 +23,17 @@
       "date": "2027-06-17",
       "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=c3BlY2lhbGludGVyZXN0OnBoeXMvc29saWQtc3RhdGU&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
       "description": "D-PHYS News All stories that have been tagged with Laboratory for Solid State Physics (LFKP) Staying open to the next surprise - Laboratory for Solid State Physics (LFKP) - Physics - D-PHYS - People A conversation with Dr Antonius Armanious about unc..."
+    },
+    {
+      "title": "ETH News | ETH Zurich",
+      "organizer": "ETH Zurich",
+      "category": "Soft X-Ray & Attosecond",
+      "type": "Conference",
+      "location": "See Link",
+      "display_date": "23 October",
+      "date": "2027-10-23",
+      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpzY2hsYWd3b3J0ZS9zcGluLW9mZnM&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "ETH News All stories that have been tagged with Spin-offs and patents Dissolving blood clots with flow-generating microbots News A blood clot can restrict the blood flow in a blood vessel to such an extent that the medications intended to dissolve it..."
     }
   ]
 }
