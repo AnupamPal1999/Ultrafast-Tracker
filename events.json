@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-25 07:26 UTC",
+  "last_updated": "2026-11-26 07:15 UTC",
   "total_events": 3,
   "events": [
     {
@@ -8,32 +8,32 @@
       "category": "Soft X-Ray & Attosecond",
       "type": "Conference",
       "location": "See Link",
-      "display_date": "Nov 25",
-      "date": "2026-11-25",
+      "display_date": "Nov 27",
+      "date": "2026-11-27",
       "link": "https://www.psi.ch/en/news/scientific-events",
-      "description": "Scientific Events Show filters Title From Date To Date 25 Nov 25. November 2026 • 14:30 - 15:30 •Event •WBGB/019 25 Nov Modelling and beam instability studies for Future ERL-based Applications Mr Vanhecke, Lode 25 Nov 25. November 2026 • 15:00 - 16:0..."
+      "description": "Scientific Events Show filters Title From Date To Date 27 Nov 27. November 2026 • 11:00 - 12:00 •Colloquium •ODRA/111 27 Nov Neutron-Induced Reactions in Intertial Confinement Fusion experiments and the Curious Case of the 42Ar Nuclide Prof. Michael ..."
     },
     {
       "title": "ETH News | ETH Zurich",
       "organizer": "ETH Zurich",
       "category": "Soft X-Ray & Attosecond",
-      "type": "Conference",
+      "type": "School",
       "location": "See Link",
-      "display_date": "19 December",
-      "date": "2026-12-19",
-      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpaw&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "ETH News All stories that have been tagged with Physics Novel particle beam could challenge Einstein’s theory of gravity News Researchers at ETH Zurich and the Paul Scherrer Institute have produced an intense, cold beam of exotic atoms. They aim to u..."
+      "display_date": "16 December",
+      "date": "2026-12-16",
+      "link": "https://ethz.ch/en/news-and-events/eth-news/news.html?TAG=bmV3czpmb3JtYXRlL2luZ2VuaWV1cndpc3NlbnNjaGFmdGVuL2luZ2VuaWV1cndpc3NlbnNjaGFmdGVu&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "ETH News All stories that have been tagged with Engineering sciences Hungering for knowledge: Where enjoyment has a rendezvous with science News Why does bread turn golden brown when it’s baked? Just what makes a sauce creamy, and why does an egg cha..."
     },
     {
       "title": "D-PHYS News – Department of Physics | ETH Zurich",
       "organizer": "ETH Zurich",
       "category": "Ultrafast Science & Non-Linear Optics",
-      "type": "Conference",
+      "type": "School",
       "location": "See Link",
       "display_date": "17 June",
       "date": "2027-06-17",
-      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=bmV3czpmb3JtYXRlL3BoeXNpay90ZWlsY2hlbnBoeXNpaw&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
-      "description": "D-PHYS News All stories that have been tagged with Particle physics Pretraining makes AI better at interpreting neutrino interactions - Particle physics - Research - Physics - Particle Physics (IPA) - D-PHYS Researchers from the Institute for Particl..."
+      "link": "https://phys.ethz.ch/news-and-events/d-phys-news.html?TAG=c3BlY2lhbGludGVyZXN0OnBoeXMvc29saWQtc3RhdGU&path=L2NvbnRlbnQvc3BlY2lhbGludGVyZXN0L3BoeXMvZC1waHlzL2VuL25ld3MtYW5kLWV2ZW50cy9qY3I6Y29udGVudC9wYXIvbmV3c2ZlZWQ",
+      "description": "D-PHYS News All stories that have been tagged with Laboratory for Solid State Physics (LFKP) Staying open to the next surprise - Laboratory for Solid State Physics (LFKP) - Physics - D-PHYS - People A conversation with Dr Antonius Armanious about unc..."
     }
   ]
 }
